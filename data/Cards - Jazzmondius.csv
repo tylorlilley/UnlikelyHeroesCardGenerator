@@ -1,0 +1,16 @@
+Name,Description,Count,Health,Duration,Icons,Attack,Card Type,,,,Notes
+Jazzmondius,"After you play an action that deals damage to Jazzmondius, he attacks you for [1 damage].
+After a card from the encounter deck causes one or more players to discard a card, Jazzmondius heals 1 damage per card discarded.",1,20,,,0,MINION - ELITE,,,,
+Draw Into the Abyss,"Jazzmondius attacks you for [X damage, where X is the number of resources in play]. 
+Discard each resource in play.",1,,,,,EVENT,,,,
+Shadowjazz,"If Jazzmondius would attack, this minion attacks with [that attack] as well.",1,8,,,0,MINION,,,,
+Surprise Attack,Jazzmondius attacks for [2 damage. Surge.],2,,,,,EVENT,,,,
+Dark Vortex,"When time passes, you discard 1 card.",2,,4,,,DURATION,,,,
+Jazz's Left Wing Man,"All damage that would be dealt to Jazzmondius is dealt to this minion instead.
+
+If Jazzmondius is not in play, increase this minion's strength by 2.",1,6,,,2,MINION,,,,
+Jazz's Right Wing Man,"All damage that would be dealt to Jazzmondius is dealt to this minion instead, unless Jazz's Left Wing Man is in play.
+
+If Jazzmondius is not in play, increase this minion's strength by 2.",1,6,,,2,MINION,,,,
+Lifegrasp,Jazzmondius attacks for [3 damage. You discard a card.],3,,,,,EVENT,,,,
+Occult Servant,"After this minion attacks, you discard a card.",3,2,,,1,MINION,,,,

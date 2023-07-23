@@ -1,0 +1,17 @@
+Name,Description,Count,Health,Attack,Duration,Icons,Card Type,,,,Notes
+Intoxicating Glow Worm,"You cannot deal damage to other minions.
+
+You can use resources from your partner OR play actions from your partner, but NOT both.
+
+After each night, heal all damage from this minion.
+",1,4,1,,,MINION,,,,
+Hive Queen,"The first minion drawn each turn gains surge (including this, if applicable).",1,10,2,,,MINION - ELITE,,,,
+Big Beefy Strong Mushroom Man,Each other minion gets +1 to its strength.,1,8,1,,,MINION,,,,
+Spore Cloud,"Heal 1 damage from each minion.
+Surge.",2,,,,,EVENT,,,,
+Hornet Swarm,"After an action deals one or more damage to one or more minions, this minion attacks.",2,3,3,,,MINION,,,,
+Big Spider,"After this minion attacks, discard an action card you have in play.",2,4,1,,,MINION,,,,
+Beetleborger,,3,4,2,,,MINION,,,,
+Army of Ants,"After the encounter deck surges, this minion attacks.
+
+Surge.",3,3,1,,,MINION,,,,

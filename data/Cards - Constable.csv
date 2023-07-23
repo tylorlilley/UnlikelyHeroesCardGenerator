@@ -1,0 +1,11 @@
+Name,Description,Count,Cost: Berries,Cost: Sticks,Cost: Stones,Cost: Flowers,Gives: Berries,Gives: Sticks,Gives: Stones,Gives: Flowers,Notes,Frequency
+Enforce,"Deal 2 damage. If it is dealt to a minion, subdue it.",2,,1,1,,,1,,,Uncommon 3,2
+Enforce,"Deal 2 damage. If it is dealt to a minion, subdue it.",2,,1,1,,,,1,,Uncommon 3,2
+Throw in the Slammer,"Deal 2 damage, or 5 damage instead if it is dealt to a subdued minion.",1,1,1,,,,1,,1,Uncommon 1,2
+Throw in the Slammer,"Deal 2 damage, or 5 damage instead if it is dealt to a subdued minion.",1,,1,,1,1,1,,,Uncommon 1,2
+Lay down the Law,"Deal 2 damage to each subdued minion. 
+Subdue each minion.",1,1,,1,,,,1,1,Uncommon 2,2
+Lay down the Law,"Deal 2 damage to each subdued minion. 
+Subdue each minion.",1,,,1,1,1,,1,,Uncommon 2,2
+Interrogate,"Remove any number of subdue counters from among all minions. Heal X damage, where X is twice the number of counters removed.",1,1,1,1,1,1,,,1,Rare 1 (Multi),1
+Crackdown,Deal 5 damage to each subdued minions.,1,,2,2,,,1,1,,Rare 2 (Super),1

@@ -1,0 +1,9 @@
+Name,Description,Count,Cost: Berries,Cost: Sticks,Cost: Stones,Cost: Flowers,Gives: Berries,Gives: Sticks,Gives: Stones,Gives: Flowers,Notes
+Quick Snack,Heal 2,2,1,1,,,,1,,,Common 1
+Quick Snack,Heal 2,2,1,1,,,1,,,,Common 1
+Nourishing Meal,"If played by the Chef's partner, they heal twice as much the next time they heal this turn.",1,1,,1,,1,,,1,Uncommon 1
+Nourishing Meal,"If played by the Chef's partner, they heal twice as much the next time they heal this turn.",1,1,,,1,1,,1,,Uncommon 1
+Invigorating Stew,"If played by the Chef's partner, they do twice as much damage the next time they attack this turn.",1,,1,1,,,1,,1,Uncommon 2
+Invigorating Stew,"If played by the Chef's partner, they do twice as much damage the next time they attack this turn.",1,,1,,1,,1,1,,Uncommon 2
+Spicy Meatball,Deal 1 damage to a minion once per Spice symbol in play,1,1,1,1,1,,1,1,1,Rare 1 (Multi)
+Masterpiece Meal,"If played by the Chef's partner, they trigger their draw effect immediately",1,2,2,,,1,1,,,Rare 2 (Super)
