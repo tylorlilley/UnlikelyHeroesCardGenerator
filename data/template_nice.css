@@ -234,11 +234,31 @@ html {
     font-size: 56px;
     gap: 8px;
   }
-    .resource .icon .cost_icon
+    .resource .icon .icon_wrapper
     {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 56px;
+      gap: 8px;
       width: 80%;
       height: 80%;
     }
+
+    .resource .icon .icon_wrapper .cost_icon
+    {
+      width: 100%;
+      height: 100%;
+    }
+
+    .resource .icon .icon_wrapper .spiced
+    {
+      position: absolute;
+      left: 20px;
+      top: 12px;
+    }
+
   .resource .name
   {
     padding-bottom: 4px;

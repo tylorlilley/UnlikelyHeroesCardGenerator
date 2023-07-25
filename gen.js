@@ -6,6 +6,7 @@ const { parse } = require("csv-parse/sync");
 // CONFIGURATION 
 
 const is_nice = true
+const generate_gives_from_costs = true
 
 const TEMPLATE_HEROES = "./data/template_hero.html"
 const TEMPLATE_ENCOUNTER = "./data/template_encounter.html"
@@ -14,6 +15,7 @@ const ICON_BERRIES = { emoji: "🍓", image: "../assets/berry.png", image_small:
 const ICON_STICKS  = { emoji: "🌿", image: "../assets/stick.png", image_small: "../assets/stick-small.png",  color: "border-sticks",  text: "Sticks" }
 const ICON_STONES  = { emoji: "🪨", image: "../assets/rock.png",  image_small: "../assets/rock-small.png",   color: "border-stones",  text: "Stones" }
 const ICON_FLOWERS = { emoji: "🌸", image: "../assets/flower.png",image_small: "../assets/flower-small.png", color: "border-flowers", text: "Flowers" }
+const ICON_WILD = { emoji: "❓", image: "../assets/wild.png",image_small: "../assets/wild-small.png", color: "border-wild", text: "Any Resource" }
 
 const ICON_SPICE   = { emoji: "🌶️", image: "../assets/spicy.png", color: "", text: "(Spiced)" }
 const ICON_ATTACK  = { emoji: "🗡️", image: "../assets/sword-small.png" }
@@ -70,10 +72,7 @@ const template_hero = fs.readFileSync(TEMPLATE_HEROES).toString()
 const template_encounter = fs.readFileSync(TEMPLATE_ENCOUNTER).toString()
 
 const icons = {
-  "Berries": ICON_BERRIES,
-  "Sticks": ICON_STICKS,
-  "Flowers": ICON_FLOWERS,
-  "Stones": ICON_STONES,
+  "Wild": ICON_WILD,
   "Cost: Berries": ICON_BERRIES,
   "Cost: Sticks": ICON_STICKS,
   "Cost: Flowers": ICON_FLOWERS,
@@ -103,12 +102,12 @@ icon_spec_to_html_no_class(icon_spec)
 }
 
 function 
-icon_spec_to_html(icon_spec, small = false)
+icon_spec_to_html(icon_spec, small = false, spiced = false)
 {
   if (!icon_spec) return null
   if (is_nice) {
     const image = small ? icon_spec.image_small : icon_spec.image
-    return `<img class="cost_icon" src="${image}" />`
+    return (spiced) ? `<div class="icon_wrapper"><img class="cost_icon" src="${image}" /><img class="cost_icon spiced" src="${ICON_SPICE.image}" /></div>` : `<img class="cost_icon" src="${image}" />`
   } else {
     return `<div class="cost_icon">${icon_spec.emoji}</div>`
   }
@@ -147,29 +146,36 @@ insert_gives(insert, gives, spiced)
   let gives_icons = ""
   let gives_text = []
   let color = ""
-  for (let i = 0; i < gives.length; i++) {
-    const give = gives[i]
-    const icon = get_resource_icon(give.key)
-    color = icon.color
-    if (gives_icons != "") {
-      gives_icons += " / "
-    }
-    gives_icons += icon_spec_to_html(icon)
+ 
+  // Replace with wild if all resources are present
+  if (gives.length > 3) {
+    const icon = get_resource_icon("Wild")
+    gives_icons += icon_spec_to_html(icon, false, spiced)
     gives_text.push(icon.text)
   }
-
-  gives_text = gives_text.join(" / ")
-  if (spiced) {
-    gives_icons += icon_spec_to_html(ICON_SPICE)
-    gives_text += ` ${ICON_SPICE.text}`
+  else {
+    // Generate each cost symbol seperately
+    for (let i = 0; i < gives.length; i++) {
+      const give = gives[i]
+      const icon = get_resource_icon(give.key)
+      color = icon.color
+      // Add a slash between te sybols
+      if (gives_icons != "") {
+        gives_icons += " / "
+      }
+      gives_icons += icon_spec_to_html(icon, false, spiced)
+      gives_text.push(icon.text)
+    }
   }
 
+  gives_text = (spiced) ? ICON_SPICE.text + ": " + gives_text.join(" / ") : gives_text.join(" / ")
   gives_icons = `<div class="icon ${color}">${gives_icons}</div>`
 
   insert = insert.replace("%Gives Icon%", gives_icons)
   insert = insert.replace("%Gives Name%", gives_text)
   return insert
 }
+
 
 function
 insert_counts(insert, count)
@@ -249,7 +255,7 @@ gen_hero(rows, name, deck_spec)
     }
 
     insert = insert_costs(insert, costs)
-    insert = insert_gives(insert, gives, deck_spec.spiced)
+    insert = generate_gives_from_costs ? insert_gives(insert, costs, deck_spec.spiced) : insert_gives(insert, gives, deck_spec.spiced)
 
     const freq = row["Frequency"]
     if (freq != "") insert = insert_counts(insert, freq)
@@ -315,7 +321,7 @@ gen_encounter(rows, name, deck_spec)
       const fire_count = stupid_fucking_emoji_string_length(row["Icons"], "🔥")
       let icons = ""
       for (let j = 0; j < fire_count; j++) {
-        icons += icon_spec_to_html(ICON_FIRE)
+        icons += icon_spec_to_html(ICON_FIRE, true)
       }
       console.log(fire_count)
       insert = insert.replace("%Icons%", icons)
@@ -350,7 +356,7 @@ decks.forEach(deck_spec => {
       } else if (deck_spec.is_encounter) {
         html_body = gen_encounter(rows, name, deck_spec)
       }
-      html = html_preamble.replace("CSS", is_nice ? "template_nice.css" : "template_bare.css")
+      html = html_preamble.replace("CSS", is_nice ? "../template_nice.css" : "../template_bare.css")
       html += html_body
       html += html_postamble
 
