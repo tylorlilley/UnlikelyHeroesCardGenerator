@@ -157,7 +157,7 @@ html {
 
   .action .body
   {
-    height: 1.5in;
+    height: 1.75in;
     padding-left: 12px;
     padding-right: 6px;
     padding-top: 6px;
@@ -211,7 +211,9 @@ html {
       object-fit: contain;
       width: 20px;
       height: 20px;
+      transform: rotate(180deg);
     }
+    
     .encounter .deck
     {
       background: var(--encounter-deck-bg);
@@ -275,6 +277,30 @@ html {
   padding-left: 6px;
   padding-right: 6px;
   padding-bottom: 6px;
+}
+
+.hero .action .body .footer
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 40px;
+}
+
+.hero .action .body .footer .count_icons
+{ 
+  font-size: 8px;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  top: 80%;
+  left: 0%;
+  width: 100%
 }
 
 .encounter .number_icon

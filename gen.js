@@ -107,7 +107,7 @@ icon_spec_to_html(icon_spec, small = false, spiced = false)
   if (!icon_spec) return null
   if (is_nice) {
     const image = small ? icon_spec.image_small : icon_spec.image
-    return (spiced) ? `<div class="icon_wrapper"><img class="cost_icon" src="${image}" /><img class="cost_icon spiced" src="${ICON_SPICE.image}" /></div>` : `<img class="cost_icon" src="${image}" />`
+    return `<div class="icon_wrapper"><img class="cost_icon" src="${image}" />${ (spiced) ? `<img class="cost_icon spiced" src="${ICON_SPICE.image}" />` : ""}</div>`
   } else {
     return `<div class="cost_icon">${icon_spec.emoji}</div>`
   }
