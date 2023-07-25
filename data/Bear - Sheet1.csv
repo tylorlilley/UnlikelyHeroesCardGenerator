@@ -1,0 +1,10 @@
+Name,Description,Count,Cost: Berries,Cost: Sticks,Cost: Stones,Cost: Flowers,Gives: Berries,Gives: Sticks,Gives: Stones,Gives: Flowers,Notes,Frequency
+Bear Claw,"Deal 2 damage. If the Bear is awake, also deal 3 damage to another enemy.",2,1,1,0,0,1,0,0,0,,2
+Catch Fish,"Gain 2 vitality. If the Bear is awake, gain 5 vitality instead.",2,1,1,0,0,0,1,0,0,,2
+Mark Territory,Put the top two cards of your deck onto your field as actions for your partner.,2,1,0,0,1,1,0,0,1,,2
+Roar,"Deal 2 damage.
+Remove 2 time counters.",2,0,1,1,0,0,1,1,0,,2
+Poke the Bear,"Gain 3 vitality.
+If the Bear is hibernating, the Bear performs their draw ability.",1,1,1,1,1,0,0,1,1,,1
+Hunker Down,"Deal 2 damage.
+If the Bear is awake, the Bear performs their draw ability.",1,2,2,0,0,1,1,0,0,,1

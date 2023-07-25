@@ -1,0 +1,9 @@
+Name,Description,Count,Cost: Berries,Cost: Sticks,Cost: Stones,Cost: Flowers,Gives: Berries,Gives: Sticks,Gives: Stones,Gives: Flowers,Notes,Frequency
+Eat Acorns,Heal 3 life.,2,1,0,0,1,0,0,0,1,,2
+Bury Deep,"Draw a card.
+Rotate an action or resource on the field.",2,1,0,0,1,1,0,0,0,,2
+Dart Around,Remove 4 time counters.,2,0,0,1,1,0,0,1,1,,2
+Fur Frenzy,"Deal 1 damage to each enemy. If you have no cards in hand, deal 2 damage to each enemy instead.",2,1,1,0,0,1,1,0,0,,2
+Nut Assault,"Deal X damage, where X is half the number of cards on your field, rounded up.",1,1,1,1,1,0,1,1,0,,1
+Fill Cheeks,"Draw two cards.
+For the rest of this turn, after you discard a card, return it to your hand.",1,2,0,0,2,1,0,0,1,,1

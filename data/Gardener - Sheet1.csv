@@ -1,0 +1,9 @@
+Name,Description,Count,Cost: Berries,Cost: Sticks,Cost: Stones,Cost: Flowers,Gives: Berries,Gives: Sticks,Gives: Stones,Gives: Flowers,Notes,Frequency
+Harvest,"Discard any number of resources from your field. Gain X+2 vitality, where X is the number of resources discarded this way.",2,2,0,0,0,1,0,0,0,,2
+Sow,"Discard a resource from your field. If you do, plant two cards.",2,1,0,0,1,1,0,0,1,,2
+Entangle,"Deal 1 damage.
+Plant a card.",2,1,0,1,0,1,0,1,0,,2
+Absorb,"Deal 2 damage.
+Gain 2 vitality.",2,1,1,0,0,1,1,0,0,,2
+Bloom,Plant three cards.,1,2,1,1,1,1,0,0,0,,1
+Nourish,Gain 5 vitality.,1,3,0,0,0,1,0,0,0,,1

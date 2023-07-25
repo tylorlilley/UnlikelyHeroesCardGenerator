@@ -1,9 +1,0 @@
-Name,Description,Count,Cost: Berries,Cost: Sticks,Cost: Stones,Cost: Flowers,Gives: Berries,Gives: Sticks,Gives: Stones,Gives: Flowers,Notes,Frequency
-Bite,Deal 1 damage to up to 2 different things.,3,1,,,,1,,,,Common 1,3
-Eat Acorns,You may discard X cards. Heal X+3 damage.,1,2,,,,,,1,,Uncommon 1,2
-Eat Acorns,You may discard X cards. Heal X+3 damage.,1,2,,,,,,,1,Uncommon 1,2
-Bury Deep,Draw one card at random from your discard pile and put it into play as a resource for your partner.,1,1,,1,,1,,1,,Uncommon 2,2
-Bury Deep,Draw one card at random from your discard pile and put it into play as a resource for your partner.,1,1,,,1,1,,,1,Uncommon 2,2
-Fill Cheeks,"For the rest of this turn, after you discard a card, return it to your hand.",1,2,1,,,1,1,,,Rare (Off Color),1
-Fur Frenzy,You may discard X cards. Deal X+3 damage divided among any number of things.,1,3,,,,1,,,,Rare (Super),1
-Nut Assault,"Deal X damage, where X is the number of cards on your field.",1,1,1,1,1,,1,,,Rare (Multi),1

@@ -22,21 +22,21 @@ const ICON_CLOCK   = { emoji: "⏳", image: "../assets/time-small.png" }
 const ICON_HEART   = { emoji: "❤️", image: "../assets/heart-small.png" }
 
 // Occupations
-const DECK_LIBRARIAN = { is_hero: true, path: "./data/Cards - Librarian.csv", emoji: "📚", image: "../assets/deck_icon_librarian.png" }
-const DECK_GARDENER  = { is_hero: true, path: "./data/Cards - Gardener.csv",  emoji: "👩‍🌾", image: "../assets/deck_icon_gardener.png" }
-const DECK_CHEF      = { is_hero: true, path: "./data/Cards - Baker.csv",     emoji: "👨‍🍳", image: "../assets/deck_icon_baker.png", spiced: true }
-const DECK_CONSTABLE = { is_hero: true, path: "./data/Cards - Constable.csv", emoji: "👮", image: "../assets/deck_icon_constable.png" }
+const DECK_LIBRARIAN = { is_hero: true, path: "./data/Librarian - Sheet1.csv", emoji: "📚", image: "../assets/deck_icon_librarian.png" }
+const DECK_GARDENER  = { is_hero: true, path: "./data/Gardener - Sheet1.csv",  emoji: "👩‍🌾", image: "../assets/deck_icon_gardener.png" }
+const DECK_CHEF      = { is_hero: true, path: "./data/Baker - Sheet1.csv",     emoji: "👨‍🍳", image: "../assets/deck_icon_baker.png", spiced: true }
+const DECK_CONSTABLE = { is_hero: true, path: "./data/Constable - Sheet1.csv", emoji: "👮", image: "../assets/deck_icon_constable.png" }
 
 // Critters
-const DECK_BEAR     = { is_hero: true,  path: "./data/Cards - Bear.csv",     emoji: "🐻", image: "../assets/deck_icon_bear.png"}
-const DECK_SQUIRREL = { is_hero: true,  path: "./data/Cards - Squirrel.csv", emoji: "🐿️", image: "../assets/deck_icon_squirrel.png"}
-const DECK_SNAKE    = { is_hero: true,  path: "./data/Cards - Snake.csv",    emoji: "🐍", image: "../assets/deck_icon_snake.png"}
-const DECK_TURTLE   = { is_hero: true,  path: "./data/Cards - Turtle.csv",   emoji: "🐢", image: "../assets/deck_icon_turtle.png"}
+const DECK_BEAR     = { is_hero: true,  path: "./data/Bear - Sheet1.csv",     emoji: "🐻", image: "../assets/deck_icon_bear.png"}
+const DECK_SQUIRREL = { is_hero: true,  path: "./data/Squirrel - Sheet1.csv", emoji: "🐿️", image: "../assets/deck_icon_squirrel.png"}
+const DECK_SNAKE    = { is_hero: true,  path: "./data/Snake - Sheet1.csv",    emoji: "🐍", image: "../assets/deck_icon_snake.png"}
+const DECK_TURTLE   = { is_hero: true,  path: "./data/Turtle - Sheet1.csv",   emoji: "🐢", image: "../assets/deck_icon_turtle.png"}
 
 // Encounter
-const DECK_JAZZMONDIUS  = { is_encounter: true, path: "./data/Cards - Jazzmondius.csv",  emoji: "🦅", image: "../assets/deck_icon_jazzmondius.png" }
-const DECK_WILDEFIRE    = { is_encounter: true, path: "./data/Cards - Wildefire.csv",    emoji: "🔥", image: "../assets/deck_icon_wildefire.png" }
-const DECK_INSECT_SWARM = { is_encounter: true, path: "./data/Cards - Insect_Swarm.csv", emoji: "🐝", image: "../assets/deck_icon_insecthorde.png" }
+const DECK_JAZZMONDIUS  = { is_encounter: true, path: "./data/Jazzmondius - Sheet1.csv",  emoji: "🦅", image: "../assets/deck_icon_jazzmondius.png" }
+const DECK_WILDEFIRE    = { is_encounter: true, path: "./data/Wildfire - Sheet1.csv",    emoji: "🔥", image: "../assets/deck_icon_wildefire.png" }
+const DECK_INSECT_SWARM = { is_encounter: true, path: "./data/The Swarm - Sheet1.csv", emoji: "🐝", image: "../assets/deck_icon_insecthorde.png" }
 
 //////////////////////////////////////////////////////
 // 
@@ -70,6 +70,10 @@ const template_hero = fs.readFileSync(TEMPLATE_HEROES).toString()
 const template_encounter = fs.readFileSync(TEMPLATE_ENCOUNTER).toString()
 
 const icons = {
+  "Berries": ICON_BERRIES,
+  "Sticks": ICON_STICKS,
+  "Flowers": ICON_FLOWERS,
+  "Stones": ICON_STONES,
   "Cost: Berries": ICON_BERRIES,
   "Cost: Sticks": ICON_STICKS,
   "Cost: Flowers": ICON_FLOWERS,
@@ -147,6 +151,9 @@ insert_gives(insert, gives, spiced)
     const give = gives[i]
     const icon = get_resource_icon(give.key)
     color = icon.color
+    if (gives_icons != "") {
+      gives_icons += " / "
+    }
     gives_icons += icon_spec_to_html(icon)
     gives_text.push(icon.text)
   }
@@ -158,6 +165,7 @@ insert_gives(insert, gives, spiced)
   }
 
   gives_icons = `<div class="icon ${color}">${gives_icons}</div>`
+
   insert = insert.replace("%Gives Icon%", gives_icons)
   insert = insert.replace("%Gives Name%", gives_text)
   return insert

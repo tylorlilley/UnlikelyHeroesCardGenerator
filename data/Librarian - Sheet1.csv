@@ -1,0 +1,11 @@
+Name,Description,Count,Cost: Berries,Cost: Sticks,Cost: Stones,Cost: Flowers,Gives: Berries,Gives: Sticks,Gives: Stones,Gives: Flowers,Notes,Frequency
+Catalog,"Read Ahead.
+Skip the Draw step of the night phase this turn.",2,0,0,0,2,0,0,0,1,,2
+Archive,"Read Ahead.
+Remove 3 time counters.",2,0,0,1,1,0,0,1,1,,2
+Paper Cut,"Draw a card.
+Deal 1 damage.",2,0,1,0,1,0,1,0,1,,2
+Compelling Read,"Read Ahead.
+Draw a card.",2,1,0,0,1,1,0,0,1,,2
+Burn the Midnight Oil,"Discard a card from your hand. If you do, skip the night phase this turn.",1,1,1,1,2,0,0,0,1,,1
+Catalog,"Choose a player. They perform their draw ability, then discard two cards from their hand.",1,0,0,0,3,0,0,0,1,,1

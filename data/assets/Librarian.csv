@@ -1,0 +1,10 @@
+Name,Description,Count,Berries,Sticks,Stones,Flowers,Berries,Sticks,Stones,Flowers,Notes,Frequency
+Catalog,"Choose a player. They perform their draw effect, then discard a card from their hand.",2,0,0,0,2,0,0,0,1,,2
+Decipher,"Read Ahead.
+Remove two time counters from a duration.",2,0,0,1,1,0,0,1,1,,2
+Paper Cut,"Deal 1 damage. 
+Draw a card.",2,0,1,0,1,0,1,0,1,,2
+Research,"Read Ahead.
+Draw a card.",2,1,0,0,1,1,0,0,1,,2
+Foreknowledge,Skip the draw an encounter card step of the night this turn.,1,1,1,1,1,0,0,0,1,,1
+Archive,Choose a player. They perform their draw effect.,1,0,0,0,3,0,0,0,1,,1

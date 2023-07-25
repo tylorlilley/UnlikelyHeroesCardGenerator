@@ -1,0 +1,13 @@
+Name,Description,Count,Cost: Berries,Cost: Sticks,Cost: Stones,Cost: Flowers,Gives: Berries,Gives: Sticks,Gives: Stones,Gives: Flowers,Notes,Frequency
+Strike,Deal 2 damage. Deal 4 damage instead if you have played an another action this turn with your partner's icon.,2,0,1,1,0,0,1,0,0,,2
+Constrict,"Deal 4 damage.
+Lose 2 vitality.",2,0,1,1,0,0,0,1,0,,2
+Tailwhip,"Deal 1 damage to two different enemies.
+Rotate an action or resource on the field.",2,1,1,0,0,1,1,0,0,,2
+Sideswipe,Deal 3 damage directly to the encounter deck as if there were no enemies on the field.,2,0,0,1,1,0,0,1,1,,2
+Tempt,"Draw all the cards in your partner's hand.
+Your partner performs their draw ability.
+Lose 2 vitality.",1,1,1,1,1,1,0,0,1,,1
+Spit Venom,"Deal 2 damage to one enemy. That enemy can't attack this turn.
+OR
+Remove 3 time counters.",1,0,2,2,0,0,1,1,0,,1
