@@ -1,0 +1,289 @@
+@font-face {
+  font-family: Immortal;
+  src: url("./assets/IMMORTAL.ttf");
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url("./assets/Montserrat-Light.ttf");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url("./assets/Montserrat-Bold.ttf");
+  font-weight: bold;
+}
+
+html {
+  --hero-text-color: #000000;
+  --encounter-text-color: #000000;
+  --card-border: 8px solid #000000;
+  --hero-split: 1px solid #000000;
+  --encounter-deck-bg: #000000;
+}
+
+html {
+  --hero-text-color: #000000;
+  --encounter-text-color: #FFFFFF;
+  
+  --resource-bg-color: #ffffff61;
+  --hero-bg-image: url("./assets/hero_bg.png");
+  --encounter-bg-image: url("./assets/encounter_bg.png");
+  --card-border: 0px solid #00000000;
+  --hero-split: 0px solid #00000000;
+  --encounter-deck-bg: transparent;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: Montserrat;
+  letter-spacing: 1px;
+  font-size: 12px;
+}
+
+.page-break
+{
+  clear: both;
+  page-break-after: always;
+  height: 1in;
+}
+
+.wrapper
+{
+  max-width: 8.2in;
+  display: grid;
+  grid-template-columns: repeat(3, 2.49in);
+}
+
+.card
+{
+  width: 2.49in;
+  max-width: 2.49in;
+  height: 3.48in;
+  max-height: 3.48in;
+  border-radius: 8px;
+  background-size: contain;
+  position: relative;
+
+  border: var(--card-border);
+}
+
+.hero
+{
+  background: var(--hero-bg-image);
+  background-size: contain;
+  color: var(--hero-text-color);
+}
+  .card.hero
+  {
+    display: grid;
+    grid-template-rows: 2.2in 1.1in;
+  }
+
+.encounter
+{
+  background: var(--encounter-bg-image);
+  background-size: contain;
+  color: var(--encounter-text-color);
+}
+
+.action 
+{
+  
+}
+  .hero .action 
+  {
+    transform: rotate(180deg);
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    padding: 8px;
+    row-gap: 8px;
+    border-top: var(--hero-split);
+  }
+  .encounter .action
+  {
+    display: grid;
+    grid-template-rows: auto 18px auto 52px;
+    height: 100%;
+    padding: 37px 12px 22px 12px;
+  }
+
+  .action .header
+  {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 12px;
+  }
+    .encounter .action .header {
+      margin-top: 8px;
+      margin-bottom: 6px;
+    }
+    
+    .title
+    {
+      font-family: Immortal;
+      font-weight: bold;
+      font-size: 20px;
+    }
+      .encounter .title
+      {
+        text-align: center;
+      }
+
+    .action .cost
+    {
+      display: flex;
+      gap: 6px;
+      margin-top: 6px;
+    }
+      .cost_icon
+      {
+        object-fit: contain;
+      }
+      .action .cost .cost_icon
+      {
+        width: 18px;
+        height: 18px;
+      }
+  
+      .encounter .cost_icon
+      {
+        width: 18px;
+        height: 18px;
+      }
+
+  .action .body
+  {
+    height: 1.5in;
+    padding-left: 12px;
+    padding-right: 6px;
+    padding-top: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    white-space: pre-wrap;
+  }
+  .encounter .action .body
+  {
+    padding-top: 0;
+  }
+
+.action .body .footer
+{
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin-bottom: 4px;
+}
+.count_icons
+{ 
+  font-size: 8px;
+}
+    .action .body .count_icons
+    {
+      
+    }
+    .encounter .count_icons
+    {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .encounter .duration
+    {
+      margin-top: 6px;
+    }
+
+  .card .deck
+  {
+    position: absolute;
+    right: 21px;
+    bottom: 18px;
+  }
+    .card .deck img
+    {
+      object-fit: contain;
+      width: 20px;
+      height: 20px;
+    }
+    .encounter .deck
+    {
+      background: var(--encounter-deck-bg);
+    }
+
+.resource
+{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 5px;
+  align-items: center;
+}
+  .resource .icon
+  {
+    width: 1.5in;
+    height: 0.7in;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 56px;
+    gap: 8px;
+  }
+    .resource .icon .cost_icon
+    {
+      width: 80%;
+      height: 80%;
+    }
+  .resource .name
+  {
+    padding-bottom: 4px;
+    font-family: Immortal;
+  }
+
+.footer
+{
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  height: 0.85in;
+  padding-left: 6px;
+  padding-right: 6px;
+  padding-bottom: 6px;
+}
+
+.encounter .number_icon
+{
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+}
+
+.encounter .tb .icons
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 4px;
+}
+
+.encounter .info_row
+{
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  padding-left: 12px;
+}
+  .encounter .info_row *
+  {
+    font-size: 10px;
+    font-weight: bold;
+  }
+
+.border-berries { border-color: #ff00de; }
+.border-sticks { border-color: #884e0d; }
+.border-flowers { border-color: #ff8ac5; }
+.border-stones { border-color: #8ea5c3; }
