@@ -166,10 +166,12 @@ html {
     justify-content: space-between;
     white-space: pre-wrap;
   }
+
   .encounter .action .body
   {
     padding-top: 0;
   }
+
 
 .action .body .footer
 {
@@ -255,8 +257,8 @@ html {
     .resource .icon .icon_wrapper .spiced
     {
       position: absolute;
-      left: 20px;
-      top: 12px;
+      left: 18px;
+      top: 11px;
     }
 
   .resource .name
@@ -307,3 +309,10 @@ html {
 .border-sticks { border-color: #884e0d; }
 .border-flowers { border-color: #ff8ac5; }
 .border-stones { border-color: #8ea5c3; }
+
+p
+{
+  margin:0;
+  padding:0;
+  padding-bottom: 8px;
+}

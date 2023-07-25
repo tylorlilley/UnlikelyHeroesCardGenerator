@@ -1,4 +1,4 @@
-Name,Description,Count,Health,Attack,Time,Icons,Card Type
+Name,Description,Count,Health,Attack,Duration,Icons,Card Type
 Feeding Frenzy,"Whenever an enemy would attack, it attacks twice instead.
 ",1,,,4,,DURATION
 Hive Queen,"The first enemy drawn each turn gains surge (including this, if applicable).

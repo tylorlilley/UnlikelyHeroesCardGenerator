@@ -168,7 +168,7 @@ insert_gives(insert, gives, spiced)
     }
   }
 
-  gives_text = (spiced) ? ICON_SPICE.text + ": " + gives_text.join(" / ") : gives_text.join(" / ")
+  gives_text = (spiced) ? ICON_SPICE.text + ": " + gives_text.join(" or ") : gives_text.join(" or ")
   gives_icons = `<div class="icon ${color}">${gives_icons}</div>`
 
   insert = insert.replace("%Gives Icon%", gives_icons)
@@ -221,6 +221,17 @@ insert_page_break(i)
   `
 }
 
+function
+modified_description(desc)
+{
+  let html = ""
+  const paragraphs = desc.split("\n")
+  for (let i = 0; i < paragraphs.length; i++) {
+    const paragraph = paragraphs[i]
+    html += `<p>${paragraph}</p>`
+  }
+  return html
+}
 
 function 
 gen_hero(rows, name, deck_spec) 
@@ -249,6 +260,9 @@ gen_hero(rows, name, deck_spec)
         if (count > 0) {
           gives.push({ key, value })
         }
+      } 
+      else if (key == "Description") {
+        insert = insert.replace(`%Description%`, modified_description(value))
       } else {
         insert = insert.replace(`%${key}%`, value.trim())
       }
@@ -308,11 +322,16 @@ gen_encounter(rows, name, deck_spec)
 
     let insert = template_encounter;
     let keys = Object.keys(row)
+
     for (let j = 0; j < keys.length; j++) {
       const key = keys[j]
       const value = row[key]
       if (key === "Icons") continue
-      if (value != "") {
+
+      if (key == "Description") {
+        insert = insert.replace(`%Description%`, modified_description(value))
+      }
+      else if (value != "") {
         insert = insert.replace(`%${key}%`, encounter_with_suffix(key, value))
       }
     }
@@ -321,9 +340,8 @@ gen_encounter(rows, name, deck_spec)
       const fire_count = stupid_fucking_emoji_string_length(row["Icons"], "🔥")
       let icons = ""
       for (let j = 0; j < fire_count; j++) {
-        icons += icon_spec_to_html(ICON_FIRE, true)
+        icons += icon_spec_to_html(ICON_FIRE, false)
       }
-      console.log(fire_count)
       insert = insert.replace("%Icons%", icons)
     }
 
@@ -332,7 +350,7 @@ gen_encounter(rows, name, deck_spec)
       const key = not_replaced[j]
       insert = insert.replace(`%${key}%`, "")
     }
-
+    
     insert = insert.replace("%Deck%", get_deck_icon(deck_spec))
     
     const count = parseInt(row["Count"])

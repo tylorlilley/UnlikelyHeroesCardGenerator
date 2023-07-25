@@ -1,4 +1,4 @@
-Name,Description,Count,Health,Time,Icons,Attack,Card Type
+Name,Description,Count,Health,Duration,Icons,Attack,Card Type
 Jazzmondius,"After you play an action that deals damage to Jazzmondius, he attacks.
 Jazzmondius does not attack during the enemies attack step of each night.
 After a card from the encounter deck causes one or more players to discard a card, Jazzmondius heals 1 damage per card discarded.",1,16,,,2,MINION - ELITE
