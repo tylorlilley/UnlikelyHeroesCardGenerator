@@ -76,13 +76,29 @@
 
       }
 
-  .action .body
+  .hero .action .body
   {
-
+    height: 1.25in;
+    padding-left: 12px;
+    padding-right: 6px;
+    padding-top: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    white-space: pre-wrap;
   }
+
+  .action .body .footer
+{
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin-bottom: 4px;
+}
+
   .encounter .action .body
   {
-    min-height: 2.6in;
+    min-height: 2.4in;
   }
 
   .hero .action .deck
@@ -110,11 +126,8 @@
 }
   .resource .icon
   {
-    border-width: 8px;
-    border-style: solid;
-    width: 1.4in;
-    height: 1.4in;
-    border-radius: .75in;
+    width: .75in;
+    height: .75in;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -135,10 +148,50 @@
   height: 100%;
 }
 
-.border-berries { border-color: #ff00de; }
-.border-sticks { border-color: #884e0d; }
-.border-flowers { border-color: #ff8ac5; }
-.border-stones { border-color: #8ea5c3; }
+.encounter .footer .icons {
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  top: 70%;
+  left: 46%;
+  width: 100%;
+}
+
+
+.hero .footer
+{
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  height: 0.85in;
+  padding-left: 6px;
+  padding-right: 6px;
+  padding-bottom: 6px;
+}
+
+.hero .action .body .footer
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 40px;
+}
+
+.hero .action .body .footer .count_icons
+{ 
+  font-size: 8px;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  top: 110%;
+  left: 0%;
+  width: 100%
+}
 
 p
 {

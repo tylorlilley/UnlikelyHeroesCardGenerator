@@ -211,6 +211,9 @@ html {
       object-fit: contain;
       width: 20px;
       height: 20px;
+    }
+
+    .hero .deck img {
       transform: rotate(180deg);
     }
     

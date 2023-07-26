@@ -7,5 +7,5 @@ Paper Cut,"Draw a card.
 Deal 1 damage.",2,0,1,0,1,0,1,0,1,,2
 Compelling Read,"Read Ahead.
 Draw a card.",2,1,0,0,1,1,0,0,1,,2
-Burn the Midnight Oil,"Discard a card from your hand. If you do, skip the night phase this turn.",1,1,1,1,2,0,0,0,1,,1
+Burn Midnight Oil,"Discard a card from your hand. If you do, skip the night phase this turn.",1,1,1,1,2,0,0,0,1,,1
 Catalog,"Choose a player. They perform their draw ability, then discard two cards from their hand.",1,0,0,0,3,0,0,0,1,,1

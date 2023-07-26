@@ -5,7 +5,7 @@ const { parse } = require("csv-parse/sync");
 //////////////////////////////////////////////////////
 // CONFIGURATION 
 
-const is_nice = true
+const is_nice = false // TODO: Fix the non-nice mode
 const generate_gives_from_costs = true
 
 const TEMPLATE_HEROES = "./data/template_hero.html"
@@ -37,7 +37,7 @@ const DECK_TURTLE   = { is_hero: true,  path: "./data/Turtle - Sheet1.csv",   em
 
 // Encounter
 const DECK_JAZZMONDIUS  = { is_encounter: true, path: "./data/Jazzmondius - Sheet1.csv",  emoji: "🦅", image: "../assets/deck_icon_jazzmondius.png" }
-const DECK_WILDEFIRE    = { is_encounter: true, path: "./data/Wildfire - Sheet1.csv",    emoji: "🔥", image: "../assets/deck_icon_wildefire.png" }
+const DECK_WILDEFIRE    = { is_encounter: true, path: "./data/Wildfire - Sheet1.csv",    emoji: "🌋", image: "../assets/deck_icon_wildefire.png" }
 const DECK_INSECT_SWARM = { is_encounter: true, path: "./data/The Swarm - Sheet1.csv", emoji: "🐝", image: "../assets/deck_icon_insecthorde.png" }
 
 //////////////////////////////////////////////////////
