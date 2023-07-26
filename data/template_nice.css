@@ -264,8 +264,9 @@ html {
     .resource .icon .icon_wrapper .spiced
     {
       position: absolute;
-      left: 24px;
-      top: 6px;
+      left: 20px;
+      top: 16px;
+      transform: scale(50%)
     }
 
   .resource .name

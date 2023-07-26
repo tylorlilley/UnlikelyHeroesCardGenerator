@@ -17,28 +17,28 @@ const ICON_STONES  = { emoji: "🪨", image: "../assets/rock.png",  image_small:
 const ICON_FLOWERS = { emoji: "🌼", image: "../assets/flower.png",image_small: "../assets/flower-small.png", color: "border-flowers", text: "Flowers" }
 const ICON_WILD = { emoji: "❓", image: "../assets/wild.png",image_small: "../assets/wild-small.png", color: "border-wild", text: "Any Resource" }
 
-const ICON_SPICE   = { emoji: "🌶️", image: "../assets/spicy.png", color: "", text: "(Spiced)" }
+const ICON_SPICE   = { emoji: "🌶️", image: "../assets/spicy-small.png", color: "", text: "(Spicey)" }
 const ICON_ATTACK  = { emoji: "🗡️", image: "../assets/sword-small.png" }
 const ICON_FIRE    = { emoji: "🔥", image: "../assets/fire-small.png" }
 const ICON_CLOCK   = { emoji: "⏳", image: "../assets/time-small.png" }
 const ICON_HEART   = { emoji: "❤️", image: "../assets/heart-small.png" }
 
 // Occupations
-const DECK_LIBRARIAN = { is_hero: true, path: "./data/source/Librarian - Sheet1.csv", emoji: "📚", image: "../assets/deck_icon_librarian.png" }
-const DECK_GARDENER  = { is_hero: true, path: "./data/source/Gardener - Sheet1.csv",  emoji: "👩‍🌾", image: "../assets/deck_icon_gardener.png" }
-const DECK_CHEF      = { is_hero: true, path: "./data/source/Baker - Sheet1.csv",     emoji: "👨‍🍳", image: "../assets/deck_icon_baker.png", spiced: true }
-const DECK_CONSTABLE = { is_hero: true, path: "./data/source/Constable - Sheet1.csv", emoji: "👮", image: "../assets/deck_icon_constable.png" }
+const DECK_LIBRARIAN = { is_hero: true, path: "./data/source/Librarian - Cards.csv", emoji: "📚", image: "../assets/deck_icon_librarian.png" }
+const DECK_GARDENER  = { is_hero: true, path: "./data/source/Gardener - Cards.csv",  emoji: "👩‍🌾", image: "../assets/deck_icon_gardener.png" }
+const DECK_CHEF      = { is_hero: true, path: "./data/source/Chef - Cards.csv",     emoji: "👨‍🍳", image: "../assets/deck_icon_baker.png", spiced: true }
+const DECK_CONSTABLE = { is_hero: true, path: "./data/source/Constable - Cards.csv", emoji: "👮", image: "../assets/deck_icon_constable.png" }
 
 // Critters
-const DECK_BEAR     = { is_hero: true,  path: "./data/source/Bear - Sheet1.csv",     emoji: "🐻", image: "../assets/deck_icon_bear.png"}
-const DECK_SQUIRREL = { is_hero: true,  path: "./data/source/Squirrel - Sheet1.csv", emoji: "🐿️", image: "../assets/deck_icon_squirrel.png"}
-const DECK_SNAKE    = { is_hero: true,  path: "./data/source/Snake - Sheet1.csv",    emoji: "🐍", image: "../assets/deck_icon_snake.png"}
-const DECK_TURTLE   = { is_hero: true,  path: "./data/source/Turtle - Sheet1.csv",   emoji: "🐢", image: "../assets/deck_icon_turtle.png"}
+const DECK_BEAR     = { is_hero: true,  path: "./data/source/Bear - Cards.csv",     emoji: "🐻", image: "../assets/deck_icon_bear.png"}
+const DECK_SQUIRREL = { is_hero: true,  path: "./data/source/Squirrel - Cards.csv", emoji: "🐿️", image: "../assets/deck_icon_squirrel.png"}
+const DECK_SNAKE    = { is_hero: true,  path: "./data/source/Snake - Cards.csv",    emoji: "🐍", image: "../assets/deck_icon_snake.png"}
+const DECK_TURTLE   = { is_hero: true,  path: "./data/source/Turtle - Cards.csv",   emoji: "🐢", image: "../assets/deck_icon_turtle.png"}
 
 // Encounter
-const DECK_JAZZMONDIUS  = { is_encounter: true, path: "./data/source/Jazzmondius - Sheet1.csv",  emoji: "🦅", image: "../assets/deck_icon_jazzmondius.png" }
-const DECK_WILDEFIRE    = { is_encounter: true, path: "./data/source/Wildfire - Sheet1.csv",    emoji: "🌋", image: "../assets/deck_icon_wildefire.png" }
-const DECK_INSECT_SWARM = { is_encounter: true, path: "./data/source/The Swarm - Sheet1.csv", emoji: "🐝", image: "../assets/deck_icon_insecthorde.png" }
+const DECK_JAZZMONDIUS  = { is_encounter: true, path: "./data/source/Jazzmondius - Cards.csv",  emoji: "🦅", image: "../assets/deck_icon_jazzmondius.png" }
+const DECK_WILDEFIRE    = { is_encounter: true, path: "./data/source/Wildfire - Cards.csv",    emoji: "🌋", image: "../assets/deck_icon_wildefire.png" }
+const DECK_INSECT_SWARM = { is_encounter: true, path: "./data/source/The Swarm - Cards.csv", emoji: "🐝", image: "../assets/deck_icon_insecthorde.png" }
 
 //////////////////////////////////////////////////////
 // 
