@@ -5,7 +5,7 @@ const { parse } = require("csv-parse/sync");
 //////////////////////////////////////////////////////
 // CONFIGURATION 
 
-const is_nice = true
+const is_nice = false // TODO: Fix Encounter icons for nice mode
 const generate_gives_from_costs = true
 
 const TEMPLATE_HEROES = "./data/template_hero.html"
@@ -97,7 +97,7 @@ icon_spec_to_html_no_class(icon_spec)
   if (is_nice) {
     return `<img class="cost_icon" src="${icon_spec.image}" />`
   } else {
-    return icon_spec.emoji
+    return `${icon_spec.emoji}`
   }
 }
 
@@ -109,7 +109,7 @@ icon_spec_to_html(icon_spec, small = false, spiced = false)
     const image = small ? icon_spec.image_small : icon_spec.image
     return `<div class="icon_wrapper"><img class="cost_icon" src="${image}" />${ (spiced) ? `<img class="cost_icon spiced" src="${ICON_SPICE.image}" />` : ""}</div>`
   } else {
-    return `<div class="icon_wrapper">${(spiced) ? `<div class="cost_icon spiced">${ICON_SPICE.emoji}</div>` : ""}<div class="cost_icon">${icon_spec.emoji}</div></div>`
+    return `<div class="icon_wrapper"><div class="cost_icon">${icon_spec.emoji}</div>${(spiced) ? `<div class="cost_icon spiced">${ICON_SPICE.emoji}</div>` : ""}</div>`
   }
 }
 
@@ -277,6 +277,7 @@ gen_hero(rows, name, deck_spec)
     
     const count = parseInt(row["Count"])
     insert = insert.replace("%Deck%", get_deck_icon(deck_spec))
+    insert = insert.replace("%DeckName%", name.replace(" - Cards", ""))
 
     for (let j = 0; j < count; j++) {
       html += insert
@@ -291,7 +292,7 @@ function
 encounter_with_suffix(key, value)
 {
   const suffix = icon_spec_to_html_no_class(encounter_suffixes[key])
-  if (!suffix) return value.trim()
+  if (!suffix) return `${value.trim()}`
   return `${value.trim()} ${suffix}`
 }
 
@@ -331,7 +332,10 @@ gen_encounter(rows, name, deck_spec)
       if (key == "Description") {
         insert = insert.replace(`%Description%`, modified_description(value))
       }
-      else if (value != "") {
+      else if (key == "Duration" || key == "Attack" || key == "Health") {
+        insert = insert.replace(`%${key}%`, `<div class ="number_icon ${key} ${(value == 0) ? "hidden" : ""}">${encounter_with_suffix(key, value.replace(/\D/g,''))}</div>`)
+      }
+      else {
         insert = insert.replace(`%${key}%`, encounter_with_suffix(key, value))
       }
     }
@@ -342,7 +346,7 @@ gen_encounter(rows, name, deck_spec)
       for (let j = 0; j < fire_count; j++) {
         icons += icon_spec_to_html(ICON_FIRE, false)
       }
-      insert = insert.replace("%Icons%", icons)
+      insert = insert.replace("%Icons%", `<div class ="icons ${(fire_count == 0) ? "hidden" : ""}">${icons}</div>`)
     }
 
     const not_replaced = keys.filter(key => row[key] == "")
@@ -352,6 +356,7 @@ gen_encounter(rows, name, deck_spec)
     }
     
     insert = insert.replace("%Deck%", get_deck_icon(deck_spec))
+    insert = insert.replace("%DeckName%", name.replace(" - Cards", ""))
     
     const count = parseInt(row["Count"])
     insert = insert_counts(insert, count)

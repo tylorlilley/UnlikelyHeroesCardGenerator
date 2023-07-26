@@ -100,6 +100,7 @@ html {
     padding: 8px;
     row-gap: 8px;
     border-top: var(--hero-split);
+    height: 2.25in;
   }
   .encounter .action
   {
@@ -215,6 +216,10 @@ html {
       height: 20px;
     }
 
+    .hero .deck_name {
+      display: none;
+    }
+
     .hero .deck img {
       transform: rotate(180deg);
     }
@@ -316,27 +321,6 @@ html {
   gap: 4px;
 }
 
-.encounter .tb .icons
-{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  gap: 4px;
-}
-
-.encounter .info_row
-{
-  display: grid;
-  grid-template-columns: 3fr 1fr;
-  padding-left: 12px;
-}
-  .encounter .info_row *
-  {
-    font-size: 10px;
-    font-weight: bold;
-  }
-
 .border-berries { border-color: #ff00de; }
 .border-sticks { border-color: #884e0d; }
 .border-flowers { border-color: #ff8ac5; }
@@ -355,3 +339,37 @@ p
   left: 38%;
   width: 50%;
 }
+
+.hidden {
+  visibility: hidden;
+}
+
+.encounter .info_row
+{
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  padding-left: 12px;
+  padding-right: 18px;
+}
+  .encounter .info_row *
+  {
+    font-size: 10px;
+    font-weight: bold;
+  }
+
+  .encounter .footer .icons {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    left: 0%;
+    width: 100%
+  }
+  
+  .encounter .footer .duration {
+    position: absolute;
+    width: 50%;
+    left: 50%;
+    text-align: right;
+  }

@@ -2,7 +2,7 @@ Name,Description,Count,Cost: Berries,Cost: Sticks,Cost: Stones,Cost: Flowers,Giv
 Toss the Dough,"Deal 1 damage.
 Rotate this action.",2,0,0,1,0,0,0,1,0,,2
 Cut the Vegetables,"Deal 2 damage. If this action was spiced, also deal that much damage to another enemy.",2,0,1,1,0,0,1,1,0,,2
-Taste the Batter,"Gain 2 vitality.
+Taste Test,"Gain 2 vitality.
 Rotate this action.
 If you are the Baker's partner, spice your next action three times.",2,1,0,1,0,1,0,1,0,,2
 Serve the Guests,"Rotate this action.

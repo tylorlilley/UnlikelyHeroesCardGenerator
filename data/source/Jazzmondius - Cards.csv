@@ -1,7 +1,7 @@
 Name,Description,Count,Health,Duration,Icons,Attack,Card Type
 Jazzmondius,"After you play an action that damages Jazzmondius, he attacks.
 Jazzmondius does not attack during the enemies attack step of the night.
-After an encounter card causes a player to discard a card, Jazzmondius heals 1 damage per card discarded.",1,16,,,2,ELITE ENEMY
+After an encounter card causes a player to discard a card, Jazzmondius heals 1 damage per card discarded.",1,15,,,2,ELITE ENEMY
 Blistering Wind,"Jazzmondius attacks X times, where X is half the number of cards in your partner's field, rounded up.
 Discard each card on your field.",1,,,,,EVENT
 Shadowjazz,"Before Jazzmondius attacks, this enemy also attacks.

@@ -78,7 +78,7 @@
 
   .hero .action .body
   {
-    height: 1.25in;
+    height: 1.5in;
     padding-left: 12px;
     padding-right: 6px;
     padding-top: 6px;
@@ -98,12 +98,14 @@
 
   .encounter .action .body
   {
-    min-height: 2.45in;
+    margin-top: 18px;
+    min-height: 2.35in;
   }
 
   .hero .action .deck
   {
     position: absolute;
+    left: 0;
     right: 0;
     bottom: 0;
   }
@@ -112,6 +114,13 @@
     text-align: right;
     height: 18px;
     transform: rotate(180deg);
+  }
+
+  .hero .deck_name {
+    position: absolute;
+    text-align: left;
+    width: 2.125in;
+    height: 12px;
   }
 
   .encounter .deck
@@ -137,7 +146,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
     font-size: 56px;
   }
 
@@ -155,6 +163,8 @@
 
   .resource .icon .icon_wrapper .cost_icon
   {
+    position: relative;
+    top: -10%;
     width: 100%;
     height: 100%;
   }
@@ -164,12 +174,14 @@
     font-size: 28px;
     position: absolute;
     left: 34px;
-    top: 0px;
+    top: -10px;
   }
 
   .resource .name
   {
-
+    position: relative;
+    top: 0%;
+    height: 50%;
   }
 
 .footer
@@ -181,19 +193,25 @@
   height: 100%;
 }
 
-.encounter .footer .icons {
-  position: absolute;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  top: 70%;
-  left: 46%;
-  width: 100%;
+.encounter .footer {
+
 }
 
-.encounter .footer .cost_icon {
-  position: relative;
-  top: -18px;
+.encounter .footer .icons {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  left: 0%;
+  width: 100%
+}
+
+.encounter .footer .duration {
+  position: absolute;
+  width: 50%;
+  left: 50%;
+  text-align: right;
 }
 
 .hero .footer
@@ -225,7 +243,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  top: 110%;
+  top: 100%;
   left: 0%;
   width: 100%
 }
@@ -255,5 +273,10 @@ p
   }
 
 .card_type {
+  text-align: right;
   width: 75px;
+}
+
+.hidden {
+  visibility: hidden;
 }
