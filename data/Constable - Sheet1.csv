@@ -1,8 +1,0 @@
-Name,Description,Count,Cost: Berries,Cost: Sticks,Cost: Stones,Cost: Flowers,Gives: Berries,Gives: Sticks,Gives: Stones,Gives: Flowers,Notes,Frequency
-Enforce,Deal 2 damage. Deal 4 damage instead if it is dealt to a subdued enemy.,2,0,2,0,0,0,1,0,0,,2
-Throw in the Slammer,"Deal 2 damage. If it is dealt to an enemy, also subdue it.",2,1,1,0,0,1,1,0,0,,2
-Interrogate,"Subdue an enemy.
-Draw a card.",2,0,1,0,1,0,1,0,1,,2
-Rough Up,Deal 3 damage.,2,0,1,1,0,0,1,1,0,,2
-Crackdown,Deal 2 damage to each enemy.,1,1,2,1,1,0,1,0,0,,1
-Clear Out,"Discard any number of actions from your field. Deal X+2 damage divided as you choose among any number of enemies, where X is the number of resources discarded this way.",1,0,3,0,0,0,1,0,0,,1

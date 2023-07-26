@@ -190,7 +190,9 @@ html {
     }
     .encounter .count_icons
     {
-      width: 100%;
+      position: absolute;
+      left: 0%;
+      width: 40%;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -262,8 +264,8 @@ html {
     .resource .icon .icon_wrapper .spiced
     {
       position: absolute;
-      left: 18px;
-      top: 11px;
+      left: 24px;
+      top: 6px;
     }
 
   .resource .name
@@ -344,4 +346,11 @@ p
   margin:0;
   padding:0;
   padding-bottom: 8px;
+}
+
+.card_type {
+  position: absolute;
+  text-align: right;
+  left: 38%;
+  width: 50%;
 }

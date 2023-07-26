@@ -1,0 +1,11 @@
+Name,Description,Count,Cost: Berries,Cost: Sticks,Cost: Stones,Cost: Flowers,Gives: Berries,Gives: Sticks,Gives: Stones,Gives: Flowers,Notes,Frequency
+Dart Around,Skip the Draw step of the next night.,2,0,0,0,1,0,0,0,1,,2
+Eat Acorns,Gain 3 vitality.,2,1,0,0,0,1,0,0,0,,2
+Bury Deep,"Deal 1 damage.
+Gain 2 vitality.
+Remove 2 time counters.
+Move a card from your partner's field to your field.",2,0,0,1,1,0,0,1,1,,2
+Fur Frenzy,"Deal 2 damage. If you have no cards in hand, deal 2 damage to each enemy instead.",2,1,1,0,0,1,1,0,0,,2
+Nut Assault,"Deal X damage, where X is half the number of cards on your field, rounded up.",1,1,1,1,1,0,1,1,0,,1
+Fill Cheeks,"Perform your draw ability.
+For the rest of this turn, after you discard a card, return it to your hand.",1,2,0,0,2,1,0,0,1,,1

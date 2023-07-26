@@ -1,0 +1,12 @@
+Name,Description,Count,Cost: Berries,Cost: Sticks,Cost: Stones,Cost: Flowers,Gives: Berries,Gives: Sticks,Gives: Stones,Gives: Flowers,Notes,Frequency
+Organize,"Read Ahead.
+Rotate a card on your field or on your partner's field.",2,0,0,0,1,0,0,0,1,,2
+Archive,"Read Ahead.
+Remove 4 time counters.",2,0,0,1,1,0,0,1,1,,2
+Paper Cut,"Deal 1 damage to each enemy.
+Draw a card.",2,0,1,0,1,0,1,0,1,,2
+Compelling Read,"Read Ahead.
+Gain 2 vitality.
+Draw a card.",2,1,0,0,1,1,0,0,1,,2
+Burn Midnight Oil,Skip the night phase this turn.,1,1,1,1,1,0,0,0,1,,1
+Research,Choose a player to perform their draw ability.,1,0,0,0,3,0,0,0,1,,1

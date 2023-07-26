@@ -5,16 +5,16 @@ const { parse } = require("csv-parse/sync");
 //////////////////////////////////////////////////////
 // CONFIGURATION 
 
-const is_nice = false // TODO: Fix the non-nice mode
+const is_nice = true
 const generate_gives_from_costs = true
 
 const TEMPLATE_HEROES = "./data/template_hero.html"
 const TEMPLATE_ENCOUNTER = "./data/template_encounter.html"
 
-const ICON_BERRIES = { emoji: "🍓", image: "../assets/berry.png", image_small: "../assets/berry-small.png",  color: "border-berries", text: "Berries" }
-const ICON_STICKS  = { emoji: "🌿", image: "../assets/stick.png", image_small: "../assets/stick-small.png",  color: "border-sticks",  text: "Sticks" }
+const ICON_BERRIES = { emoji: "🍇", image: "../assets/berry.png", image_small: "../assets/berry-small.png",  color: "border-berries", text: "Berries" }
+const ICON_STICKS  = { emoji: "🪵", image: "../assets/stick.png", image_small: "../assets/stick-small.png",  color: "border-sticks",  text: "Sticks" }
 const ICON_STONES  = { emoji: "🪨", image: "../assets/rock.png",  image_small: "../assets/rock-small.png",   color: "border-stones",  text: "Stones" }
-const ICON_FLOWERS = { emoji: "🌸", image: "../assets/flower.png",image_small: "../assets/flower-small.png", color: "border-flowers", text: "Flowers" }
+const ICON_FLOWERS = { emoji: "🌼", image: "../assets/flower.png",image_small: "../assets/flower-small.png", color: "border-flowers", text: "Flowers" }
 const ICON_WILD = { emoji: "❓", image: "../assets/wild.png",image_small: "../assets/wild-small.png", color: "border-wild", text: "Any Resource" }
 
 const ICON_SPICE   = { emoji: "🌶️", image: "../assets/spicy.png", color: "", text: "(Spiced)" }
@@ -24,21 +24,21 @@ const ICON_CLOCK   = { emoji: "⏳", image: "../assets/time-small.png" }
 const ICON_HEART   = { emoji: "❤️", image: "../assets/heart-small.png" }
 
 // Occupations
-const DECK_LIBRARIAN = { is_hero: true, path: "./data/Librarian - Sheet1.csv", emoji: "📚", image: "../assets/deck_icon_librarian.png" }
-const DECK_GARDENER  = { is_hero: true, path: "./data/Gardener - Sheet1.csv",  emoji: "👩‍🌾", image: "../assets/deck_icon_gardener.png" }
-const DECK_CHEF      = { is_hero: true, path: "./data/Baker - Sheet1.csv",     emoji: "👨‍🍳", image: "../assets/deck_icon_baker.png", spiced: true }
-const DECK_CONSTABLE = { is_hero: true, path: "./data/Constable - Sheet1.csv", emoji: "👮", image: "../assets/deck_icon_constable.png" }
+const DECK_LIBRARIAN = { is_hero: true, path: "./data/source/Librarian - Sheet1.csv", emoji: "📚", image: "../assets/deck_icon_librarian.png" }
+const DECK_GARDENER  = { is_hero: true, path: "./data/source/Gardener - Sheet1.csv",  emoji: "👩‍🌾", image: "../assets/deck_icon_gardener.png" }
+const DECK_CHEF      = { is_hero: true, path: "./data/source/Baker - Sheet1.csv",     emoji: "👨‍🍳", image: "../assets/deck_icon_baker.png", spiced: true }
+const DECK_CONSTABLE = { is_hero: true, path: "./data/source/Constable - Sheet1.csv", emoji: "👮", image: "../assets/deck_icon_constable.png" }
 
 // Critters
-const DECK_BEAR     = { is_hero: true,  path: "./data/Bear - Sheet1.csv",     emoji: "🐻", image: "../assets/deck_icon_bear.png"}
-const DECK_SQUIRREL = { is_hero: true,  path: "./data/Squirrel - Sheet1.csv", emoji: "🐿️", image: "../assets/deck_icon_squirrel.png"}
-const DECK_SNAKE    = { is_hero: true,  path: "./data/Snake - Sheet1.csv",    emoji: "🐍", image: "../assets/deck_icon_snake.png"}
-const DECK_TURTLE   = { is_hero: true,  path: "./data/Turtle - Sheet1.csv",   emoji: "🐢", image: "../assets/deck_icon_turtle.png"}
+const DECK_BEAR     = { is_hero: true,  path: "./data/source/Bear - Sheet1.csv",     emoji: "🐻", image: "../assets/deck_icon_bear.png"}
+const DECK_SQUIRREL = { is_hero: true,  path: "./data/source/Squirrel - Sheet1.csv", emoji: "🐿️", image: "../assets/deck_icon_squirrel.png"}
+const DECK_SNAKE    = { is_hero: true,  path: "./data/source/Snake - Sheet1.csv",    emoji: "🐍", image: "../assets/deck_icon_snake.png"}
+const DECK_TURTLE   = { is_hero: true,  path: "./data/source/Turtle - Sheet1.csv",   emoji: "🐢", image: "../assets/deck_icon_turtle.png"}
 
 // Encounter
-const DECK_JAZZMONDIUS  = { is_encounter: true, path: "./data/Jazzmondius - Sheet1.csv",  emoji: "🦅", image: "../assets/deck_icon_jazzmondius.png" }
-const DECK_WILDEFIRE    = { is_encounter: true, path: "./data/Wildfire - Sheet1.csv",    emoji: "🌋", image: "../assets/deck_icon_wildefire.png" }
-const DECK_INSECT_SWARM = { is_encounter: true, path: "./data/The Swarm - Sheet1.csv", emoji: "🐝", image: "../assets/deck_icon_insecthorde.png" }
+const DECK_JAZZMONDIUS  = { is_encounter: true, path: "./data/source/Jazzmondius - Sheet1.csv",  emoji: "🦅", image: "../assets/deck_icon_jazzmondius.png" }
+const DECK_WILDEFIRE    = { is_encounter: true, path: "./data/source/Wildfire - Sheet1.csv",    emoji: "🌋", image: "../assets/deck_icon_wildefire.png" }
+const DECK_INSECT_SWARM = { is_encounter: true, path: "./data/source/The Swarm - Sheet1.csv", emoji: "🐝", image: "../assets/deck_icon_insecthorde.png" }
 
 //////////////////////////////////////////////////////
 // 
@@ -109,7 +109,7 @@ icon_spec_to_html(icon_spec, small = false, spiced = false)
     const image = small ? icon_spec.image_small : icon_spec.image
     return `<div class="icon_wrapper"><img class="cost_icon" src="${image}" />${ (spiced) ? `<img class="cost_icon spiced" src="${ICON_SPICE.image}" />` : ""}</div>`
   } else {
-    return `<div class="cost_icon">${icon_spec.emoji}</div>`
+    return `<div class="icon_wrapper">${(spiced) ? `<div class="cost_icon spiced">${ICON_SPICE.emoji}</div>` : ""}<div class="cost_icon">${icon_spec.emoji}</div></div>`
   }
 }
 

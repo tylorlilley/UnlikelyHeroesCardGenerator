@@ -1,0 +1,11 @@
+Name,Description,Count,Cost: Berries,Cost: Sticks,Cost: Stones,Cost: Flowers,Gives: Berries,Gives: Sticks,Gives: Stones,Gives: Flowers,Notes,Frequency
+Sit and Wait,Remove 2 time counters.,2,0,0,1,0,0,0,1,0,,2
+Stop and Think,Draw a card.,2,0,0,0,1,0,0,0,1,,2
+Into the Shell,Skip the Enemies Attack and Time Passes steps of the night phase this turn.,2,0,1,1,0,0,1,1,0,,2
+Submerge,"Gain 3 vitality.
+Draw an action or resource on the field.",2,1,0,0,1,1,0,0,1,,2
+Dabble,"Deal 1 damage.
+Remove 2 time counters.
+Gain 3 vitality.",1,1,1,1,1,1,1,0,0,,1
+Snap,"Deal 3 damage.
+Draw a card.",1,0,0,2,2,0,0,1,1,,1

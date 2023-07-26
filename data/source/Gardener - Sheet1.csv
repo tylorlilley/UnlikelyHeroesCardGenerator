@@ -1,0 +1,9 @@
+Name,Description,Count,Cost: Berries,Cost: Sticks,Cost: Stones,Cost: Flowers,Gives: Berries,Gives: Sticks,Gives: Stones,Gives: Flowers,Notes,Frequency
+Sow,Plant a card.,2,1,0,0,0,1,0,0,0,,2
+Cultivate,Plant two cards.,2,1,0,0,1,1,0,0,1,,2
+Entangle,"Deal 2 damage.
+Plant a card.",2,1,0,1,0,1,0,1,0,,2
+Absorb,"Deal 2 damage.
+Gain 3 vitality.",2,1,1,0,0,1,1,0,0,,2
+Reap,"Discard any number of resources from your field or from your partner's field. Deal X damage and Gain X vitality, where X is the number of resources discarded this way.",1,1,1,1,1,1,0,0,0,,1
+Harvest,"Discard any number of resources from your field or from your partner's field. Gain X vitality, where X is twice the number of resources discarded this way.",1,3,0,0,0,1,0,0,0,,1
