@@ -208,7 +208,7 @@ parse_csv(file)
 function
 should_page_break(row_i)
 {
-  return row_i != 0 && (row_i % 6) == 0
+  return row_i != 0 && (row_i % 9) == 0
 }
 
 function

@@ -1,4 +1,5 @@
 Name,Description,Count,Health,Attack,Duration,Icons,Card Type
+Encounter: The Swarm,(no additional rules),1,,,,,RULES CARD
 Feeding Frenzy,"Whenever an enemy would attack, it attacks twice instead.",1,,,4,,DURATION
 Hive Queen,"The first enemy drawn each turn gains surge (including this, if applicable).
 This enemy gets +X strength, where X is the number of enemies on the field.",1,12,0,,,ELITE ENEMY

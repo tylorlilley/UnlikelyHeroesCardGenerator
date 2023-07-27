@@ -1,4 +1,5 @@
 Name,Description,Count,Health,Duration,Icons,Attack,Card Type
+Encounter: Jazzmondius,"Before the game begins, search the encounter deck for Jazzmondius and put it onto the field.",1,,,,,RULES CARD
 Jazzmondius,"After you play an action that damages Jazzmondius, he attacks.
 Jazzmondius does not attack during the enemies attack step of the night.
 If Jazzmondius would be discarded, shuffle him into the encounter deck instead.",1,15,,,2,ELITE ENEMY
