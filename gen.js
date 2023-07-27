@@ -6,7 +6,7 @@ const { parse } = require("csv-parse/sync");
 // CONFIGURATION 
 
 const is_nice = false
-const generate_gives_from_costs = true
+const generate_gives_from_costs = false
 
 const TEMPLATE_HEROES = "./data/template_hero.html"
 const TEMPLATE_ENCOUNTER = "./data/template_encounter.html"

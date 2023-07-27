@@ -1,6 +1,6 @@
 Name,Description,Count,Cost: Berries,Cost: Sticks,Cost: Stones,Cost: Flowers,Gives: Berries,Gives: Sticks,Gives: Stones,Gives: Flowers,Notes,Frequency
-Sit and Wait,Remove 2 time counters.,2,0,0,1,0,0,0,1,0,,2
-Stop and Think,Draw a card.,2,0,0,0,1,0,0,0,1,,2
+Sit and Wait,Remove 2 time counters.,2,0,0,1,0,0,0,0,1,,2
+Stop and Think,Draw a card.,2,0,0,0,1,0,0,1,0,,2
 Into the Shell,"Discard a card from your hand. If you do, skip the Enemies Attack step of the next night.",2,0,1,1,0,0,1,1,0,,2
 Submerge,"Gain 2 vitality.
 Draw an action or resource on the field.",2,1,0,0,1,1,0,0,1,,2
