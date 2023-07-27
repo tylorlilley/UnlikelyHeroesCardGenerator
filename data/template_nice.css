@@ -137,11 +137,10 @@ html {
 
     .action .cost
     {
+      margin-left: 18px;
       gap: 6px;
       margin-top: 6px;
       display: flex;
-      align-items: center;
-      justify-content: center;
     }
       .cost_icon
       {
@@ -377,24 +376,6 @@ html {
     left: 82%;
   }
 
-  .hero .deck
-  {
-    position: absolute;
-    top: 61%;
-    left: 7%;
-  }
-
-  .hero .second_deck
-  {
-    position: absolute;
-    top: 61%;
-    left: 85%;
-  }
-  
-  .hero .second_deck .deck_icon {
-    transform: rotate(180deg);
-  }
-
   .deck .deck_icon
   {
     position: absolute;
@@ -402,6 +383,10 @@ html {
     width: 20px;
     height: 20px;
     z-index: 200;
+  }
+  .hero .deck .deck_icon
+  {
+    transform: rotate(180deg);
   }
 
   .deck .diamond
