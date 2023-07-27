@@ -4,6 +4,6 @@ Throw in the Slammer,Deal 3 damage.,2,1,1,0,0,1,1,0,0,,2
 Interrogate,"Subdue an enemy.
 Draw a card.",2,0,1,0,1,0,1,0,1,,2
 Enforce,Deal 2 damage. Deal 4 damage instead if it is dealt to a subdued enemy.,2,0,1,1,0,0,1,1,0,,2
-Eavesdrop,"If there are two or more enemies on the field, perform your draw effect.
+Eavesdrop,"If there are two or more enemies on the field, forage.
 Subdue each enemy.",1,1,1,1,1,0,1,0,0,,1
 Clear Out,Deal 2 damage to each enemy.,1,0,3,0,0,0,1,0,0,,1

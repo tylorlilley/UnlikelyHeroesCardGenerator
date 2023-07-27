@@ -69,16 +69,18 @@ html {
   border: var(--card-border);
 }
 
+.hero .resource {
+  min-height: 31.4in;
+}
+
 .hero
 {
   background: var(--hero-bg-image);
   background-size: contain;
   color: var(--hero-text-color);
 }
-  .card.hero
+  .card .hero
   {
-    display: grid;
-    grid-template-rows: 2.2in 1.1in;
   }
 
 .encounter
@@ -98,10 +100,12 @@ html {
     display: grid;
     grid-template-rows: 1fr 3fr;
     padding: 8px;
+    padding-top: 6px;
     row-gap: 8px;
     border-top: var(--hero-split);
-    height: 2.25in;
+    height: 2.2in;
   }
+
   .encounter .action
   {
     display: grid;
@@ -139,7 +143,7 @@ html {
     {
       margin-left: 18px;
       gap: 6px;
-      margin-top: 6px;
+      margin-top: 0px;
       display: flex;
     }
       .cost_icon
@@ -162,37 +166,27 @@ html {
     height: 1.75in;
     padding-left: 12px;
     padding-right: 12px;
-    padding-top: 0px;
+    margin-top: -6px;
   }
 
   .hero .action .body
   {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     white-space: pre-wrap;
   }
 
-.action .body .footer
-{
-  display: flex;
-  justify-content: space-between;
-  padding: 0;
-  margin-bottom: 4px;
-}
+
+
 .count_icons
 { 
   font-size: 8px;
 }
-    .action .body .count_icons
-    {
-      
-    }
     .encounter .count_icons
     {
       position: absolute;
       left: 12%;
-      width: 40%;
+      width: 410%;
       display: flex;
       align-items: left;
       justify-content: left;
@@ -243,6 +237,7 @@ html {
     align-items: center;
     font-size: 56px;
     gap: 8px;
+    margin-top: -8px;
   }
     .resource .icon .icon_wrapper
     {
@@ -276,7 +271,7 @@ html {
     font-family: Immortal;
   }
 
-.footer
+.enecounter .footer
 {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
@@ -286,27 +281,13 @@ html {
   padding-bottom: 6px;
 }
 
-.hero .action .body .footer
-{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 0;
-  margin-left: 0;
-  margin-right: 0;
-  margin-bottom: 40px;
-}
-
-.hero .action .body .footer .count_icons
+.hero .count_icons
 { 
   font-size: 8px;
   position: absolute;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  top: 80%;
-  left: 0%;
+  text-align: right;
+  top: 70%;
+  left: -8%;
   width: 100%
 }
 
@@ -376,6 +357,24 @@ html {
     left: 82%;
   }
 
+  .hero .deck
+  {
+    position: absolute;
+    top: 90%;
+    left: 46%;
+  }
+
+  .hero .second_deck
+  {
+    position: absolute;
+    top: 4%;
+    left: 46%;
+  }
+  
+  .hero .second_deck .deck_icon {
+    transform: rotate(180deg);
+  }
+
   .deck .deck_icon
   {
     position: absolute;
@@ -383,10 +382,6 @@ html {
     width: 20px;
     height: 20px;
     z-index: 200;
-  }
-  .hero .deck .deck_icon
-  {
-    transform: rotate(180deg);
   }
 
   .deck .diamond
