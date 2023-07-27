@@ -1,14 +1,14 @@
 Name,Description,Count,Health,Attack,Duration,Icons,Card Type
-Encounter: Wildfire,"Before each night, you lose the game if there are seven or more fire icons (🔥) on the field.",1,,,,,RULES CARD
-The Firestarter,"This enemy gets +X strength, where X is the number of fire icons on the field.
-This enemy gets +X health, where X is two times the number of fire icons on the field.",1,0,0,,🔥🔥🔥,ELITE ENEMY
-Fuel for the Fire,Counters can't be removed from other durations (including when time passes).,1,,,8 turns,🔥,DURATION
+Encounter: Wildfire,"Before each night, you lose the game if there are seven or more 🔥 on the field.",1,,,,,RULES CARD
+The Firestarter,"This enemy gets +X 🗡️, where X is the number of 🔥 on the field.
+This enemy gets +X ❤️, where X is two times the number of 🔥 on the field.",1,0,0,,🔥🔥🔥,ELITE ENEMY
+Fuel for the Fire,Don't remove ⏳ from other durations (including when time passes).,1,,,8 turns,🔥,DURATION
 Smoke Inhalation,The first action you play each turn costs an additional resource of any type.,1,,,6 turns,🔥,DURATION
-Smoldering Coals,"If you would gain vitality, you may remove that many time counters from this duration instead.",2,,,8 turns,🔥🔥🔥,DURATION
+Smoldering Coals,"If you would gain X vitality, you may remove X ⏳ from this duration instead.",2,,,8 turns,🔥🔥🔥,DURATION
 Swirling Ashes,"When time passes, this deals 1 damage.",2,,,5 turns ,🔥🔥,DURATION
-Encroaching Flames,"You may deal damage to this duration as if it were an enemy. If you do, remove time counters from it equal to the damage dealt.
-Before time passes, if there is exactly one time counter on this duration, it deals 6 damage.",2,,,5 turns,🔥🔥,DURATION
-Heat Wave,"This deals X damage, where X is the number of fire icons on the field. 
-If there are less than four fire icons on the field, Surge.",3,,,,,EVENT
-Emberling,"This enemy gets +2 strength if there are 5 or more fire icons on the field.
+Encroaching Flames,"You may deal damage to this as if it were an enemy. If you do, remove X ⏳ from it, where X is the damage dealt.
+Before time passes, if there is exactly 1 ⏳ on this, it deals 6 damage.",2,,,5 turns,🔥🔥,DURATION
+Heat Wave,"This deals X damage, where X is the number of 🔥 on the field. 
+If there are less than four 🔥 on the field, Surge.",3,,,,,EVENT
+Emberling,"If there are 5 or more 🔥 on the field, this enemy gets +2 🗡️.
 Surge.",3,2,1,,🔥🔥,ENEMY

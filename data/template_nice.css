@@ -132,7 +132,7 @@ html {
 
     .encounter .title
     {
-      font-size: 22px;
+      font-size: 20px;
     }
 
     .action .cost
@@ -159,23 +159,20 @@ html {
         height: 18px;
       }
 
-  .action .body
-  {
+  .action .body {
     height: 1.75in;
     padding-left: 12px;
-    padding-right: 6px;
-    padding-top: 6px;
+    padding-right: 12px;
+    padding-top: 0px;
+  }
+
+  .hero .action .body
+  {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     white-space: pre-wrap;
   }
-
-  .encounter .action .body
-  {
-    padding-top: 0;
-  }
-
 
 .action .body .footer
 {
@@ -326,13 +323,6 @@ html {
 .border-flowers { border-color: #ff8ac5; }
 .border-stones { border-color: #8ea5c3; }
 
-p
-{
-  margin:0;
-  padding:0;
-  padding-bottom: 8px;
-}
-
 .card_type {
   position: absolute;
   text-align: right;
@@ -437,7 +427,7 @@ p
   justify-content: space-between;
   align-items: flex-end;
   align-items: center;
-  top: 33%;
+  top: 34%;
   left: 8%;
   height: 100%;
   width: 97%;
@@ -465,4 +455,24 @@ p
   width: 50%;
   left: 55%;
   text-align: right;
+}
+
+.encounter .body {
+  margin-top: 6px;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.encounter .body .cost_icon {
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.body_section
+{
+  margin:0;
+  padding:0;
+  padding-bottom: 8px;
 }

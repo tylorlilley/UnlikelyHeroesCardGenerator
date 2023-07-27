@@ -10,8 +10,8 @@ Shadowjazz does not attack during the enemies attack step of each night.",1,8,,,
 Surprise Attack,"Jazzmondius attacks.
 Surge.",2,,,,,EVENT
 Growing Storm,"When time passes, you discard a card from your hand.
-Jazzmondius's gets +1 strength.",2,,4,,,DURATION
-Cloudbringer,"You can't play actions from your partners field if you've played a resource from your partners field this turn.
+Jazzmondius's gets +1 🗡️.",2,,4,,,DURATION
+Dasher of Hopes,"You can't play actions from your partners field if you've played a resource from your partners field this turn.
 You can't play resources from your partners field if you've played an action from your partners field this turn.",2,5,,,1,ENEMY
 Lifegrasp,"Jazzmondius attacks.
 You discard a card.",3,,,,,EVENT

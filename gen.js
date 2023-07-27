@@ -5,7 +5,7 @@ const { parse } = require("csv-parse/sync");
 //////////////////////////////////////////////////////
 // CONFIGURATION 
 
-const is_nice = false
+const is_nice = true
 const generate_gives_from_costs = true
 
 const TEMPLATE_HEROES = "./data/template_hero.html"
@@ -43,6 +43,7 @@ const DECK_TURTLE   = { is_hero: true,  path: "./data/source/Turtle - Cards.csv"
 const DECK_JAZZMONDIUS  = { is_encounter: true, path: "./data/source/Jazzmondius - Cards.csv",  emoji: "🦅", image: "../assets/deck_icon_jazzmondius.png" }
 const DECK_WILDEFIRE    = { is_encounter: true, path: "./data/source/Wildfire - Cards.csv",    emoji: "🌋", image: "../assets/deck_icon_wildefire.png" }
 const DECK_INSECT_SWARM = { is_encounter: true, path: "./data/source/The Swarm - Cards.csv", emoji: "🐝", image: "../assets/deck_icon_insecthorde.png" }
+const DECK_TEMPEST = { is_encounter: true, path: "./data/source/The Tempest - Cards.csv", emoji: "🌧️", image: "../assets/deck_icon_insecthorde.png" }
 
 //////////////////////////////////////////////////////
 // 
@@ -59,6 +60,7 @@ const decks = [
   DECK_JAZZMONDIUS,
   DECK_WILDEFIRE,
   DECK_INSECT_SWARM,
+  DECK_TEMPEST
 ]
 
 const html_preamble = `<html>
@@ -75,6 +77,13 @@ const html_postamble = `    </div>
 const template_hero = fs.readFileSync(TEMPLATE_HEROES).toString()
 const template_encounter = fs.readFileSync(TEMPLATE_ENCOUNTER).toString()
 
+const inline_icons = [
+  "🗡️",
+  "❤️",
+  "⏳",
+  "🔥",
+]
+
 const icons = {
   "Wild": ICON_WILD,
   "Cost: Berries": ICON_BERRIES,
@@ -85,6 +94,10 @@ const icons = {
   "Gives: Sticks": ICON_STICKS,
   "Gives: Flowers": ICON_FLOWERS,
   "Gives: Stones": ICON_STONES,
+  "🗡️": ICON_ATTACK,
+  "❤️": ICON_HEART,
+  "⏳": ICON_CLOCK,
+  "🔥": ICON_FIRE,
 }
 
 const encounter_suffixes = {
@@ -173,7 +186,8 @@ insert_gives(insert, gives, spiced)
     }
   }
 
-  gives_text = (spiced) ? ICON_SPICE.text + ": " + gives_text.join(" or ") : gives_text.join(" or ")
+  //gives_text = (spiced) ? ICON_SPICE.text + ": " + gives_text.join(" or ") : gives_text.join(" or ")
+  gives_text = gives_text.join(" or ")
   gives_icons = `<div class="icon ${color}">${gives_icons}</div>`
 
   const divider = is_nice ? `<img class="divider" src = "${HERO_DIVIDER}" />` : ""
@@ -232,11 +246,23 @@ function
 modified_description(desc)
 {
   let html = ""
+
+  // Insert paragraphs
   const paragraphs = desc.split("\n")
   for (let i = 0; i < paragraphs.length; i++) {
     const paragraph = paragraphs[i]
-    html += `<p>${paragraph}</p>`
+    html += `<div class="body_section">${paragraph}</div>`
   }
+
+  // Replace icons
+  if (is_nice) {
+    for (let i = 0; i < inline_icons.length; i++) {
+      const emoji = inline_icons[i]
+      const icon = get_resource_icon(emoji)
+      html = html.replaceAll(emoji, icon_spec_to_html_no_class(icon))
+    }
+  }
+
   return html
 }
 
