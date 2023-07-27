@@ -1,5 +1,5 @@
 Name,Description,Count,Health,Attack,Duration,Icons,Card Type
-Wildfire Encounter Deck,"Before each night, you lose the game if there are seven or more fire icons (🔥) on the field.",1,,,,,RULES CARD
+Encounter: Wildfire,"Before each night, you lose the game if there are seven or more fire icons (🔥) on the field.",1,,,,,RULES CARD
 The Firestarter,"This enemy gets +X strength, where X is the number of fire icons on the field.
 This enemy gets +X health, where X is two times the number of fire icons on the field.",1,0,0,,🔥🔥🔥,ELITE ENEMY
 Fuel for the Fire,Counters can't be removed from other durations (including when time passes).,1,,,8 turns,🔥,DURATION

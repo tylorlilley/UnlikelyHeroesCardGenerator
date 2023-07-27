@@ -5,11 +5,15 @@ const { parse } = require("csv-parse/sync");
 //////////////////////////////////////////////////////
 // CONFIGURATION 
 
-const is_nice = false // TODO: Fix Encounter icons for nice mode
+const is_nice = true // TODO: Fix Encounter icons for nice mode
 const generate_gives_from_costs = true
 
 const TEMPLATE_HEROES = "./data/template_hero.html"
 const TEMPLATE_ENCOUNTER = "./data/template_encounter.html"
+
+const HERO_DIAMOND = "../assets/hero_bg_diamond.png"
+const HERO_DIVIDER = "../assets/hero_bg_divider.png"
+const ENCOUNTER_DIAMOND = "../assets/encounter_bg_diamond.png"
 
 const ICON_BERRIES = { emoji: "🍇", image: "../assets/berry.png", image_small: "../assets/berry-small.png",  color: "border-berries", text: "Berries" }
 const ICON_STICKS  = { emoji: "🪵", image: "../assets/stick.png", image_small: "../assets/stick-small.png",  color: "border-sticks",  text: "Sticks" }
@@ -123,7 +127,8 @@ get_resource_icon(icon_key)
 function
 get_deck_icon(deck_spec)
 {
-  return is_nice ? `<img class="deck_icon" src="${deck_spec.image}" />` : deck_spec.emoji
+  const diamond = deck_spec.is_hero ? HERO_DIAMOND : ENCOUNTER_DIAMOND
+  return is_nice ? `<img class="deck_icon" src="${deck_spec.image}" /><img class="deck diamond" src="${diamond}">` : deck_spec.emoji
 }
 
 function 
@@ -171,6 +176,8 @@ insert_gives(insert, gives, spiced)
   gives_text = (spiced) ? ICON_SPICE.text + ": " + gives_text.join(" or ") : gives_text.join(" or ")
   gives_icons = `<div class="icon ${color}">${gives_icons}</div>`
 
+  const divider = is_nice ? `<img class="divider" src = "${HERO_DIVIDER}" />` : ""
+  insert = insert.replace("%Gives Divider%", divider)
   insert = insert.replace("%Gives Icon%", gives_icons)
   insert = insert.replace("%Gives Name%", gives_text)
   return insert
