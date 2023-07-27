@@ -1,6 +1,6 @@
 Name,Description,Count,Cost: Berries,Cost: Sticks,Cost: Stones,Cost: Flowers,Gives: Berries,Gives: Sticks,Gives: Stones,Gives: Flowers,Notes,Frequency
 Constrict,"Choose an enemy. That enemy can't attack during the Enemies Attack step of the next night.
-Rotate a card on your field or on your partner's field.",2,0,1,0,0,0,1,0,0,,2
+Rotate a card on your parnter's field.",2,0,1,0,0,0,1,0,0,,2
 Strike,"Deal 1 damage. If you have played another action with your partner's icon this turn, deal 3 damage instead.",2,0,0,1,0,0,0,1,0,,2
 Spit Venom,"Deal 4 damage.
 Lose 2 vitality.",2,1,1,0,0,1,1,0,0,,2

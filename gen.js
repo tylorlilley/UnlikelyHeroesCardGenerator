@@ -333,7 +333,7 @@ gen_encounter(rows, name, deck_spec)
         insert = insert.replace(`%Description%`, modified_description(value))
       }
       else if (key == "Duration" || key == "Attack" || key == "Health") {
-        insert = insert.replace(`%${key}%`, `<div class ="number_icon ${key} ${(value == 0) ? "hidden" : ""}">${encounter_with_suffix(key, value.replace(/\D/g,''))}</div>`)
+        insert = insert.replace(`%${key}%`, `<div class ="number_icon ${key} ${(value == "") ? "hidden" : ""}">${encounter_with_suffix(key, value.replace(/\D/g,''))}</div>`)
       }
       else {
         insert = insert.replace(`%${key}%`, encounter_with_suffix(key, value))

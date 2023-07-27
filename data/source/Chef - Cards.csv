@@ -1,10 +1,10 @@
 Name,Description,Count,Cost: Berries,Cost: Sticks,Cost: Stones,Cost: Flowers,Gives: Berries,Gives: Sticks,Gives: Stones,Gives: Flowers,Notes,Frequency
-Toss the Dough,"Deal 1 damage.
-Rotate this action.",2,0,0,1,0,0,0,1,0,,2
-Cut the Vegetables,"Deal 2 damage. If this action was spiced, also deal that much damage to another enemy.",2,0,1,1,0,0,1,1,0,,2
-Taste Test,"Gain 2 vitality.
+Toss the Dough,"Rotate this action.
+Deal 1 damage. If you are the Baker's partner, deal 3 damage instead.",2,0,0,1,0,0,0,1,0,,2
+Cut the Vegetables,Deal 2 damage divided as you choose between any number of enemies.,2,0,1,1,0,0,1,1,0,,2
+Taste Test,"Gain 3 vitality.
 Rotate this action.
-If you are the Baker's partner, spice your next action three times.",2,1,0,1,0,1,0,1,0,,2
+If you are the Baker's partner, spice your next action twice.",2,1,0,1,0,1,0,1,0,,2
 Serve the Guests,"Rotate this action.
 If you are the Baker's partner, perform your draw ability.",2,0,0,1,1,0,0,1,1,,2
 Prepare the Ingredients,"Move all cards from your partner's field to your field.
