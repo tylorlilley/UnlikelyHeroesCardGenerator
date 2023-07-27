@@ -116,7 +116,6 @@ html {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding-left: 12px;
   }
     .encounter .action .header {
       margin-top: 8px;
@@ -127,18 +126,22 @@ html {
     {
       font-family: Immortal;
       font-weight: bold;
-      font-size: 20px;
+      font-size: 16px;
+      text-align: center;
     }
-      .encounter .title
-      {
-        text-align: center;
-      }
+
+    .encounter .title
+    {
+      font-size: 22px;
+    }
 
     .action .cost
     {
-      display: flex;
       gap: 6px;
       margin-top: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
       .cost_icon
       {
@@ -192,11 +195,11 @@ html {
     .encounter .count_icons
     {
       position: absolute;
-      left: 0%;
+      left: 12%;
       width: 40%;
       display: flex;
-      align-items: center;
-      justify-content: center;
+      align-items: left;
+      justify-content: left;
     }
     .encounter .duration
     {
@@ -216,27 +219,6 @@ html {
     top: 5%;
     left: 80%;
   }
-    .hero .deck .deck_icon
-    {
-      position: absolute;
-      object-fit: contain;
-      width: 20px;
-      height: 20px;
-      transform: rotate(180deg);
-      z-index: 200;
-    }
-
-    .hero .deck .diamond
-    {
-      z-index: 1;
-      position: absolute;
-      object-fit: contain;
-      left: -10px;
-      top: -10px;
-      width: 40px;
-      height: 40px;
-      transform: rotate(180deg);
-    }
 
   .hero .deck_name {
     display: none;
@@ -398,3 +380,89 @@ p
     height: 1%;
     top: 63%
   }
+
+  .encounter .deck {
+    position: absolute;
+    top: 90%;
+    left: 82%;
+  }
+
+  .hero .deck
+  {
+    position: absolute;
+    top: 61%;
+    left: 7%;
+  }
+
+  .hero .second_deck
+  {
+    position: absolute;
+    top: 61%;
+    left: 85%;
+  }
+  
+  .hero .second_deck .deck_icon {
+    transform: rotate(180deg);
+  }
+
+  .deck .deck_icon
+  {
+    position: absolute;
+    object-fit: contain;
+    width: 20px;
+    height: 20px;
+    z-index: 200;
+  }
+
+  .deck .diamond
+  {
+    z-index: 1;
+    position: absolute;
+    object-fit: contain;
+    left: -10px;
+    top: -10px;
+    width: 40px;
+    height: 40px;
+    transform: rotate(180deg);
+  }
+
+  .hero .title
+  {
+    text-align: center;
+  }
+
+.encounter .footer {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  align-items: center;
+  top: 33%;
+  left: 8%;
+  height: 100%;
+  width: 97%;
+}
+
+.encounter .footer .icons {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  left: 0%;
+  width: 90%
+}
+
+.encounter .footer .duration {
+  position: absolute;
+  width: 50%;
+  left: 55%;
+  text-align: right;
+}
+
+.encounter .footer .health {
+  position: absolute;
+  width: 50%;
+  left: 55%;
+  text-align: right;
+}

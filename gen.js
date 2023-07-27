@@ -5,7 +5,7 @@ const { parse } = require("csv-parse/sync");
 //////////////////////////////////////////////////////
 // CONFIGURATION 
 
-const is_nice = true // TODO: Fix Encounter icons for nice mode
+const is_nice = false
 const generate_gives_from_costs = true
 
 const TEMPLATE_HEROES = "./data/template_hero.html"
@@ -283,7 +283,9 @@ gen_hero(rows, name, deck_spec)
     
     
     const count = parseInt(row["Count"])
+    const secondDeck = (is_nice) ? get_deck_icon(deck_spec) : ""
     insert = insert.replace("%Deck%", get_deck_icon(deck_spec))
+    insert = insert.replace("%SecondDeck%", secondDeck)
     insert = insert.replace("%DeckName%", name.replace(" - Cards", ""))
 
     for (let j = 0; j < count; j++) {

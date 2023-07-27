@@ -78,7 +78,7 @@
 
   .hero .action .body
   {
-    height: 1.5in;
+    height: 1.3in;
     padding-left: 12px;
     padding-right: 6px;
     padding-top: 6px;
@@ -243,7 +243,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  top: 100%;
+  top: 110%;
   left: 0%;
   width: 100%
 }
