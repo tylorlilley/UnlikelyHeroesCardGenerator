@@ -1,15 +1,17 @@
 Name,Description,Count,Health,Duration,Icons,Attack,Card Type
 Encounter: Tempest,"Before the game begins, search the encounter deck for The Tempest and put it onto the field.
-Eye of the Storm - You are in the eye of the storm if there are between 5 and 8 time counters on The Tempest.",1,,,,,RULES CARD
-The Tempest,"After you play an action, put add 1 ⏳ to The Tempest.
-If an action would remove ⏳ from The Tempest, you may add that much ⏳ instead.
-If The Tempest would be discarded, players lose the game instead.",1,,6,,,ELITE DURATION
-Approaching Storm,"When time passes, if there is more than 5 ⏳ on The Tempest, remove ⏳ from it until there is 5 ⏳. 
-You can't add ⏳ to The Tempest.",1,,2,,,DURATION
-Storm's Maw,"If you are in the eye of the storm, Torrential Harbinger does not attack during the Enemies Attack step of the night.
-This enemy gets +X ❤️, where X is the number of ⏳ on The Tempest.",1,7,,,4,ELITE ENEMY
-Gale Force Winds,"After this card is discarded from the field, remove X ⏳ from The Tempest, where X is the number of cards on your field.",2,,2,,,DURATION
-Funnel Clouds,"Before time passes, remove 1 ⏳ from The Tempest.",2,,4,,,DURATION
+Before time passes, you lose the game if there is 8 or more ⏳ on The Tempest.
+You are in the eye of the storm while The Tempest has is 4 ⏳ on it.",1,,,,,RULES CARD
+The Tempest,"After you play an action, remove 1 ⏳ from The Tempest.
+Add 1 ⏳ to The Tempest instead of removing it during the night's time passes step.
+If The Tempest would be discarded, put 1 ⏳ on it instead.",1,,4,,,ELITE DURATION
+Approaching Storm,"Before time passes, if there is less than 3 ⏳ on The Tempest, add ⏳ to it until there is 3 ⏳ on it. 
+You can't remove ⏳ from The Tempest.",1,,2,,,DURATION
+Storm's Maw,"If you are in the eye of the storm, this enemy does not attack during the night's attack step.
+This enemy gets +X ❤️, where X is the number of ⏳ on The Tempest.",1,4,,,4,ELITE ENEMY
+Gale Force Winds,"Before this card is discarded, add X ⏳ from The Tempest, where X is the number of cards on your field.",2,,2,,,DURATION
+Funnel Clouds,"Before time passes, add 1 ⏳ from The Tempest.",2,,4,,,DURATION
 Spout Kraken,"After this enemy attacks, remove 1 ⏳ from The Tempest.",2,5,,,2,ENEMY
-Downpour,Remove 2 ⏳ from Tempest and shuffle this event into the Encounter deck unless it contains 5 or fewer cards.,3,,,,,EVENT
+Downpour,"Add 2 ⏳ to Tempest.
+Shuffle this event into the Encounter deck.",3,,,,,EVENT
 Fog Wraith,This enemy can't be dealt damage unless you are in the eye of the storm.,3,2,,,2,ENEMY

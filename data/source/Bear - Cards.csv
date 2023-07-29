@@ -3,8 +3,8 @@ Roll Over,"Deal 1 damage. If the Bear is awake, deal 1 damage to each enemy inst
 Mark Territory,Move up to two cards from your partner's field to your field.,2,1,0,0,0,0,1,0,0,,2
 Settle In,"If the Bear is awake, the Bear forages.",2,1,0,0,1,1,0,0,1,,2
 Intimidate,"Deal 2 damage.
-Remove 2 time counters.",2,0,1,1,0,0,1,1,0,,2
+Remove 2 ⏳.",2,0,1,1,0,0,1,1,0,,2
 Roar or Snore,"If the Bear is awake, deal 5 damage and draw two cards.
-If the Bear is hibernating, gain 5 vitality and remove 2 time counters.",1,1,1,1,1,0,0,1,1,,1
+If the Bear is hibernating, recover 5 vitality and remove 2 ⏳.",1,1,1,1,1,0,0,1,1,,1
 Poke the Bear,"Deal 5 damage.
 If the Bear is hibernating, the Bear forages.",1,2,2,0,0,1,1,0,0,,1

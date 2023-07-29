@@ -1,12 +1,11 @@
 Name,Description,Count,Health,Attack,Duration,Icons,Card Type
 Encounter: The Swarm,,1,,,,,RULES CARD
-Feeding Frenzy,"Whenever an enemy would attack, it attacks twice instead.",1,,,4,,DURATION
-Hive Queen,"The first enemy drawn each turn gains surge (including this, if applicable).
-This enemy gets +X 🗡️, where X is the number of enemies on the field.",1,12,0,,,ELITE ENEMY
-Walking Hive,Each other enemy gets +2 🗡️.,1,9,0,,,ELITE ENEMY
+Feeding Frenzy,"If an enemy would attack, it attacks twice instead.",1,,,4,,DURATION
+Walking Hive,"After you draw an enemy for the first time during the night, surge.",1,8,0,,,ENEMY
+Filth Spouter,Each other enemy gets +2 🗡️.,1,6,0,,,ENEMY
 Spore Cloud,"Heal 2 damage from each enemy.
 Surge.",2,,,,,EVENT
-Hornet Swarm,"After an action deals damage to one or more enemies, this minion attacks.",2,3,3,,,ENEMY
-Mass of Maggots,"After a surge, this minion attacks.",2,5,1,,,ENEMY
+Hornet Swarm,"After an action deals damage to one or more enemies, this enemy attacks.",2,3,2,,,ENEMY
+Mass of Maggots,"After a surge, this enemy attacks.",2,5,1,,,ENEMY
 Giant Spider,,3,4,2,,,ENEMY
 Army of Ants,Surge.,3,3,1,,,ENEMY

@@ -1,9 +1,9 @@
 Name,Description,Count,Cost: Berries,Cost: Sticks,Cost: Stones,Cost: Flowers,Gives: Berries,Gives: Sticks,Gives: Stones,Gives: Flowers,Notes,Frequency
-Dart Around,Skip the Time Passes step of the next night.,2,0,0,0,1,1,0,0,0,,2
-Eat Acorns,Gain 3 vitality.,2,1,0,0,0,0,0,0,1,,2
-Bury Deep,"Remove 2 time counters.
+Dart Around,Blank one enemy until tommorow.,2,0,0,0,1,1,0,0,0,,2
+Eat Acorns,Recover 3 vitality.,2,1,0,0,0,0,0,0,1,,2
+Bury Deep,"Remove 2 ⏳.
 Move two cards from your partner's field to your field.",2,0,0,1,1,0,0,1,1,,2
 Fur Frenzy,"Deal 2 damage. If you have no cards in hand, also deal 1 damage to each other enemy.",2,1,1,0,0,1,1,0,0,,2
 Nut Assault,"Deal X damage divided as you choose among any number of enemies, where X is half the number of cards on your field, rounded up.",1,1,1,1,1,0,1,1,0,,1
 Fill Cheeks,"Forage.
-For the rest of this turn, after you discard a card, return it to your hand.",1,2,0,0,2,1,0,0,1,,1
+Until tommorow, after you discard a card, return it to your hand.",1,2,0,0,2,1,0,0,1,,1

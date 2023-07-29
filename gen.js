@@ -21,7 +21,7 @@ const ICON_STONES  = { emoji: "🪨", image: "../assets/rock.png",  image_small:
 const ICON_FLOWERS = { emoji: "🌼", image: "../assets/flower.png",image_small: "../assets/flower-small.png", color: "border-flowers", text: "Flowers" }
 const ICON_WILD = { emoji: "❓", image: "../assets/wild.png",image_small: "../assets/wild-small.png", color: "border-wild", text: "Any Resource" }
 
-const ICON_SPICE   = { emoji: "🌶️", image: "../assets/spicy-small.png", color: "", text: "(Spicey)" }
+const ICON_SPICE   = { emoji: "🌶️", image: "../assets/spicy-small.png", color: "", text: "(Spicy)" }
 const ICON_ATTACK  = { emoji: "🗡️", image: "../assets/sword-small.png" }
 const ICON_FIRE    = { emoji: "🔥", image: "../assets/fire-small.png" }
 const ICON_CLOCK   = { emoji: "⏳", image: "../assets/time-small.png" }
@@ -203,7 +203,7 @@ insert_counts(insert, count)
 {
   let count_icons = ""
   for (let j = 0; j < count; j++) {
-    count_icons += "⚫️ "
+    count_icons += (is_nice) ? "⚫️ " : "• "
   }
   insert = insert.replace("%CountIcons%", count_icons)
   return insert
@@ -229,7 +229,7 @@ parse_csv(file)
 function
 should_page_break(row_i)
 {
-  return row_i != 0 && (row_i % 9) == 0
+  return row_i != 0 && (row_i % 6) == 0
 }
 
 function
