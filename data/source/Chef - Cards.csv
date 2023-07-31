@@ -6,5 +6,4 @@ If this action was spiced, also recover 3 vitality.",2,1,0,1,0,1,0,1,0,Chef,2
 Toss the Dough,"Deal 2 Damage.
 Rotate a card.",2,0,0,1,1,0,0,1,1,Chef,2
 Chop,Deal 3 damage.,1,0,0,2,0,0,0,1,0,Chef,1
-Into the Oven,"Deal 5 damage.
-Spice the next action you play today twice.",1,0,0,3,0,0,0,1,0,Chef,1
+Into the Oven,"Deal 4 damage. If this damage is dealt to an elite enemy, deal 8 damage instead.",1,0,0,3,0,0,0,1,0,Chef,1
