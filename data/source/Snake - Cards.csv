@@ -1,11 +1,11 @@
 Name,Description,Count,Cost: Berries,Cost: Sticks,Cost: Stones,Cost: Flowers,Gives: Berries,Gives: Sticks,Gives: Stones,Gives: Flowers,Notes,Frequency
-Constrict,"Choose an enemy. That enemy can't attack until tomorrow.
-Rotate a card on your parnter's field.",2,0,1,0,0,0,0,1,0,,2
-Strike,"Deal 1 damage. If you have played another action with your partner's icon today, deal 3 damage instead.",2,0,0,1,0,0,1,0,0,,2
-Spit Venom,"Deal 4 damage.
-Lose 2 vitality.",2,1,1,0,0,1,1,0,0,,2
-Sideswipe,Deal 3 damage directly to the encounter deck as if there were no enemies on the field.,2,0,0,1,1,0,0,1,1,,2
-Consume,"Forage.
-Draw all the cards in your partner's hand.
-If you have played another action with your partner's icon today, your partner forages.",1,1,1,1,1,1,0,0,1,,1
-Encircle,Deal 6 damage divided as you choose between any number of enemies.,1,0,2,2,0,0,1,1,0,,1
+Tailwhip,Deal 1 damage to up two enemies.,2,0,1,0,0,0,0,1,0,Snake,2
+Strike,"Deal 1 damage. If you have played another action with your partner's icon today, deal 3 damage instead.",2,0,0,1,0,0,1,0,0,Snake,2
+Lash Out,"Deal 3 damage divided as you choose between any number of enemies.
+Discard this card.",2,0,1,1,0,0,1,1,0,Snake,2
+Constrict,"Deal 2 damage. If that damage is dealt to an enemy, also blank it until tomorrow.",1,0,1,0,1,0,1,0,1,Snake,1
+Spit Venom,"Lose 2 vitality.
+Deal 4 damage.",1,1,0,1,0,0,0,1,1,Snake,1
+Consume,"Draw all the cards in your partner's hand.
+You and your partner forage.",1,1,1,1,1,1,1,1,1,Snake,1
+Encircle,Deal 6 damage divided as you choose between up to two enemies.,1,0,2,2,0,0,1,1,0,Snake,1

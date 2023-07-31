@@ -191,10 +191,6 @@ html {
       align-items: left;
       justify-content: left;
     }
-    .encounter .duration
-    {
-      margin-top: 6px;
-    }
 
   .encounter .deck
   {
@@ -450,9 +446,16 @@ html {
   display: inline-block;
 }
 
+.hero .body .body_section .cost_icon {
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+  display: inline-block;
+}
+
 .body_section
 {
   margin:0;
   padding:0;
-  padding-bottom: 8px;
+  padding-bottom: 6px;
 }

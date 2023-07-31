@@ -1,9 +1,10 @@
 Name,Description,Count,Health,Attack,Duration,Icons,Card Type
 Encounter: The Swarm,,1,,,,,RULES CARD
 Feeding Frenzy,"If an enemy would attack, it attacks twice instead.",1,,,4,,DURATION
-Walking Hive,"After you draw an enemy for the first time during the night, surge.",1,8,0,,,ENEMY
+Walking Hive,"After you draw the an enemy for the first time each night, surge.
+Surge.",1,8,0,,,ENEMY
 Filth Spouter,Each other enemy gets +2 🗡️.,1,6,0,,,ENEMY
-Spore Cloud,"Heal 2 damage from each enemy.
+Spore Cloud,"Remove 2 damage from each enemy.
 Surge.",2,,,,,EVENT
 Hornet Swarm,"After an action deals damage to one or more enemies, this enemy attacks.",2,3,2,,,ENEMY
 Mass of Maggots,"After a surge, this enemy attacks.",2,5,1,,,ENEMY

@@ -1,11 +1,9 @@
 Name,Description,Count,Cost: Berries,Cost: Sticks,Cost: Stones,Cost: Flowers,Gives: Berries,Gives: Sticks,Gives: Stones,Gives: Flowers,Notes,Frequency
-Sow,Plant a card.,2,1,0,0,0,1,0,0,0,,2
-Harvest,"Discard any number of resources from your field and/or your partner's field.
-Recover X vitality, where X is the number of resources discarded this way.",2,1,0,0,1,1,0,0,1,,2
-Prick,"Deal 1 damage.
-Plant a card.",2,1,0,1,0,1,0,1,0,,2
-Absorb,"Deal 2 damage.
-Recover 2 vitality.",2,1,1,0,0,1,1,0,0,,2
-Reap,"Discard any number of resources from your field and/or your partner's field.
-Deal X damage and recover X vitality, where X is the number of resources discarded this way.",1,1,1,1,1,1,1,1,1,,1
-Bloom,Plant three cards.,1,3,0,0,0,1,0,0,0,,1
+Rake,Rake up to two cards from your partner's field to your field.,2,0,0,0,1,0,0,0,1,Gardener,2
+Trim Back,"Deal 2 damage.
+Rake a card.",2,0,0,1,1,0,0,1,1,Gardener,2
+Overgrow,"Deal 1 damage to up to two enemies. If there are eight or more cards on your field, also blank those enemies until tomorrow.",2,0,1,0,1,0,1,0,1,Gardener,2
+Till the Soil,"Recover 3 vitality.
+Rake a card.",2,1,0,0,1,1,0,0,1,Gardener,2
+Wait Patiently,Remove 4 ⏳.,1,0,0,0,2,0,0,0,1,Gardener,1
+Cover Up,Blank up to six cards until tomorrow.,1,0,0,0,3,0,0,0,1,Gardener,1

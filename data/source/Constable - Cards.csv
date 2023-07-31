@@ -1,9 +1,10 @@
 Name,Description,Count,Cost: Berries,Cost: Sticks,Cost: Stones,Cost: Flowers,Gives: Berries,Gives: Sticks,Gives: Stones,Gives: Flowers,Notes,Frequency
-Round Up,Deal 1 damage to two different enemies.,2,0,1,0,0,0,1,0,0,,2
-Throw in the Slammer,Deal 3 damage.,2,1,1,0,0,1,1,0,0,,2
-Interrogate,"Subdue an enemy.
-Draw a card.",2,0,1,0,1,0,1,0,1,,2
-Enforce,Deal 2 damage. Deal 4 damage instead if it is dealt to a subdued enemy.,2,0,1,1,0,0,1,1,0,,2
-Eavesdrop,"If there are two or more enemies on the field, forage.
-Subdue each enemy.",1,1,1,1,1,1,1,1,1,,1
-Clear Out,Deal 2 damage to each enemy.,1,0,3,0,0,0,1,0,0,,1
+Restrain,"Deal 1 damage. If you damage an enemy this way, also subdue it.",2,0,1,0,0,0,1,0,0,Constable,2
+Interrogate,"Deal 1 damage.
+Draw two cards and discard a card.",2,1,1,0,0,1,1,0,0,Constable,2
+Hassle,"Deal 1 damage.
+Rotate up to two cards.",2,0,1,0,1,0,1,0,1,Constable,2
+Enforce,Deal 2 damage. Deal 4 damage instead if it is dealt to a subdued enemy.,2,0,1,1,0,0,1,1,0,Constable,2
+Look for Trouble,"Draw an encounter card.
+Deal 3 damage to up to two enemies.",1,0,2,0,0,0,1,0,0,Constable,1
+Clear Out,Deal 2 damage to each enemy.,1,0,3,0,0,0,1,0,0,Constable,1
