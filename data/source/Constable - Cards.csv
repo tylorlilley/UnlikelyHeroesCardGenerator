@@ -3,7 +3,7 @@ Restrain,"Deal 1 damage. If you damage an enemy this way, also subdue it.",2,0,1
 Interrogate,"Deal 1 damage.
 Draw two cards and discard a card.",2,1,1,0,0,1,1,0,0,Constable,2
 Hassle,"Deal 1 damage.
-Rotate up to two cards.",2,0,1,0,1,0,1,0,1,Constable,2
+Rotate up to two cards on your partner's field.",2,0,1,0,1,0,1,0,1,Constable,2
 Enforce,Deal 2 damage. Deal 4 damage instead if it is dealt to a subdued enemy.,2,0,1,1,0,0,1,1,0,Constable,2
 Look for Trouble,"Draw an encounter card.
 Deal 3 damage to up to two enemies.",1,0,2,0,0,0,1,0,0,Constable,1

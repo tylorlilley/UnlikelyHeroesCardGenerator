@@ -1,9 +1,10 @@
 Name,Description,Count,Cost: Berries,Cost: Sticks,Cost: Stones,Cost: Flowers,Gives: Berries,Gives: Sticks,Gives: Stones,Gives: Flowers,Notes,Frequency
-Rake,Rake up to two cards from your partner's field to your field.,2,0,0,0,1,0,0,0,1,Gardener,2
-Trim Back,"Deal 2 damage.
-Rake a card.",2,0,0,1,1,0,0,1,1,Gardener,2
-Overgrow,"Deal 1 damage to up to two enemies. If there are eight or more cards on your field, also blank those enemies until tomorrow.",2,0,1,0,1,0,1,0,1,Gardener,2
+Plow,Rake a card.,2,0,0,0,1,0,0,0,1,Gardener,2
+Trim Back,"Remove 2 ⏳.
+Deal 2 damage.",2,0,0,1,1,0,0,1,1,Gardener,2
+Scatter Seeds,"Remove 2 ⏳.
+If there are eight or more cards on your field, deal 1 damage to each enemy.",2,0,1,0,1,0,1,0,1,Gardener,2
 Till the Soil,"Recover 3 vitality.
 Rake a card.",2,1,0,0,1,1,0,0,1,Gardener,2
 Wait Patiently,Remove 4 ⏳.,1,0,0,0,2,0,0,0,1,Gardener,1
-Cover Up,Blank up to six cards until tomorrow.,1,0,0,0,3,0,0,0,1,Gardener,1
+Mulch,Blank up to six cards until tomorrow.,1,0,0,0,3,0,0,0,1,Gardener,1

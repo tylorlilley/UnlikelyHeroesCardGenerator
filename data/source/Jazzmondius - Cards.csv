@@ -10,7 +10,7 @@ Effects that cause Jazzmondius to attack also cause this enemy to attack.",1,8,,
 Surprise Attack,"Jazzmondius attacks.
 Surge.",2,,,,,EVENT
 Growing Storm,"As time passes, you discard a card from your hand.
-Jazzmondius's gets +1 🗡️.",2,,4,,,DURATION
+Jazzmondius gets +1 🗡️.",2,,4,,,DURATION
 Dasher of Hopes,"Each day, you can play actions or resource from your partner's field, but not both.",2,5,,,1,ENEMY
 Lifegrasp,"Jazzmondius attacks.
 You discard a card.",3,,,,,EVENT

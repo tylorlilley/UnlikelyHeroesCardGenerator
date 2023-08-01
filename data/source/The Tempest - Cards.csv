@@ -12,6 +12,6 @@ Rising Tides,"Add ⏳ to The Tempest until there are at least X ⏳ on it, where
 Funnel Clouds,"As time passes, add 1 ⏳ to The Tempest.",2,,4,,,DURATION
 Spout Kraken,"As this enemy attacks, add 1 ⏳ to The Tempest.",2,6,,,2,ENEMY
 Building Pressure,"Add 1 ⏳ to the Tempest.
-Shuffle this event into the encounter deck at the end of this day.
+Set this event aside and shuffle it into the encounter deck at the end of the night.
 Surge.",3,,,,,EVENT
 Fog Wraith,This enemy can't be dealt damage unless there are exactly 4 ⏳ on The Tempest.,3,2,,,2,ENEMY

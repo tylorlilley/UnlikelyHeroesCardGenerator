@@ -1,11 +1,12 @@
 Name,Description,Count,Cost: Berries,Cost: Sticks,Cost: Stones,Cost: Flowers,Gives: Berries,Gives: Sticks,Gives: Stones,Gives: Flowers,Notes,Frequency
 Eat Acorns,Recover 3 vitality.,2,1,0,0,0,0,0,0,1,Squirrel,2
-Dart Around,Rotate up to two cards.,2,0,0,0,1,1,0,0,0,Squirrel,2
+Dart Around,Rotate a card.,2,0,0,0,1,1,0,0,0,Squirrel,2
 Bury Deep,"Remove 2 ⏳.
 Recovery 3 vitality.",2,1,0,0,1,1,0,0,1,Squirrel,2
 Slip Past,Deal 2 damage directly to the encounter deck as if there were no enemies on the field.,1,1,0,1,0,1,0,1,0,Squirrel,1
 Fur Frenzy,"Remove 2 ⏳.
 Deal 1 damage to up to two enemies.",1,0,1,0,1,0,1,0,1,Squirrel,1
-Nut Assault,"Deal 1+X damage divided as you choose among any number of enemies, where X is half the number of cards on your field, rounded up.",1,1,1,1,1,1,1,1,1,Squirrel,1
+Nut Assault,"Discard any number of cards from your field.
+Deal X damage divided as you choose among any number of enemies, where X is half the number of cards you discarded this way, rounded up.",1,1,1,1,1,1,1,1,1,Squirrel,1
 Fill Cheeks,"Return up to five cards from your partner's field to your hand.
-Until tommorow, you can't discard cards.",1,2,0,0,2,1,0,0,1,Squirrel,1
+Until tommorow, if you would discard a card from anywhere, instead set it aside and draw it at the end of the night.",1,2,0,0,2,1,0,0,1,Squirrel,1

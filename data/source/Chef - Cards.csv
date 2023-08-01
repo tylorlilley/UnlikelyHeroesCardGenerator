@@ -2,8 +2,8 @@ Name,Description,Count,Cost: Berries,Cost: Sticks,Cost: Stones,Cost: Flowers,Giv
 Season to Taste,Spice the next action you play today twice.,2,0,0,1,0,0,0,1,0,Chef,2
 Slice and Dice,Deal 2 damage divided as you choose between any number of enemies.,2,0,1,1,0,0,1,1,0,Chef,2
 Fill the Pot,"Deal 2 damage.
-If this action was spiced, also recover 3 vitality.",2,1,0,1,0,1,0,1,0,Chef,2
+If this action was spiced, recover 3 vitality.",2,1,0,1,0,1,0,1,0,Chef,2
 Toss the Dough,"Deal 2 Damage.
-Rotate a card.",2,0,0,1,1,0,0,1,1,Chef,2
+Rotate a card on your field.",2,0,0,1,1,0,0,1,1,Chef,2
 Chop,Deal 3 damage.,1,0,0,2,0,0,0,1,0,Chef,1
 Into the Oven,"Deal 4 damage. If this damage is dealt to an elite enemy, deal 8 damage instead.",1,0,0,3,0,0,0,1,0,Chef,1

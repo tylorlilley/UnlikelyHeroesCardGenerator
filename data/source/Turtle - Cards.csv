@@ -1,14 +1,14 @@
 Name,Description,Count,Cost: Berries,Cost: Sticks,Cost: Stones,Cost: Flowers,Gives: Berries,Gives: Sticks,Gives: Stones,Gives: Flowers,Notes,Frequency
 Stop and Think,Draw two cards and discard a card.,2,1,0,0,0,0,0,1,0,Turtle,2
 Bash,Deal 2 damage.,2,0,0,1,0,1,0,0,0,Turtle,2
-Snap,"Deal 3 damage.
+Snap,"Deal 2 damage.
 Return this to your hand.",2,1,0,1,0,1,0,1,0,Turtle,2
-Retreat,"Deal 2 damage. If you have three or more cards in hand, also deal 2 damage to another enemy.",1,0,1,1,0,0,1,1,0,Turtle,1
+Beat Back,"Deal 2 damage. If you have three or more cards in hand, also deal 2 damage to another enemy.",1,0,1,1,0,0,1,1,0,Turtle,1
 Submerge,"Recover 3 vitality.
 Blank a card until tomorrow.",1,1,0,0,1,1,0,0,1,Turtle,1
 Dabble,"Recover 4 vitality.
 Deal 3 damage.
 Remove 2 ⏳.
 Rotate a card.",1,1,1,1,1,1,1,1,1,Turtle,1
-Feast,"Deal 5 damage.
-Recover 5 vitality.",1,2,0,2,0,1,0,1,0,Turtle,1
+Outlast,"Deal 5 damage.
+Skip drawing an encounter card tonight.",1,2,0,2,0,1,0,1,0,Turtle,1
