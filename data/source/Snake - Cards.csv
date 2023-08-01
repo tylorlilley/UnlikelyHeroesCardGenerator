@@ -1,8 +1,7 @@
 Name,Description,Count,Cost: Berries,Cost: Sticks,Cost: Stones,Cost: Flowers,Gives: Berries,Gives: Sticks,Gives: Stones,Gives: Flowers,Notes,Frequency
 Tailwhip,Deal 1 damage to up two enemies.,2,0,1,0,0,0,0,1,0,Snake,2
 Strike,"Deal 1 damage. If you have played another action with your partner's icon today, deal 3 damage instead.",2,0,0,1,0,0,1,0,0,Snake,2
-Lash Out,"Deal 3 damage divided as you choose between any number of enemies.
-Discard this card.",2,0,1,1,0,0,1,1,0,Snake,2
+Lash Out,"Deal 2 damage. If an enemy has been discarded this turn, deal 4 damage instead.",2,0,1,1,0,0,1,1,0,Snake,2
 Constrict,"Deal 2 damage. If you damage an enemy this way, also blank it until tomorrow.",1,0,1,0,1,0,1,0,1,Snake,1
 Spit Venom,"Lose 2 vitality.
 Deal 4 damage.",1,1,0,1,0,0,0,1,1,Snake,1

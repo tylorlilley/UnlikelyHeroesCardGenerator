@@ -5,7 +5,7 @@ const { parse } = require("csv-parse/sync");
 //////////////////////////////////////////////////////
 // CONFIGURATION 
 
-const is_nice = true
+const is_nice = false
 const generate_gives_from_costs = false
 
 const TEMPLATE_HEROES = "./data/template_hero.html"
@@ -43,7 +43,7 @@ const DECK_TURTLE   = { is_hero: true,  path: "./data/source/Turtle - Cards.csv"
 const DECK_JAZZMONDIUS  = { is_encounter: true, path: "./data/source/Jazzmondius - Cards.csv",  emoji: "🦅", image: "../assets/deck_icon_jazzmondius.png" }
 const DECK_WILDEFIRE    = { is_encounter: true, path: "./data/source/Wildfire - Cards.csv",    emoji: "🌋", image: "../assets/deck_icon_wildefire.png" }
 const DECK_INSECT_SWARM = { is_encounter: true, path: "./data/source/The Swarm - Cards.csv", emoji: "🐝", image: "../assets/deck_icon_insecthorde.png" }
-const DECK_TEMPEST = { is_encounter: true, path: "./data/source/The Tempest - Cards.csv", emoji: "🌧️", image: "../assets/deck_icon_insecthorde.png" }
+const DECK_TEMPEST = { is_encounter: true, path: "./data/source/The Tempest - Cards.csv", emoji: "🌧️", image: "" }
 
 //////////////////////////////////////////////////////
 // 
