@@ -69,10 +69,6 @@ html {
   border: var(--card-border);
 }
 
-.hero .resource {
-  min-height: 31.4in;
-}
-
 .hero
 {
   background: var(--hero-bg-image);
@@ -458,4 +454,9 @@ html {
   margin:0;
   padding:0;
   padding-bottom: 6px;
+}
+
+.card {
+  min-height: 3.49in;
+  min-width: 2.49in;
 }

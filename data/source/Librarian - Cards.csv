@@ -1,12 +1,11 @@
 Name,Description,Count,Cost: Berries,Cost: Sticks,Cost: Stones,Cost: Flowers,Gives: Berries,Gives: Sticks,Gives: Stones,Gives: Flowers,Notes,Frequency
-Research,Read Ahead.,2,1,0,0,0,1,0,0,0,Librarian,2
+Research,Read ahead once.,2,1,0,0,0,1,0,0,0,Librarian,2
 Shush,"Blank a card until tomorrow.
-Read Ahead.",2,1,0,0,1,1,0,0,1,Librarian,2
-Stamp,"Recover 3 vitality. 
+Read Ahead twice.",2,1,0,0,1,1,0,0,1,Librarian,2
+Stamp,"Read ahead twice.
 If you have drawn a card this turn, deal 2 damage.",2,1,0,1,0,1,0,1,0,Librarian,2
 Paper Cut,"Deal 1 damage.
-Read Ahead.",2,1,1,0,0,1,1,0,0,Librarian,2
+Draw two cards, then discard a card.",2,1,1,0,0,1,1,0,0,Librarian,2
 Rummage,Forage.,1,2,0,0,0,1,0,0,0,Librarian,1
-Organize,"Recover 2 vitality.
-Read Ahead.
+Organize,"Read Ahead three times.
 Draw two cards.",1,3,0,0,0,1,0,0,0,Librarian,1

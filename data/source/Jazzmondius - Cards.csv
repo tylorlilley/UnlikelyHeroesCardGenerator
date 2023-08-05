@@ -1,17 +1,17 @@
 Name,Description,Count,Health,Duration,Icons,Attack,Card Type
 Encounter: Jazzmondius,"Before the game begins, put Jazzmondius onto the field.
 Before each night, if Jazzmondius is in the discard pile, shuffle him into the encounter deck.",1,,,,,RULES CARD
-Jazzmondius,"This enemy does not attack during the attack step.
+Jazzmondius,"This enemy does not attack during the attack step. This effect can't be blanked.
 After you play an action that damages this enemy, it attacks.",1,15,,,2,ELITE ENEMY
 Fill With Despair,"Jazzmondius attacks X times, where X is half the number of cards on your partner's field, rounded up.
 Discard each card on your field.",1,,,,,EVENT
-Shadowjazz,"This enemy does not attack during the attack step.
+Shadowjazz,"This enemy does not attack during the attack step. This effect can't be blanked.
 Effects that cause Jazzmondius to attack also cause this enemy to attack.",1,8,,,2,ENEMY
 Surprise Attack,"Jazzmondius attacks.
 Surge.",2,,,,,EVENT
 Growing Storm,"As time passes, you discard a card from your hand.
 Jazzmondius gets +1 🗡️.",2,,4,,,DURATION
-Dasher of Hopes,"Each day, you can play actions or resource from your partner's field, but not both.",2,5,,,1,ENEMY
+Dasher of Hopes,"Each day, you can play actions or resources from your partner's field, but not both.",2,5,,,1,ENEMY
 Lifegrasp,"Jazzmondius attacks.
 You discard a card.",3,,,,,EVENT
-Hawk Lord's Servant,"As this enemy attacks, you discard a card.",3,4,,,1,ENEMY
+Hawk Lord's Servant,"As time passes, you discard a card.",3,4,,,1,ENEMY

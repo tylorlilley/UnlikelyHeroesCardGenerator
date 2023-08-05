@@ -1,8 +1,8 @@
 Name,Description,Count,Cost: Berries,Cost: Sticks,Cost: Stones,Cost: Flowers,Gives: Berries,Gives: Sticks,Gives: Stones,Gives: Flowers,Notes,Frequency
-Stop and Think,Draw two cards and discard a card.,2,1,0,0,0,0,0,1,0,Turtle,2
-Bash,Deal 2 damage.,2,0,0,1,0,1,0,0,0,Turtle,2
+Stop and Think,Draw a card.,2,1,0,0,0,0,0,1,0,Turtle,2
+Nip,Deal 1 damage.,2,0,0,1,0,1,0,0,0,Turtle,2
 Snap,"Deal 2 damage.
-Return this to your hand.",2,1,0,1,0,1,0,1,0,Turtle,2
+Draw this action.",2,1,0,1,0,1,0,1,0,Turtle,2
 Beat Back,"Deal 2 damage. If you have three or more cards in hand, also deal 2 damage to another enemy.",1,0,1,1,0,0,1,1,0,Turtle,1
 Submerge,"Recover 3 vitality.
 Blank a card until tomorrow.",1,1,0,0,1,1,0,0,1,Turtle,1
@@ -10,5 +10,4 @@ Dabble,"Recover 4 vitality.
 Deal 3 damage.
 Remove 2 ⏳.
 Rotate a card.",1,1,1,1,1,1,1,1,1,Turtle,1
-Outlast,"Deal 5 damage.
-Skip drawing an encounter card tonight.",1,2,0,2,0,1,0,1,0,Turtle,1
+Outlast,"Deal 6 damage. If damage is dealt to an enemy this way that is in excess of the amount of health it had remaining, also deal X damage to the encounter deck as if there were no enemies on the field, where X is the amount of excess damage dealt.",1,2,0,2,0,1,0,1,0,Turtle,1
