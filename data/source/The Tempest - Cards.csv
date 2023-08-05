@@ -4,10 +4,12 @@ Before each night, you lose the game if there are 8 or more ⏳ on The Tempest.
 If The Tempest would be discarded, put 1 ⏳ on it instead.",1,,,,,RULES CARD
 The Tempest,"After you play an action, you may discard it instead of performing its effect to remove 1 ⏳ from this duration. Otherwise, add 1 ⏳ to this duration.
 After you play an action that deals damage to the deck, draw an encounter card.",1,,3,,,ELITE DURATION
-Torrential Rain,"You lose X vitality, where X is the number of ⏳ on The Tempest.",1,,,,,EVENT
+Torrential Rain,"You lose X vitality, where X is the number of ⏳ on The Tempest.
+If there are fewer than 4 ⏳ on The Tempest, surge.",1,,,,,EVENT
 Storm's Maw,"This enemy can't attack if there are exactly 4 ⏳ on The Tempest. This effect can't be blanked.
 This enemy gets +X ❤️, where X is number of ⏳ on The Tempest. This effect can't be blanked.",1,8,,,6,ELITE ENEMY
-Rising Tides,"Add ⏳ to The Tempest until there are at least X ⏳ on it, where X is the number of cards on your field.",2,,,,,EVENT
+Rising Tides,"Add ⏳ to The Tempest until there are at least X ⏳ on it, where X is the number of cards on your field.
+If there are fewer than 6 ⏳ on The Tempest, surge.",2,,,,,EVENT
 Funnel Clouds,"As time passes, add 1 ⏳ to The Tempest.",2,,4,,,DURATION
 Spout Kraken,"As time passes, add 1 ⏳ to The Tempest.",2,6,,,2,ENEMY
 Building Pressure,"Add 1 ⏳ to the Tempest.

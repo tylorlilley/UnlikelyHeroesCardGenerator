@@ -10,4 +10,4 @@ Dabble,"Recover 4 vitality.
 Deal 3 damage.
 Remove 2 ⏳.
 Rotate a card.",1,1,1,1,1,1,1,1,1,Turtle,1
-Outlast,"Deal 6 damage. If damage is dealt to an enemy this way that is in excess of the amount of health it had remaining, also deal X damage to the encounter deck as if there were no enemies on the field, where X is the amount of excess damage dealt.",1,2,0,2,0,1,0,1,0,Turtle,1
+Overpower,"Deal 6 damage. If more damage is dealt to an enemy this way than is necessary to discard it, deal that excess damage directly to the encounter deck as if there were no enemies on the field.",1,2,0,2,0,1,0,1,0,Turtle,1
