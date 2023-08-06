@@ -1,7 +1,8 @@
 Name,Description,Count,Cost: Berries,Cost: Sticks,Cost: Stones,Cost: Flowers,Gives: Berries,Gives: Sticks,Gives: Stones,Gives: Flowers,Notes,Frequency
 Roll Around,"If the Bear is awake, deal 1 damage to each enemy.",2,0,1,0,0,0,0,0,1,Bear,2
 Settle In,Remove 2 ⏳.,2,0,0,0,1,0,1,0,0,Bear,2
-Hunker Down,Skip tonight's attack step.,2,0,1,0,1,0,1,0,1,Bear,2
+Knock Over,"Deal 1 damage to one or two enemies.
+Rotate a card.",2,0,1,0,1,0,1,0,1,Bear,2
 Mark Territory,"Rotate two cards on your field.
 Draw a card.",1,1,0,0,1,1,0,0,1,Bear,1
 Bear Claw,"Deal 2 damage. If the Bear is awake, deal 4 damage instead.",1,0,1,1,0,0,1,1,0,Bear,1

@@ -4,8 +4,7 @@ Dart Around,Rotate a card.,2,0,0,0,1,1,0,0,0,Squirrel,2
 Bury Deep,"Remove 2 ⏳.
 Recovery 3 vitality.",2,1,0,0,1,1,0,0,1,Squirrel,2
 Slip Past,Deal 2 damage directly to the encounter deck as if there were no enemies on the field.,1,1,0,1,0,1,0,1,0,Squirrel,1
-Fur Frenzy,"Deal 1 damage to one or two enemies.
-Rotate a card.",1,0,1,0,1,0,1,0,1,Squirrel,1
+Climb the Tree,Skip tonight's attack step.,1,0,1,0,1,0,1,0,1,Squirrel,1
 Nut Assault,"Discard each action on your field.
 Deal X damage divided as you choose among one or more enemies, where X is the number of cards you discarded this way.",1,1,1,1,1,1,1,1,1,Squirrel,1
 Fill Cheeks,"Draw between one and five cards from your partner's field.
