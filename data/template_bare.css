@@ -110,13 +110,13 @@
     bottom: 0;
   }
 
-  .hero .card .deck {
+  .card .deck {
     text-align: right;
     height: 18px;
     transform: rotate(180deg);
   }
 
-  .hero .card .deck_name {
+  .card .deck_name {
     position: absolute;
     text-align: left;
     width: 2.125in;
@@ -125,6 +125,7 @@
 
   .encounter .deck
   {
+    transform: rotate(0);
     position: absolute;
     right: -4px;
     top: 4px;
@@ -308,6 +309,7 @@
   
 }
 
+
 .sheet
 {
   position: relative;
@@ -341,6 +343,9 @@
 }
 
 .sheet .deck_name {
+  font-size: 24px;
+  font-weight: bold;
+  padding-bottom: 8px;
   position: absolute;
   top: 2%;
   left: 10%;
@@ -348,8 +353,8 @@
 
 .sheet .deck_type {
   position: absolute;
-  top: 10%;
-  left: 12%;
+  top: 14%;
+  left: 10%;
 }
 
 .sheet .resource_types {
