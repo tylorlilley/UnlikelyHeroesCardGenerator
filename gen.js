@@ -9,6 +9,7 @@ const is_nice = false
 const generate_gives_from_costs = false
 
 const TEMPLATE_HEROES = "./data/template_hero.html"
+const TEMPLATE_HERO_SHEET = "./data/template_hero_sheet.html"
 const TEMPLATE_ENCOUNTER = "./data/template_encounter.html"
 
 const HERO_DIAMOND = "../assets/hero_bg_diamond.png"
@@ -27,17 +28,17 @@ const ICON_FIRE    = { emoji: "🔥", image: "../assets/fire-small.png" }
 const ICON_CLOCK   = { emoji: "⏳", image: "../assets/time-small.png" }
 const ICON_HEART   = { emoji: "❤️", image: "../assets/heart-small.png" }
 
-// Occupations
-const DECK_LIBRARIAN = { is_hero: true, path: "./data/source/Librarian - Cards.csv", emoji: "📚", image: "../assets/deck_icon_librarian.png" }
-const DECK_GARDENER  = { is_hero: true, path: "./data/source/Gardener - Cards.csv",  emoji: "👩‍🌾", image: "../assets/deck_icon_gardener.png" }
-const DECK_CHEF      = { is_hero: true, path: "./data/source/Chef - Cards.csv",     emoji: "👨‍🍳", image: "../assets/deck_icon_baker.png", spiced: true }
-const DECK_CONSTABLE = { is_hero: true, path: "./data/source/Constable - Cards.csv", emoji: "👮", image: "../assets/deck_icon_constable.png" }
+// Jobs
+const DECK_LIBRARIAN = { is_job: true, is_hero: true, path: "./data/source/Librarian - Cards.csv", sheet_path: "./data/source/Librarian - Sheet.csv", emoji: "📚", image: "../assets/deck_icon_librarian.png" }
+const DECK_GARDENER  = { is_job: true, is_hero: true, path: "./data/source/Gardener - Cards.csv", sheet_path: "./data/source/Gardener - Sheet.csv", emoji: "👩‍🌾", image: "../assets/deck_icon_gardener.png" }
+const DECK_CHEF      = { is_job: true, is_hero: true, path: "./data/source/Chef - Cards.csv", sheet_path: "./data/source/Chef - Sheet.csv", emoji: "👨‍🍳", image: "../assets/deck_icon_baker.png", spiced: true }
+const DECK_CONSTABLE = { is_job: true, is_hero: true, path: "./data/source/Constable - Cards.csv", sheet_path: "./data/source/Constable - Sheet.csv", emoji: "👮", image: "../assets/deck_icon_constable.png" }
 
 // Critters
-const DECK_BEAR     = { is_hero: true,  path: "./data/source/Bear - Cards.csv",     emoji: "🐻", image: "../assets/deck_icon_bear.png"}
-const DECK_SQUIRREL = { is_hero: true,  path: "./data/source/Squirrel - Cards.csv", emoji: "🐿️", image: "../assets/deck_icon_squirrel.png"}
-const DECK_SNAKE    = { is_hero: true,  path: "./data/source/Snake - Cards.csv",    emoji: "🐍", image: "../assets/deck_icon_snake.png"}
-const DECK_TURTLE   = { is_hero: true,  path: "./data/source/Turtle - Cards.csv",   emoji: "🐢", image: "../assets/deck_icon_turtle.png"}
+const DECK_BEAR     = { is_critter: true, is_hero: true,  path: "./data/source/Bear - Cards.csv", sheet_path: "./data/source/Bear - Sheet.csv", emoji: "🐻", image: "../assets/deck_icon_bear.png"}
+const DECK_SQUIRREL = { is_critter: true, is_hero: true,  path: "./data/source/Squirrel - Cards.csv", sheet_path: "./data/source/Squirrel - Sheet.csv", emoji: "🐿️", image: "../assets/deck_icon_squirrel.png"}
+const DECK_SNAKE    = { is_critter: true, is_hero: true,  path: "./data/source/Snake - Cards.csv", sheet_path: "./data/source/Snake - Sheet.csv", emoji: "🐍", image: "../assets/deck_icon_snake.png"}
+const DECK_TURTLE   = { is_critter: true, is_hero: true,  path: "./data/source/Turtle - Cards.csv", sheet_path: "./data/source/Turtle - Sheet.csv", emoji: "🐢", image: "../assets/deck_icon_turtle.png"}
 
 // Encounter
 const DECK_JAZZMONDIUS  = { is_encounter: true, path: "./data/source/Jazzmondius - Cards.csv",  emoji: "🦅", image: "../assets/deck_icon_jazzmondius.png" }
@@ -47,6 +48,17 @@ const DECK_TEMPEST = { is_encounter: true, path: "./data/source/The Tempest - Ca
 
 //////////////////////////////////////////////////////
 // 
+
+const sheets = [
+  DECK_LIBRARIAN,
+  DECK_GARDENER, 
+  DECK_CHEF,
+  DECK_CONSTABLE,
+  DECK_BEAR,
+  DECK_SQUIRREL,
+  DECK_SNAKE,
+  DECK_TURTLE,
+]
 
 const decks = [
   DECK_LIBRARIAN,
@@ -75,6 +87,7 @@ const html_postamble = `    </div>
 </html>`
 
 const template_hero = fs.readFileSync(TEMPLATE_HEROES).toString()
+const template_hero_sheet = fs.readFileSync(TEMPLATE_HERO_SHEET).toString()
 const template_encounter = fs.readFileSync(TEMPLATE_ENCOUNTER).toString()
 
 const inline_icons = [
@@ -86,6 +99,10 @@ const inline_icons = [
 
 const icons = {
   "Wild": ICON_WILD,
+  "Berries": ICON_BERRIES,
+  "Sticks": ICON_STICKS,
+  "Flowers": ICON_FLOWERS,
+  "Stones": ICON_STONES,
   "Cost: Berries": ICON_BERRIES,
   "Cost: Sticks": ICON_STICKS,
   "Cost: Flowers": ICON_FLOWERS,
@@ -142,6 +159,18 @@ get_deck_icon(deck_spec)
 {
   const diamond = deck_spec.is_hero ? HERO_DIAMOND : ENCOUNTER_DIAMOND
   return is_nice ? `<img class="deck_icon" src="${deck_spec.image}" /><img class="deck diamond" src="${diamond}">` : deck_spec.emoji
+}
+
+function 
+insert_resource_types(insert, resource_types) 
+{
+  let type_html = ""
+  for (let i = 0; i < resource_types.length; i++) {
+    const type = resource_types[i]
+    const icon = get_resource_icon(type)
+    type_html += icon_spec_to_html(icon, true)
+  }
+  return insert.replace("%ResourceTypes%", type_html)
 }
 
 function 
@@ -210,9 +239,9 @@ insert_counts(insert, count)
 }
 
 async function 
-parse_csv(file)
+parse_csv(file, use_sheet = false)
 {
-  const file_path = file.path
+  const file_path = use_sheet ? file.sheet_path : file.path
   const path_parsed = path.parse(file_path)
   console.log("READING", file_path)
   console.log("  BASENAME", path_parsed.name)
@@ -261,6 +290,41 @@ modified_description(desc)
       const icon = get_resource_icon(emoji)
       html = html.replaceAll(emoji, icon_spec_to_html_no_class(icon))
     }
+  }
+
+  return html
+}
+
+function 
+gen_hero_sheet(rows, name, deck_spec) 
+{
+  let html = ""
+  for (let i = 0; i < rows.length; i++) {
+    const row = rows[i]
+    let insert = template_hero_sheet;
+    let keys = Object.keys(row)
+    let resources = []
+    for (let j = 0; j < keys.length; j++) {
+      const key = keys[j]
+      const value = row[key]
+      if (key.includes("Resource Affinity")) {
+        if (value != "") { resources.push(value) }
+      }
+      else if (key == "Ability") {
+        desc = (deck_spec.is_critter) ? modified_description("Forage - " + value) : modified_description(value)
+        insert = insert.replace(`%Ability%`, desc)
+      } else {
+        insert = insert.replace(`%${key}%`, value.trim())
+      }
+    }
+
+    insert = insert_resource_types(insert, resources)
+
+    insert = insert.replace("%DeckType%", (deck_spec.is_critter ? "Critter" : "Job"))
+
+    insert = insert.replace("%Deck%", get_deck_icon(deck_spec))
+
+    html += insert
   }
 
   return html
@@ -424,5 +488,32 @@ decks.forEach(deck_spec => {
       html = lines_trimmed.join("\n")
       
       fs.writeFileSync(`./data/output/${name}.html`, html)
+    })
+})
+
+sheets.forEach(deck_spec => {
+  let inserted = 0;
+  fs.writeFileSync(`./data/output/Hero Sheets.html`, html_preamble.replace("CSS", is_nice ? "../template_nice.css" : "../template_bare.css"))
+  parse_csv(deck_spec, true)
+    .then(({ rows, name }) => {
+      html = gen_hero_sheet(rows, name, deck_spec)
+
+      // Remove leading tabs
+      const lines = html.split("\n")
+      const lines_trimmed = lines.map(line => line.trim())
+      html = lines_trimmed.join("\n")
+
+      // Insert Page Breaks
+      // TODO: do something else to check if it's time to page break
+      if (name == "Squirrel - Sheet") { 
+        html += insert_page_break(html)
+      }
+
+      fs.writeFileSync(`./data/output/Hero Sheets.html`, html, {flag: 'a'})
+
+      // TODO: do something else to check if it's the last sheet
+      if (name == "Turtle - Sheet") { 
+        fs.writeFileSync(`./data/output/Hero Sheets.html`, html_postamble, {flag: 'a'})
+      }
     })
 })

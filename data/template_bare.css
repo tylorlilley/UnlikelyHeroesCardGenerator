@@ -110,13 +110,13 @@
     bottom: 0;
   }
 
-  .hero .deck {
+  .hero .card .deck {
     text-align: right;
     height: 18px;
     transform: rotate(180deg);
   }
 
-  .hero .deck_name {
+  .hero .card .deck_name {
     position: absolute;
     text-align: left;
     width: 2.125in;
@@ -306,4 +306,60 @@
 .encounter .count_icons
 {
   
+}
+
+.sheet
+{
+  position: relative;
+  width: 2.49in;
+  max-width: 2.49in;
+  min-width: 2.49in;
+  height: 3.48in;
+  max-height: 3.48in;
+  min-height: 3.48in;
+  border: 7px solid black;
+  border-radius: 8px;
+  padding: 8px;
+}
+
+.sheet .contents {
+  width: 3.2in;
+  height: 2.48in;
+  transform: rotate(270deg);
+
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  margin-left: -0.4in;
+  margin-top: 0.3in;
+}
+
+.sheet .deck {
+  height: 18px;
+  position: absolute;
+  top: 4%;
+  left: 0%;
+}
+
+.sheet .deck_name {
+  position: absolute;
+  top: 2%;
+  left: 10%;
+}
+
+.sheet .deck_type {
+  position: absolute;
+  top: 10%;
+  left: 12%;
+}
+
+.sheet .resource_types {
+  position: absolute;
+  top: 0%;
+  left: 90%;
+}
+
+.sheet .ability {
+  position: absolute;
+  top: 30%;
+  left: 2%;
 }
