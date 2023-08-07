@@ -1,11 +1,12 @@
 Name,Description,Count,Cost: Berries,Cost: Sticks,Cost: Stones,Cost: Flowers,Gives: Berries,Gives: Sticks,Gives: Stones,Gives: Flowers,Notes,Frequency
 Research,Read ahead once.,2,1,0,0,0,1,0,0,0,Librarian,2
-Shush,"Blank a card until tomorrow.
-Read Ahead twice.",2,1,0,0,1,1,0,0,1,Librarian,2
-Stamp,"Read ahead twice.
-If you have drawn a card this turn, deal 2 damage.",2,1,0,1,0,1,0,1,0,Librarian,2
-Paper Cut,"Deal 1 damage.
-Draw two cards, then discard a card.",2,1,1,0,0,1,1,0,0,Librarian,2
-Rummage,Forage.,1,2,0,0,0,1,0,0,0,Librarian,1
-Organize,"Read Ahead three times.
-Draw two cards.",1,3,0,0,0,1,0,0,0,Librarian,1
+Shush,"Blank each effect of one encounter card until tomorrow.
+Read ahead twice.",2,1,0,0,1,1,0,0,1,Librarian,2
+Stamp,"If you have drawn a hero card from anywhere this turn, deal 2 damage to one enemy.
+Read ahead twice.",2,1,0,1,0,1,0,1,0,Librarian,2
+Paper Cut,"Deal 1 damage to one enemy.
+Draw two cards from your deck, then discard a hero card from your hand.",2,1,1,0,0,1,1,0,0,Librarian,2
+Rummage,"Forage.
+Discard a hero card from your hand.",1,2,0,0,0,1,0,0,0,Librarian,1
+Organize,"Read ahead three times.
+Draw two cards from your deck.",1,3,0,0,0,1,0,0,0,Librarian,1

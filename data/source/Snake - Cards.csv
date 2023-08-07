@@ -1,10 +1,11 @@
 Name,Description,Count,Cost: Berries,Cost: Sticks,Cost: Stones,Cost: Flowers,Gives: Berries,Gives: Sticks,Gives: Stones,Gives: Flowers,Notes,Frequency
 Tailwhip,Deal 1 damage to exactly two enemies.,2,0,1,0,0,0,0,1,0,Snake,2
-Strike,"If you have played another action with your partner's icon today, deal 2 damage.",2,0,0,1,0,0,1,0,0,Snake,2
-Lash Out,"Deal 2 damage. If an enemy has been discarded this turn, deal 4 damage instead.",2,0,1,1,0,0,1,1,0,Snake,2
-Constrict,"Deal 2 damage. If you damage an enemy this way, also blank it until tomorrow.",1,0,1,0,1,0,1,0,1,Snake,1
+Strike,"If you have played another action with your partner's icon today, deal 2 damage to one enemy.",2,0,0,1,0,0,1,0,0,Snake,2
+Lash Out,"Deal 2 damage to one enemy. If another enemy has been discarded from the field this turn, deal 4 damage instead.",2,0,1,1,0,0,1,1,0,Snake,2
+Constrict,"Deal 2 damage to one enemy. If you are damaging an encounter card, also blank each of its effects until tomorrow.",1,0,1,0,1,0,1,0,1,Snake,1
 Spit Venom,"Lose 2 vitality.
-Deal 4 damage.",1,1,0,1,0,0,0,1,1,Snake,1
-Consume,"Draw all the cards in your partner's hand.
-You and your partner forage.",1,1,1,1,1,1,1,1,1,Snake,1
+Deal 4 damage to one enemy.",1,1,0,1,0,0,0,1,1,Snake,1
+Consume,"Draw each hero card in your partner's hand.
+Forage.
+Your partner forages.",1,1,1,1,1,1,1,1,1,Snake,1
 Encircle,Deal 6 damage divided as you choose between one or two enemies.,1,0,2,2,0,0,1,1,0,Snake,1

@@ -1,10 +1,9 @@
 Name,Description,Count,Cost: Berries,Cost: Sticks,Cost: Stones,Cost: Flowers,Gives: Berries,Gives: Sticks,Gives: Stones,Gives: Flowers,Notes,Frequency
-Restrain,Subdue an enemy.,2,0,1,0,0,0,1,0,0,Constable,2
-Round Up,"Deal 1 damage to one or two enemies.
-Draw a card.",2,1,1,0,0,1,1,0,0,Constable,2
-Do Time,"Remove 3 ⏳.
-Deal 1 damage.",2,0,1,0,1,0,1,0,1,Constable,2
-Enforce,Deal 2 damage. Deal 4 damage instead if it is dealt to a subdued enemy.,2,0,1,1,0,0,1,1,0,Constable,2
-Look for Trouble,"Draw an encounter card.
-Deal 3 damage one or two enemies.",1,0,2,0,0,0,1,0,0,Constable,1
-Clear Out,Deal 2 damage to each enemy.,1,0,3,0,0,0,1,0,0,Constable,1
+Restrain,Subdue one enemy.,2,0,1,0,0,0,1,0,0,Constable,2
+Look for Trouble,"Draw one card from the encounter deck.
+Deal 3 damage to one or two enemies.",2,1,1,0,0,1,1,0,0,Constable,2
+Do Time,"Remove 3 ⏳ from one duration.
+Deal 1 damage to one enemy.",2,0,1,0,1,0,1,0,1,Constable,2
+Enforce,"Deal 2 damage to one enemy. If you are damaging a subdued enemy, deal 4 damage instead.",2,0,1,1,0,0,1,1,0,Constable,2
+Clear Out,Deal 1 damage to each enemy.,1,0,2,0,0,0,1,0,0,Constable,1
+Crackdown,Deal 2 damage to each enemy.,1,0,3,0,0,0,1,0,0,Constable,1
