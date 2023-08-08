@@ -7,7 +7,7 @@ The Blob,"This enemy gets +X 🗡️, where X half is the number of enemies name
 This enemy gets +X ❤️, where X is 32 divided by the number of enemies named The Blob on the field, rounded down. This effect can't be blanked.",1,0,,,0,ELITE ENEMY
 Swallow Whole,"Shuffle each hero card on your field into the encounter deck.
 If no cards were shuffled into the encounter deck this way, surge.",1,,,,,EVENT
-Incorporate,"Turn each non-elite enemy face down. Each of those cards are now a copy of The Blob.
+Incorporate,"Turn each non-elite enemy face down. Each of those enemies are now a copy of The Blob.
 Evenly redistribute the damage on enemies named The Blob among each enemy named The Blob, rounded down.
 If no enemies were turned face down this way, surge and, after this night ends, shuffle this event into the encounter deck.",1,,,,,EVENT
 Acid Burns,"After you draw a hero card from the encounter deck, lose 1 vitality.",2,,8,,,DURATION
