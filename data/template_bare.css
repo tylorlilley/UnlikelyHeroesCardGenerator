@@ -98,7 +98,8 @@
 
   .encounter .action .body
   {
-    margin-top: 18px;
+    margin-top: 4px;
+    margin-bottom: 14px;
     min-height: 2.3in;
   }
 

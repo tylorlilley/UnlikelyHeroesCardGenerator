@@ -45,6 +45,8 @@ const DECK_JAZZMONDIUS  = { is_encounter: true, path: "./data/source/Jazzmondius
 const DECK_WILDEFIRE    = { is_encounter: true, path: "./data/source/Wildfire - Cards.csv",    emoji: "🌋", image: "../assets/deck_icon_wildefire.png" }
 const DECK_INSECT_SWARM = { is_encounter: true, path: "./data/source/The Swarm - Cards.csv", emoji: "🐝", image: "../assets/deck_icon_insecthorde.png" }
 const DECK_TEMPEST = { is_encounter: true, path: "./data/source/The Tempest - Cards.csv", emoji: "🌧️", image: "" }
+const DECK_BLOB = { is_encounter: true, path: "./data/source/The Blob - Cards.csv", emoji: "🟢", image: "" }
+const DECK_PARASITES = { is_encounter: true, path: "./data/source/Parasites - Cards.csv", emoji: "🦠", image: "" }
 
 //////////////////////////////////////////////////////
 // 
@@ -72,7 +74,9 @@ const decks = [
   DECK_JAZZMONDIUS,
   DECK_WILDEFIRE,
   DECK_INSECT_SWARM,
-  DECK_TEMPEST
+  DECK_TEMPEST,
+  DECK_BLOB,
+  DECK_PARASITES
 ]
 
 const html_preamble = `<html>
