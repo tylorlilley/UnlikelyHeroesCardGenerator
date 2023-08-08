@@ -10,4 +10,4 @@ Dabble,"Recover 4 vitality.
 Deal 3 damage to one enemy.
 Remove 2 ⏳ from one duration.
 Rotate one hero card on your field or your partner's field.",1,1,1,1,1,1,1,1,1,Turtle,1
-Overpower,"Deal 6 damage to one enemy. If you are dealing more damage to an enemy than the amount of health they have remaining, deal the excess damage directly to the encounter deck as if there were no enemies on the field.",1,2,0,2,0,1,0,1,0,Turtle,1
+Overpower,"Deal 6 damage to one enemy. If you are dealing more damage than the amount of health they have remaining, deal the excess damage directly to the encounter deck as if there were no enemies on the field.",1,2,0,2,0,1,0,1,0,Turtle,1

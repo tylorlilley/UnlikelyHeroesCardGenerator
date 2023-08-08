@@ -258,7 +258,7 @@ parse_csv(file, use_sheet = false)
 function
 should_page_break(row_i)
 {
-  return row_i != 0 && (row_i % 6) == 0
+  return row_i != 0 && (row_i % 9) == 0
 }
 
 function
@@ -506,7 +506,7 @@ sheets.forEach(deck_spec => {
       // Insert Page Breaks
       // TODO: do something else to check if it's time to page break
       if (name == "Squirrel - Sheet") { 
-        html += insert_page_break(html)
+        //html += insert_page_break(html)
       }
 
       fs.writeFileSync(`./data/output/Hero Sheets.html`, html, {flag: 'a'})
