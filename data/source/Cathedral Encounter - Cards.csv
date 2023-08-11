@@ -1,0 +1,12 @@
+Name,Description,Count,Health,Duration,Icons,Attack,Card Type,Opening Salvo
+Name,Description,Count,Health,Duration,Icons,Attack,Card Type,
+Encounter: Cathedral,"Before the game begins, shuffle three of the hero cards named Column chosen at random into each player's deck.
+Before you draw from an empty encounter deck, if there are not six hero cards named Column on the field, you lose the game.",1,,,,,RULES CARD,
+Setting Sun,"After the draw step of each night, draw another card from the encounter deck.",1,,4,,,DURATION,TRUE
+Errosion,"As time passes, discard a card named Column from your field. If you can't, add 1 ⏳ to this duration and lose 1 vitality.",1,,3,,,DURATION,TRUE
+Resonance,"You may discard any number of hero cards named Column from your field.
+Lose X vitality, where X is the number of hero cards named Column on your field.
+This event escalates.",2,,,,,EVENT,
+Minotaur,"Before this enemy attacks, you may discard a hero card named Column from your field. If you do, subdue this enemy twice.",2,8,,,4,ENEMY,TRUE
+Topple,"Discard a hero card named Column from your field.
+This event escalates.",3,,,,,EVENT,

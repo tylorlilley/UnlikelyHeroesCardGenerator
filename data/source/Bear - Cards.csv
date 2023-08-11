@@ -1,11 +1,10 @@
 Name,Description,Count,Cost: Berries,Cost: Sticks,Cost: Stones,Cost: Flowers,Gives: Berries,Gives: Sticks,Gives: Stones,Gives: Flowers,Notes,Frequency
-Roll Around,"If the Bear is awake, deal 1 damage to each enemy.",2,0,1,0,0,0,0,0,1,Bear,2
-Settle In,Remove 2 ⏳ from one duration.,2,0,0,0,1,0,1,0,0,Bear,2
-Knock Over,"Deal 1 damage to one or two enemies.
-Rotate one hero card on your field or on your partner's field.",2,0,1,0,1,0,1,0,1,Bear,2
-Mark Territory,"Rotate two hero cards on your field.
-Draw one card from your deck.",1,1,0,0,1,1,0,0,1,Bear,1
-Bear Claw,"Deal 2 damage to one enemy. If the Bear is awake, deal 4 damage instead.",1,0,1,1,0,0,1,1,0,Bear,1
-On the Prowl,Skip the next night.,1,1,1,1,1,1,1,1,1,Bear,1
-Resounding Roar,"If the Bear is awake, deal 3 damage to each enemy.
-Otherwise, remove 5 ⏳ and forage.",1,0,2,0,2,0,1,0,1,Bear,1
+Hunker Down,Remove 1 ⏳ from one duration.,2,0,0,0,1,0,0,1,0,Bear,2
+Swat,"If the Bear is awake, deal 2 damage to one enemy.",2,0,0,1,0,0,0,0,1,Bear,2
+Flatten,"Deal 2 damage to one enemy. If you are damaging an encounter card, also blank each of its effects until tomorrow.",2,0,0,1,1,0,0,1,1,Bear,2
+Mark Territory,Rotate two hero cards among those on your field and your partner's field.,1,0,0,0,2,0,0,0,1,Bear,1
+Claw,"Deal 2 damage to one enemy. If the Bear is awake, deal 4 damage instead.",1,0,0,2,0,0,0,1,0,Bear,1
+Intimidate,"If the Bear is awake, deal 3 damage to one enemy.
+Otherwise, remove 3 ⏳ from one duration.",1,0,0,1,1,0,0,1,1,Bear,1
+Bear Down,"If the Bear is awake, deal 6 damage to one enemy.
+Otherwise, rotate between one and six hero cards among those on your field and on your partner's field.",1,0,0,2,2,0,0,1,1,Bear,1

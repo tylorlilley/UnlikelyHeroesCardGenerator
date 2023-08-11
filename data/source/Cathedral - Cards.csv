@@ -1,0 +1,7 @@
+Name,Description,Count,Cost: Berries,Cost: Sticks,Cost: Stones,Cost: Flowers,Gives: Berries,Gives: Sticks,Gives: Stones,Gives: Flowers,Notes,Frequency
+Column,Don't discard this action from your field at dawn.,1,1,1,,,1,1,,,,1
+Column,Don't discard this action from your field at dawn.,1,1,,1,,1,,1,,,1
+Column,Don't discard this action from your field at dawn.,1,1,,,1,1,,,1,,1
+Column,Don't discard this action from your field at dawn.,1,,1,1,,,1,1,,,1
+Column,Don't discard this action from your field at dawn.,1,,1,,1,,1,,1,,1
+Column,Don't discard this action from your field at dawn.,1,,,1,1,,,1,1,,1

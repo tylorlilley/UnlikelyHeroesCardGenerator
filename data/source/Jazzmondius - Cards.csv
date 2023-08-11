@@ -1,17 +1,16 @@
-Name,Description,Count,Health,Duration,Icons,Attack,Card Type
+Name,Description,Count,Health,Duration,Icons,Attack,Card Type,Opening Salvo
 Encounter: Jazzmondius,"Before the game begins, put Jazzmondius onto the field.
-Before each night, if Jazzmondius is in the discard pile, shuffle him into the encounter deck.",1,,,,,RULES CARD
+If Jazzmondius would be discarded from the field, it persists instead.",1,,,,,RULES CARD,
 Jazzmondius,"This enemy does not attack during the attack step. This effect can't be blanked.
-After you play an action that damages this enemy, it attacks.",1,15,,,2,ELITE ENEMY
+After you play an action that damages this enemy, it attacks.",1,12,,,2,ELITE ENEMY,
 Fill With Despair,"Jazzmondius attacks X times, where X is half the number of cards on your partner's field, rounded up.
-Discard each hero card on your field.",1,,,,,EVENT
-Shadowjazz,"This enemy does not attack during the attack step. This effect can't be blanked.
-Effects that cause Jazzmondius to attack also cause this enemy to attack.",1,8,,,2,ENEMY
-Surprise Attack,"Jazzmondius attacks.
-Surge.",2,,,,,EVENT
-Growing Storm,"As time passes, discard a hero card from your hand.
-Jazzmondius gets +1 🗡️.",2,,4,,,DURATION
-Dasher of Hopes,"Each day, you can play actions or resources from your partner's field, but not both.",2,5,,,1,ENEMY
+Discard each hero card on your field.",1,,,,,EVENT,
+Shadowjazz,"After drawing this enemy, if Jazzmondius is on the field, turn this enemy into a copy of Jazzmondius.
+Otherwise, it persists and escalates.",1,12,,,2,ENEMY,TRUE
+Surprise Attack,Jazzmondius attacks and escalates.,2,,,,,EVENT,
+Fading Light,"As time passes, discard a hero card from your hand.
+Jazzmondius gets +1 🗡️.",2,,4,,,DURATION,TRUE
+Dasher of Hopes,"You can play actions or resources from your partner's field, but not both during the same day.",2,5,,,1,ENEMY,TRUE
 Lifegrasp,"Jazzmondius attacks.
-Discard a hero card from your hand.",3,,,,,EVENT
-Hawk Lord's Servant,"As time passes, discard a hero card from your hand.",3,4,,,1,ENEMY
+Discard a hero card from your hand.",3,,,,,EVENT,
+Hawk Lord's Servant,"After this enemy attacks, discard a hero card from your hand.",3,4,,,1,ENEMY,TRUE

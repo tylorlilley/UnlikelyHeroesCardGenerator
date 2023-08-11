@@ -1,14 +1,13 @@
-Name,Description,Count,Health,Attack,Duration,Icons,Card Type
-Encounter: The Swarm,,1,,,,,RULES CARD
-Feeding Frenzy,"If an enemy would attack, it attacks twice instead.",1,,,4,,DURATION
-Walking Hive,"After you draw an enemy for the first time each night, surge.
-This enemy gets +X ❤️, where X is number of other enemies on the field. This effect can't be blanked.
-Surge.",1,8,1,,,ELITE ENEMY
-Spouter of Filth,"Each other enemy gets +2 🗡️.
-After you play an action that deals damage to this enemy, discard that action.",1,10,0,,,ELITE ENEMY
-Spore Cloud,"Remove 2 damage from each enemy.
-Surge.",2,,,,,EVENT
-Hornet Swarm,"After an action deals damage to one or more enemies, this enemy attacks.",2,3,2,,,ENEMY
-Mass of Maggots,"After an encounter card surges, this enemy attacks.",2,5,1,,,ENEMY
-Giant Spider,,3,4,2,,,ENEMY
-Army of Ants,Surge.,3,3,1,,,ENEMY
+Name,Description,Count,Health,Attack,Duration,Icons,Card Type,Opening Salvo
+Encounter: The Swarm,"After each night, if there are no enemies on the field, discard cards from the top of the encounter deck until an enemy is discarded. Put that enemy on top of the encounter deck and draw it.",1,,,,,RULES CARD,
+Eaten Alive,"Each enemy attacks.
+If no enemies attack this way, this event persists and escalates.",1,,,,,EVENT,
+Walking Hive,"After you draw another enemy for the first time each night, that enemy escalates.
+This enemy gets +X ❤️, where X is number of other enemies on the field. This effect can't be blanked.",1,10,1,,,ELITE ENEMY,
+Shambling Refuse,"Each other enemy gets +2 🗡️.
+After you play an action that deals damage to this enemy, discard that action and remove 1 damage from this enemy.",1,6,0,,,ELITE ENEMY,
+Cloud of Mosquitos,"As this enemy attacks, remove all damage from it.",2,4,1,,,ENEMY,TRUE
+Hornet Swarm,"After an action deals damage to one or more enemies, this enemy attacks.",2,3,2,,,ENEMY,TRUE
+Mass of Maggots,Each other enemy gets +1 🗡️.,2,5,1,,,ENEMY,TRUE
+Giant Spider,,3,4,2,,,ENEMY,TRUE
+Army of Ants,"After you draw this enemy, use the top card of the encounter deck or discard pile to create a copy of it.",3,3,1,,,ENEMY,

@@ -79,7 +79,7 @@
   .hero .action .body
   {
     height: 1.3in;
-    padding-left: 12px;
+    padding-left: 6px;
     padding-right: 6px;
     padding-top: 6px;
     display: flex;
@@ -255,14 +255,21 @@
 {
   margin:0;
   padding:0;
-  padding-bottom: 8px;
+  font-size: 1em;
+  padding-bottom: 0.5em;
+}
+
+.encounter .body
+{
+  height: 1.5in;
 }
 
 .encounter .body_section
 {
-  margin:0;
+  margin-top:-4px;
   padding:0;
-  padding-bottom: 16px;
+  font-size: 1em;
+  padding-bottom: 0.75em;
 }
 
 .title {

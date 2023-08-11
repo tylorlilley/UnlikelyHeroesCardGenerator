@@ -1,21 +1,22 @@
-Name,Description,Count,Health,Duration,Icons,Attack,Card Type
-Name,Description,Count,Health,Duration,Icons,Attack,Card Type
+Name,Description,Count,Health,Duration,Icons,Attack,Card Type,Opening Salvo
 Encounter: The Blob,"Before the game begins, put The Blob onto the field.
-If there are no cards named The Blob on the field, you win the game.
-After you draw a hero card from the encounter deck, discard it, remove 1 damage from each enemy named The Blob, and surge.",1,,,,,RULES CARD
-The Blob,"This enemy gets +X 🗡️, where X half is the number of enemies named The Blob on the field, rounded down. This effect can't be blanked.
-This enemy gets +X ❤️, where X is 32 divided by the number of enemies named The Blob on the field, rounded down. This effect can't be blanked.",1,0,,,0,ELITE ENEMY
+At any time, if there is no enemy named The Blob on the field, you win the game.
+After you draw a hero card from the encounter deck, remove 1 damage from each enemy named The Blob, discard that hero card, and it escalates.",1,,,,,RULES CARD,
+The Blob,"This enemy gets +X 🗡️, where X half is the number of enemies named The Blob, rounded down.
+This enemy gets +X ❤️, where X is 40 divided by the number of enemies named The Blob, rounded down.
+As this leaves the field, evenly redistribute its damage among each other enemy named The Blob, removing the rest.
+You can't blank this enemy's effects.",1,0,,,0,ELITE ENEMY,
 Swallow Whole,"Shuffle each hero card on your field into the encounter deck.
-If no cards were shuffled into the encounter deck this way, surge.",1,,,,,EVENT
-Incorporate,"Turn each non-elite enemy face down. Each of those enemies are now a copy of The Blob.
-Evenly redistribute the damage on enemies named The Blob among each enemy named The Blob, rounded down.
-If no enemies were turned face down this way, surge and, after this night ends, shuffle this event into the encounter deck.",1,,,,,EVENT
-Acid Burns,"After you draw a hero card from the encounter deck, lose 1 vitality.",2,,8,,,DURATION
-Get Stuck,"Shuffle each hero card in your hand into the encounter deck.
-If no cards were shuffled into the encounter deck this way, surge.",2,,,,,EVENT
-Sticky Coating,"After you play an action that deals damage to The Blob, shuffle it into the encounter deck.",2,,6,,,DURATION
-Absorb,"Shuffle each hero card on your partner's field into the encounter deck.
-If no cards were shuffled into the encounter deck this way, surge.
-After this night ends, shuffle this event into the encounter deck.",3,,,,,EVENT
-Mitosis,"Put the top X cards of the encounter deck onto the field face down, where X is the number of enemies named The Blob on the field. Each of those cards are now a copy of The Blob.
-Evenly redistribute the damage on enemies named The Blob among each enemy named The Blob, rounded down.",3,,,,,EVENT
+If no cards were shuffled into the encounter deck this way, this event persists and escalates.",1,,,,,EVENT,
+Regurgitate,"If there are no copies on the field, this event persists and escalates.
+Otherwise, put each copy on top of the encounter deck one at a time in a random order. Then, this event escalates X times, where X is one plus the number of copies placed onto the encounter deck this way. ",1,,,,,EVENT,
+Absorb,"Shuffle each hero card on your partner's field into the encounter deck. 
+If no hero cards were shuffled into the encounter deck this way, this event escalates.
+This event persists.",3,,,,,EVENT,
+Incorporate,"If there are no non-elite enemies on the field, this event persists and escalates.
+Otherwise, turn each non-elite enemy into a copy of The Blob. Evenly redistribute the damage on enemies named The Blob among each enemy named The Blob, removing the remainder.",2,,,,,EVENT,
+Sticky Coating,"After you draw this duration, if there is another duration named Sticky Coating on the field, put 6 ⏳ on that duration and discard this one.
+After you play an action that deals damage to The Blob, shuffle it into the encounter deck.",2,,4,,,DURATION,TRUE
+Stinging Slime,"After you draw a hero card from the encounter deck, lose 1 vitality.
+As time passes, shuffle the top card of your hero deck into the encounter deck.",3,,6,,,DURATION,TRUE
+Mitosis,"Turn the top X cards of the encounter deck and/or discard pile into copies of The Blob, where X is the number of enemies named The Blob on the field. Evenly redistribute the damage on enemies named The Blob among each enemy named The Blob, removing the remainder.",3,,,,,EVENT,

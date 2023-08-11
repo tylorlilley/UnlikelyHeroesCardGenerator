@@ -2,7 +2,7 @@ Name,Description,Count,Cost: Berries,Cost: Sticks,Cost: Stones,Cost: Flowers,Giv
 Restrain,Subdue one enemy.,2,0,1,0,0,0,1,0,0,Constable,2
 Look for Trouble,"Draw one card from the encounter deck.
 Deal 3 damage to one or two enemies.",2,1,1,0,0,1,1,0,0,Constable,2
-Do Time,"Remove 3 ⏳ from one duration.
+Put Away,"Remove 2 ⏳ from one duration.
 Deal 1 damage to one enemy.",2,0,1,0,1,0,1,0,1,Constable,2
 Enforce,"Deal 2 damage to one enemy. If you are damaging a subdued enemy, deal 4 damage instead.",2,0,1,1,0,0,1,1,0,Constable,2
 Clear Out,Deal 1 damage to each enemy.,1,0,2,0,0,0,1,0,0,Constable,1

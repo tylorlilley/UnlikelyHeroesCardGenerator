@@ -1,17 +1,17 @@
-Name,Description,Count,Health,Duration,Icons,Attack,Card Type
-Name,Description,Count,Health,Duration,Icons,Attack,Card Type
-Encounter: Parasites,Your actions have no effect on encounter cards that are on your partner's field.,1,,,,,RULES CARD
-The Hatching,"If you would draw an encounter card from your hero deck, put it onto the field face down isntead. It's an enemy with 3 🗡️ and 3 ❤️. If that enemy would be discarded from the field, draw it instead.",1,,6,,,DURATION
-Miasmic Clouds,"After you forage, shuffle the top card of the encounter deck into your hero deck without looking at it.",1,,8,,,DURATION
+Name,Description,Count,Health,Duration,Icons,Attack,Card Type,Opening Salvo
+Name,Description,Count,Health,Duration,Icons,Attack,Card Type,
+Encounter: Parasites,"After you draw an enemy or duration from your hero deck, put it onto your field.
+During your nights, time does not pass for durations on your partner's field and enemies on your partner's field don't attack during the attack step.
+Actions you play have no effect on encounter cards on your partner's field.",1,,,,,RULES CARD,
+Infestation,"If you would draw an encounter card from your hero deck, turn it into a copy of an enemy with 1 🗡️ and 1 ❤️ instead. That enemy has ""If this enemy would be discarded from the field, shuffle it into your hero deck instead.""",1,,3,,,DURATION,
+Contamination,"As time passes, shuffle the top card of the encounter deck into your hero deck without looking at it.",1,,4,,,DURATION,TRUE
 The Progenitor,"After you draw an enemy or duration, put it onto your field.
 This enemy gets +X ❤️, where X is the number of encounter cards on the field. This effect can't be blanked.
-After this enemy is discarded from the field, shuffle it into your hero deck.",1,0,,,0,ELITE ENEMY
-Chestburster,"After you draw this enemy from the encounter deck, shuffle it into your hero deck.
-After you draw this enemy from your hero deck, lose 4 vitality.",2,3,,,2,ENEMY
-Larva,"After you draw this enemy, put it onto your field.
-After this enemy is discarded from the field, shuffle it into your encounter deck.",2,2,,,2,ENEMY
-Fever,"After you draw this duration, put it onto your field.
-Each action you play costs an additional resource of any type.",2,,3,,,DURATION
-Incubate,Shuffle this event and the top card of the encounter deck into your hero deck without looking at it.,3,,,,,EVENT
-Nausea,"After you draw this duration, put it onto your field.
-After you forage, discard a hero card from your hand.",3,,5,,2,DURATION
+After this enemy is discarded from the field, shuffle it into your hero deck.",1,0,,,0,ELITE ENEMY,TRUE
+Chestburster,"After you draw this enemy from the encounter deck, shuffle it into your hero deck.",2,3,,,3,ENEMY,
+Fever,"After you draw this duration from the encounter deck, shuffle it into your hero deck.
+As time passes, discard a hero card from your hand.",2,,3,,,DURATION,
+Chills,"After you draw this duration from the encounter deck, shuffle it into your hero deck.
+Each action you play costs an additional resource of any type.",2,,3,,,DURATION,
+Incubate,Shuffle this event and the top card of the encounter deck into your hero deck without looking at it.,3,,,,,EVENT,
+Heartworm,"After this enemy is discarded from the field, shuffle it into your hero deck.",3,1,,,1,ENEMY,TRUE

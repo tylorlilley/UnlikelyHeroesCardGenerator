@@ -1,0 +1,10 @@
+Name,Description,Count,Cost: Berries,Cost: Sticks,Cost: Stones,Cost: Flowers,Gives: Berries,Gives: Sticks,Gives: Stones,Gives: Flowers,Notes,Frequency
+Graze,Discard the top card of the encounter deck.,2,1,0,0,0,0,1,0,0,Deer,2
+Thrash About,"If you have shuffled your discard pile into your deck this game, deal 1 damage to each enemy.",2,0,1,0,0,1,0,0,0,Deer,2
+Poke Around,"Deal 1 damage to one or two enemies.
+Recover 2 vitality.",2,1,1,0,0,1,1,0,0,Deer,2
+Keep Watch,Draw two cards from your deck.,1,2,0,0,0,1,0,0,0,Deer,1
+Bolt,"If you have shuffled your discard pile into your deck this game, skip tonight's attack step.",1,0,2,0,0,0,1,0,0,Deer,1
+Ram Through,"If you have shuffled your discard pile into your deck this game, deal 2 damage to one or two enemies.
+Otherwise, draw two cards from your deck and discard a hero card from your hand.",1,1,1,0,0,1,1,0,0,Deer,1
+Drive Away,Shuffle one non-elite enemy into the encounter deck.,1,2,2,0,0,1,1,0,0,Deer,1

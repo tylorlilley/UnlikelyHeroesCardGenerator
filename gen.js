@@ -39,6 +39,11 @@ const DECK_BEAR     = { is_critter: true, is_hero: true,  path: "./data/source/B
 const DECK_SQUIRREL = { is_critter: true, is_hero: true,  path: "./data/source/Squirrel - Cards.csv", sheet_path: "./data/source/Squirrel - Sheet.csv", emoji: "🐿️", image: "../assets/deck_icon_squirrel.png"}
 const DECK_SNAKE    = { is_critter: true, is_hero: true,  path: "./data/source/Snake - Cards.csv", sheet_path: "./data/source/Snake - Sheet.csv", emoji: "🐍", image: "../assets/deck_icon_snake.png"}
 const DECK_TURTLE   = { is_critter: true, is_hero: true,  path: "./data/source/Turtle - Cards.csv", sheet_path: "./data/source/Turtle - Sheet.csv", emoji: "🐢", image: "../assets/deck_icon_turtle.png"}
+const DECK_PIG   = { is_critter: true, is_hero: true,  path: "./data/source/Pig - Cards.csv", sheet_path: "./data/source/Pig - Sheet.csv", emoji: "🐷", image: ""}
+const DECK_DEER   = { is_critter: true, is_hero: true,  path: "./data/source/Deer - Cards.csv", sheet_path: "./data/source/Deer - Sheet.csv", emoji: "🦌", image: ""}
+
+// Other
+const DECK_HERO_CATHEDRAL   = { is_hero: true,  path: "./data/source/Cathedral - Cards.csv", emoji: "🏛️", image: ""}
 
 // Encounter
 const DECK_JAZZMONDIUS  = { is_encounter: true, path: "./data/source/Jazzmondius - Cards.csv",  emoji: "🦅", image: "../assets/deck_icon_jazzmondius.png" }
@@ -46,17 +51,20 @@ const DECK_WILDEFIRE    = { is_encounter: true, path: "./data/source/Wildfire - 
 const DECK_INSECT_SWARM = { is_encounter: true, path: "./data/source/The Swarm - Cards.csv", emoji: "🐝", image: "../assets/deck_icon_insecthorde.png" }
 const DECK_TEMPEST = { is_encounter: true, path: "./data/source/The Tempest - Cards.csv", emoji: "🌧️", image: "" }
 const DECK_BLOB = { is_encounter: true, path: "./data/source/The Blob - Cards.csv", emoji: "🟢", image: "" }
-const DECK_PARASITES = { is_encounter: true, path: "./data/source/Parasites - Cards.csv", emoji: "🦠", image: "" }
+const DECK_PARASITES = { is_encounter: true, path: "./data/source/Parasites - Cards.csv", emoji: "🪱", image: "" }
+const DECK_CATHEDRAL = { is_encounter: true, path: "./data/source/Cathedral Encounter - Cards.csv", emoji: "🏛️", image: "" }
 
 //////////////////////////////////////////////////////
 // 
 
 const sheets = [
+  DECK_PIG,
+  DECK_DEER,
+  DECK_BEAR,
   DECK_LIBRARIAN,
   DECK_GARDENER, 
   DECK_CHEF,
   DECK_CONSTABLE,
-  DECK_BEAR,
   DECK_SQUIRREL,
   DECK_SNAKE,
   DECK_TURTLE,
@@ -71,12 +79,16 @@ const decks = [
   DECK_SQUIRREL,
   DECK_SNAKE,
   DECK_TURTLE,
+  DECK_PIG,
+  DECK_DEER,
   DECK_JAZZMONDIUS,
   DECK_WILDEFIRE,
   DECK_INSECT_SWARM,
   DECK_TEMPEST,
   DECK_BLOB,
-  DECK_PARASITES
+  DECK_PARASITES,
+  DECK_HERO_CATHEDRAL,
+  DECK_CATHEDRAL
 ]
 
 const html_preamble = `<html>
@@ -232,13 +244,14 @@ insert_gives(insert, gives, spiced)
 
 
 function
-insert_counts(insert, count)
+insert_counts(insert, count, opening_card = false)
 {
+  let bonus_styling = (opening_card) ? `style="color:red"` : ""
   let count_icons = ""
   for (let j = 0; j < count; j++) {
     count_icons += (is_nice) ? "⚫️ " : "• "
   }
-  insert = insert.replace("%CountIcons%", count_icons)
+  insert = insert.replace("%CountIcons%", `<div ${bonus_styling} class="count_icons">${count_icons}</div>`)
   return insert
 }
 
@@ -423,7 +436,7 @@ gen_encounter(rows, name, deck_spec)
   for (let i = 0; i < rows.length; i++) 
   {
     const row = rows[i]
-
+    let opening_card = false
     let insert = template_encounter;
     let keys = Object.keys(row)
 
@@ -432,7 +445,10 @@ gen_encounter(rows, name, deck_spec)
       const value = row[key]
       if (key === "Icons") continue
 
-      if (key == "Description") {
+      if (key == "Opening Salvo") {
+        if (value != "") { opening_card = true }
+      }
+      else if (key == "Description") {
         insert = insert.replace(`%Description%`, modified_description(value))
       }
       else if (key == "Duration" || key == "Attack" || key == "Health") {
@@ -462,7 +478,7 @@ gen_encounter(rows, name, deck_spec)
     insert = insert.replace("%DeckName%", name.replace(" - Cards", ""))
     
     const count = parseInt(row["Count"])
-    insert = insert_counts(insert, count)
+    insert = insert_counts(insert, count, opening_card)
     
     for (let j = 0; j < count; j++) {
       html += insert

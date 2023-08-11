@@ -1,10 +1,10 @@
 Name,Description,Count,Cost: Berries,Cost: Sticks,Cost: Stones,Cost: Flowers,Gives: Berries,Gives: Sticks,Gives: Stones,Gives: Flowers,Notes,Frequency
 Plow,Rake one hero card on your partner's field.,2,0,0,0,1,0,0,0,1,Gardener,2
-Trim Back,"Remove 2 ⏳ from one duration.
+Trim Back,"Remove 1 ⏳ from one duration.
 Deal 2 damage to one enemy.",2,0,0,1,1,0,0,1,1,Gardener,2
-Scatter Seeds,"Remove 2 ⏳ from one duration.
+Scatter Seeds,"Remove 1 ⏳ from one duration.
 If there are eight or more hero cards on your field, deal 1 damage to each enemy.",2,0,1,0,1,0,1,0,1,Gardener,2
 Till the Soil,"Recover 3 vitality.
 Rake one hero card on your partner's field.",2,1,0,0,1,1,0,0,1,Gardener,2
-Wait Patiently,Remove 4 ⏳ from one duration.,1,0,0,0,2,0,0,0,1,Gardener,1
+Wait Patiently,Remove 3 ⏳ from one duration.,1,0,0,0,2,0,0,0,1,Gardener,1
 Mulch,Blank between one and six effects of one or more encounter cards until tomorrow.,1,0,0,0,3,0,0,0,1,Gardener,1
