@@ -132,7 +132,7 @@ html {
 
     .encounter .title
     {
-      font-size: 20px;
+      font-size: 16px;
     }
 
     .action .cost
@@ -315,7 +315,7 @@ html {
 }
   .encounter .info_row *
   {
-    font-size: 10px;
+    font-size: 8px;
     font-weight: bold;
   }
 
@@ -430,21 +430,21 @@ html {
 }
 
 .encounter .body {
-  margin-top: 6px;
-  font-size: 14px;
-  line-height: 16px;
+  margin-top: 0px;
+  font-size: 12px;
+  line-height: 12px;
 }
 
 .encounter .body .cost_icon {
-  width: 16px;
-  height: 16px;
+  width: 12px;
+  height: 12px;
   vertical-align: middle;
   display: inline-block;
 }
 
 .hero .body .body_section .cost_icon {
-  width: 16px;
-  height: 16px;
+  width: 12px;
+  height: 12px;
   vertical-align: middle;
   display: inline-block;
 }
