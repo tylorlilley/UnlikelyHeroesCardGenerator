@@ -1,17 +1,17 @@
 Name,Description,Count,Health,Duration,Icons,Attack,Card Type,Opening Salvo
 Name,Description,Count,Health,Duration,Icons,Attack,Card Type,
-Encounter: Parasites,"After you draw an enemy or duration from your hero deck, put it onto your field.
+Encounter: Parasites,"After you draw an enemy or duration from your deck, put it onto your field.
 During your nights, time does not pass for durations on your partner's field and enemies on your partner's field don't attack during the attack step.
 Actions you play have no effect on encounter cards on your partner's field.",1,,,,,RULES CARD,
-Infestation,"If you would draw an encounter card from your hero deck, turn it into a copy of an enemy with 1 🗡️ and 1 ❤️ instead. That enemy has ""If this enemy would be discarded from the field, shuffle it into your hero deck instead.""",1,,3,,,DURATION,
-Contamination,"As time passes, shuffle the top card of the encounter deck into your hero deck without looking at it.",1,,4,,,DURATION,TRUE
+Infestation,"If you would draw an encounter card from your deck, turn it into a copy of an enemy with 1 🗡️ and 1 ❤️ instead. That enemy has ""If this enemy would be discarded from the field, shuffle it into your deck instead.""",1,,3,,,DURATION,
+Contamination,"As time passes, shuffle the top card of the encounter deck into your deck without looking at it.",1,,4,,,DURATION,TRUE
 The Progenitor,"After you draw an enemy or duration, put it onto your field.
 This enemy gets +X ❤️, where X is the number of encounter cards on the field. This effect can't be blanked.
-After this enemy is discarded from the field, shuffle it into your hero deck.",1,0,,,0,ELITE ENEMY,TRUE
-Chestburster,"After you draw this enemy from the encounter deck, shuffle it into your hero deck.",2,3,,,3,ENEMY,
-Fever,"After you draw this duration from the encounter deck, shuffle it into your hero deck.
+After this enemy is discarded from the field, shuffle it into your deck.",1,0,,,0,ELITE ENEMY,TRUE
+Chestburster,"After you draw this enemy from anywhere but your deck, shuffle it into your deck.",2,3,,,3,ENEMY,
+Fever,"After you draw this duration from the encounter deck, shuffle it into your deck.
 As time passes, discard a hero card from your hand.",2,,3,,,DURATION,
-Chills,"After you draw this duration from the encounter deck, shuffle it into your hero deck.
+Chills,"After you draw this duration from the encounter deck, shuffle it into your deck.
 Each action you play costs an additional resource of any type.",2,,3,,,DURATION,
-Incubate,Shuffle this event and the top card of the encounter deck into your hero deck without looking at it.,3,,,,,EVENT,
-Heartworm,"After this enemy is discarded from the field, shuffle it into your hero deck.",3,1,,,1,ENEMY,TRUE
+Incubate,Shuffle this event and the top card of the encounter deck into your deck.,3,,,,,EVENT,
+Heartworm,"If this enemy would be discarded from the field, shuffle it into your deck instead.",3,1,,,1,ENEMY,TRUE

@@ -1,9 +1,9 @@
 Name,Description,Count,Cost: Berries,Cost: Sticks,Cost: Stones,Cost: Flowers,Gives: Berries,Gives: Sticks,Gives: Stones,Gives: Flowers,Notes,Frequency
 Stop and Think,Draw one card from your deck.,2,1,0,0,0,0,0,1,0,Turtle,2
 Nip,Deal 1 damage to one enemy.,2,0,0,1,0,1,0,0,0,Turtle,2
-Swim Under,Deal 2 damage directly to the encounter deck as if there were no enemies on the field.,2,1,0,1,0,1,0,1,0,Turtle,2
+Steady Strike,"Deal 2 damage to one enemy.
+If you have three or more hero cards in your hand, draw a card from your deck.",2,1,0,1,0,1,0,1,0,Turtle,2
 Submerge,Recover 4 vitality.,1,2,0,0,0,1,0,0,0,Turtle,1
-Strike Precisely,"Deal 2 damage to one enemy. If you have three or more cards in your hand, deal 4 damage instead.",1,0,0,2,0,0,0,1,0,Turtle,1
-Snap,"Deal 2 damage to one enemy.
-Draw one card from your deck.",1,1,0,1,0,1,0,1,0,Turtle,1
+Ram Against,Deal 4 damage to one elite-enemy.,1,0,0,2,0,0,0,1,0,Turtle,1
+Swim Under,Deal 2 damage to the encounter deck as if there were no enemies on the field.,1,1,0,1,0,1,0,1,0,Turtle,1
 Overpower,"Deal 6 damage to one enemy. If you are dealing more damage than the amount of health they have remaining, deal the excess damage directly to the encounter deck as if there were no enemies on the field.",1,2,0,2,0,1,0,1,0,Turtle,1

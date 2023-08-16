@@ -1,11 +1,11 @@
 Name,Description,Count,Cost: Berries,Cost: Sticks,Cost: Stones,Cost: Flowers,Gives: Berries,Gives: Sticks,Gives: Stones,Gives: Flowers,Notes,Frequency
 Eat Acorns,Recover 2 vitality.,2,1,0,0,0,0,0,0,1,Squirrel,2
-Dart Around,Rotate one hero card on your field or on your partner's field.,2,0,0,0,1,1,0,0,0,Squirrel,2
+Dart Around,Rotate one hero card on your partner's field.,2,0,0,0,1,1,0,0,0,Squirrel,2
 Get Distracted,"Remove 2 ⏳ from one duration.
 Recover 2 vitality.",2,1,0,0,1,1,0,0,1,Squirrel,2
-Climb the Tree,"If you have no cards in your hand, skip tonight's draw step.",1,2,0,0,0,1,0,0,0,Squirrel,1
-Bury Deep,Blank each effect on one or two encounter cards until tomorrow.,1,0,0,0,2,0,0,0,1,Squirrel,1
-Dig Up,"Recover 3 vitality.
-Rotate one hero card on your field or on your partner's field.",1,1,0,0,1,1,0,0,1,Squirrel,1
-Fill Cheeks,"Draw between one and five hero cards from your partner's field.
-Until tommorow, after you discard a hero card from your hand, return it to your hand.",1,2,0,0,2,1,0,0,1,Squirrel,1
+Slip Past,"If you have no cards in your hand, discard the top three cards of the encounter deck.",1,2,0,0,0,1,0,0,0,Squirrel,1
+Bury Deep,Blank one encounter card until tomorrow.,1,0,0,0,2,0,0,0,1,Squirrel,1
+Dig Up,"If you have no cards in your hand, recover 2 vitality.
+Rotate two hero cards on your partner's field.",1,1,0,0,1,1,0,0,1,Squirrel,1
+Fill Cheeks,"Rotate between one and four hero cards on your partner's field.
+Draw two cards from your deck.",1,2,0,0,2,1,0,0,1,Squirrel,1

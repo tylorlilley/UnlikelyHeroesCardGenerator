@@ -1,8 +1,7 @@
 Name,Description,Count,Health,Attack,Duration,Icons,Card Type,Opening Salvo
 Encounter: Wildfire,"At dusk, you lose the game if there are seven or more 🔥 on the field.",1,,,,,RULES CARD,
-The Firestarter,"This enemy gets +X 🗡️, where X is the number of 🔥 on the field. This effect can't be blanked.
-This enemy gets +X ❤️, where X is two times the number of 🔥 on the field. This effect can't be blanked.
-After you draw another encounter card for the first time each night, if that card has one or more 🔥, that card escalates.",1,0,0,,🔥🔥🔥,ELITE ENEMY,
+The Firestarter,"This enemy gets +X ❤️, where X is three times the number of 🔥 on the field. This effect can't be blanked.
+After you draw another encounter card, you lose X vitality, where X is the number of 🔥 on that card. ",1,0,2,,🔥🔥🔥,ELITE ENEMY,
 Fuel for the Fire,"Don't remove ⏳ from other durations during the time passes step.
 Hero card effects can't remove ⏳ from other durations.",1,,,3,🔥,DURATION,TRUE
 Smoke Inhalation,Each action you play costs an additional resource of any type.,1,,,4,🔥,DURATION,TRUE
@@ -10,7 +9,6 @@ Encroaching Flames,"If you would recover X vitality, you may remove X ⏳ from t
 As time passes, if there is exactly 1 ⏳ on this, lose 6 vitality.",2,,,4,🔥🔥,DURATION,TRUE
 Swirling Ashes,"As time passes, lose 1 vitality. If there are five or more 🔥 on the field, lose 2 vitality instead.",2,,,3,🔥🔥,DURATION,TRUE
 Crumbling Structure,"You may deal damage to this as if it were an enemy. If you do, remove X ⏳ from it, where X is the damage dealt.",2,,,8,🔥🔥🔥,DURATION,TRUE
-Heat Wave,"This deals X damage, where X is the number of 🔥 on the field. 
-If there are three or fewer 🔥 on the field, this event escalates.",3,,,,,EVENT,
-Arsonist,"If there are five or more 🔥 on the field, this enemy gets +2 🗡️.
-After you draw this enemy, it escalates.",3,2,1,,🔥,ENEMY,
+Heat Wave,"You lose X vitality, where X is the number of 🔥 on the field. 
+If there are three or fewer 🔥 on the field, this event escalates.",3,,,,🔥,EVENT,
+Arsonist,"After you draw this enemy, seek a card with one or more 🔥 from the top of the encounter deck and draw it.",3,2,2,,🔥,ENEMY,

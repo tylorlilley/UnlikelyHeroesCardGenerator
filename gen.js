@@ -5,7 +5,7 @@ const { parse } = require("csv-parse/sync");
 //////////////////////////////////////////////////////
 // CONFIGURATION 
 
-const is_nice = true
+const is_nice = false
 const generate_gives_from_costs = false
 
 const TEMPLATE_HEROES = "./data/template_hero.html"
@@ -33,6 +33,7 @@ const DECK_LIBRARIAN = { is_job: true, is_hero: true, path: "./data/source/Libra
 const DECK_GARDENER  = { is_job: true, is_hero: true, path: "./data/source/Gardener - Cards.csv", sheet_path: "./data/source/Gardener - Sheet.csv", emoji: "👩‍🌾", image: "../assets/deck_icon_gardener.png" }
 const DECK_CHEF      = { is_job: true, is_hero: true, path: "./data/source/Chef - Cards.csv", sheet_path: "./data/source/Chef - Sheet.csv", emoji: "👨‍🍳", image: "../assets/deck_icon_baker.png", spiced: true }
 const DECK_CONSTABLE = { is_job: true, is_hero: true, path: "./data/source/Constable - Cards.csv", sheet_path: "./data/source/Constable - Sheet.csv", emoji: "👮", image: "../assets/deck_icon_constable.png" }
+const DECK_SEAMSTRESS = { is_job: true, is_hero: true, path: "./data/source/Seamstress - Cards.csv", sheet_path: "./data/source/Seamstress - Sheet.csv", emoji: "🪡", image: "" }
 
 // Critters
 const DECK_BEAR     = { is_critter: true, is_hero: true,  path: "./data/source/Bear - Cards.csv", sheet_path: "./data/source/Bear - Sheet.csv", emoji: "🐻", image: "../assets/deck_icon_bear.png"}
@@ -53,6 +54,7 @@ const DECK_TEMPEST = { is_encounter: true, path: "./data/source/The Tempest - Ca
 const DECK_BLOB = { is_encounter: true, path: "./data/source/The Blob - Cards.csv", emoji: "🟢", image: "" }
 const DECK_PARASITES = { is_encounter: true, path: "./data/source/Parasites - Cards.csv", emoji: "🪱", image: "" }
 const DECK_CATHEDRAL = { is_encounter: true, path: "./data/source/Cathedral Encounter - Cards.csv", emoji: "🏛️", image: "" }
+const DECK_BLOOD_GAMES = { is_encounter: true, path: "./data/source/Blood Games - Cards.csv", emoji: "🪚", image: "" }
 
 //////////////////////////////////////////////////////
 // 
@@ -61,6 +63,7 @@ const sheets = [
   DECK_PIG,
   DECK_DEER,
   DECK_BEAR,
+  DECK_SEAMSTRESS,
   DECK_LIBRARIAN,
   DECK_GARDENER, 
   DECK_CHEF,
@@ -71,6 +74,7 @@ const sheets = [
 ]
 
 const decks = [
+  DECK_SEAMSTRESS,
   DECK_LIBRARIAN,
   DECK_GARDENER, 
   DECK_CHEF,
@@ -88,7 +92,8 @@ const decks = [
   DECK_BLOB,
   DECK_PARASITES,
   DECK_HERO_CATHEDRAL,
-  DECK_CATHEDRAL
+  DECK_CATHEDRAL,
+  DECK_BLOOD_GAMES
 ]
 
 const html_preamble = `<html>
@@ -246,10 +251,10 @@ insert_gives(insert, gives, spiced)
 function
 insert_counts(insert, count, opening_card = false)
 {
-  let bonus_styling = (opening_card) ? `style="color:red"` : ""
+  let bonus_styling = (opening_card) ? `style="color:red"` : `style="color:black"`
   let count_icons = ""
   for (let j = 0; j < count; j++) {
-    count_icons += (is_nice) ? "⚫️ " : "• "
+    count_icons += (is_nice) ? "⬤ " : "• "
   }
   insert = insert.replace("%CountIcons%", `<div ${bonus_styling} class="count_icons">${count_icons}</div>`)
   return insert

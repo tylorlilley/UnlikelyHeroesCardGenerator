@@ -1,0 +1,25 @@
+Name,Description,Count,Health,Duration,Icons,Attack,Card Type,Opening Salvo
+Encounter: Blood Games,"As you draw encounter cards, you must make all choices it asks you to make without any input from your partner.
+After you discard one or more cards from the encounter deck, choose one:
+• Put an event discarded this way on top of the encounter deck and draw it.
+• Shuffle each card discarded this way into the encounter deck.",1,,,,,RULES CARD,
+Your Gracious Host,"After an enemy attacks, choose one:
+• Remove all damage from that enemy.
+• That enemy escalates.",1,12,,,1,ELITE ENEMY,
+Neverending Torment,"If an encounter card would be discarded from the field, shuffle it into the encounter deck instead.",1,,6,,,DURATION,TRUE
+Double Jeopardy,"If an encounter card asks you to choose one effect, choose each effects instead.",1,,6,,,DURATION,TRUE
+Harrowing Decision,"After you draw an event, choose one:
+• Lose 2 vitality.
+• That event persists and escalates.",2,,4,,,DURATION,TRUE
+Now or Later,"Choose one: 
+• Discard each hero card on the field.
+• Discard a hero card from your hand and this event persists.",2,,,,,EVENT,
+Unwilling Participant,"After you draw an event, choose one:
+• This enemy attacks.
+• That event persists.",2,,6,,2,ENEMY,TRUE
+Life or Limb,"Choose one: 
+• Lose 4 vitality.
+• Discard three hero cards from your hand.",3,,,,,EVENT,TRUE
+Friend or Foe,"Choose one: 
+• Your partner discards three hero cards from their hand.
+• Seek an enemy from the top of the encounter deck and draw it.",3,,,,,EVENT,TRUE

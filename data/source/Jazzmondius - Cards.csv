@@ -1,8 +1,8 @@
 Name,Description,Count,Health,Duration,Icons,Attack,Card Type,Opening Salvo
 Encounter: Jazzmondius,"Before the game begins, put Jazzmondius onto the field.
-If Jazzmondius would be discarded from the field, it persists instead.",1,,,,,RULES CARD,
+If Jazzmondius would be discarded from the field, he persists instead.",1,,,,,RULES CARD,
 Jazzmondius,"This enemy does not attack during the attack step. This effect can't be blanked.
-After you play an action that damages this enemy, it attacks.",1,12,,,2,ELITE ENEMY,
+After you play an action that deals damage to this enemy, it attacks.",1,12,,,2,ELITE ENEMY,
 Fill With Despair,"Jazzmondius attacks X times, where X is half the number of cards on your partner's field, rounded up.
 Discard each hero card on your field.",1,,,,,EVENT,
 Shadowjazz,"After drawing this enemy, if Jazzmondius is on the field, turn this enemy into a copy of Jazzmondius.

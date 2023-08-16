@@ -7,4 +7,4 @@ If there are eight or more hero cards on your field, deal 1 damage to each enemy
 Till the Soil,"Recover 3 vitality.
 Rake one hero card on your partner's field.",2,1,0,0,1,1,0,0,1,Gardener,2
 Wait Patiently,Remove 3 ⏳ from one duration.,1,0,0,0,2,0,0,0,1,Gardener,1
-Mulch,Blank between one and six effects of one or more encounter cards until tomorrow.,1,0,0,0,3,0,0,0,1,Gardener,1
+Mulch,Blank up to two encounter cards until tomorrow.,1,0,0,0,3,0,0,0,1,Gardener,1

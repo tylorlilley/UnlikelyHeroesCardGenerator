@@ -1,0 +1,8 @@
+Name,Description,Count,Cost: Berries,Cost: Sticks,Cost: Stones,Cost: Flowers,Gives: Berries,Gives: Sticks,Gives: Stones,Gives: Flowers,Notes,Frequency
+Pull the Thread,Deal 2 damage to one enemy that's been stitched together with another enemy.,2,0,1,0,0,0,1,0,0,Seamstress,2
+Patch,"Deal 1 damage.
+Gain X life, where X is twice the largest number of enemies that are stitched together.",2,1,1,0,0,1,1,0,0,Seamstress,2
+Tangle,"Deal 1 damage to one or two enemies. If those enemies are already stitched together, also subdue those enemies.",2,0,1,0,1,0,1,0,1,Seamstress,2
+Puncture,"Deal 2 damage to one enemy. If you are damaging an enemy that's stitched together with another enemy, deal 4 damage instead.",2,0,1,1,0,0,1,1,0,Seamstress,2
+Thread the Needle,Deal 1 damage to each enemy.,1,0,2,0,0,0,1,0,0,Seamstress,1
+Bring Together,Deal 2 damage to each enemy that isn't stitched together with another enemy.,1,0,3,0,0,0,1,0,0,Seamstress,1

@@ -1,12 +1,15 @@
 Name,Description,Count,Cost: Berries,Cost: Sticks,Cost: Stones,Cost: Flowers,Gives: Berries,Gives: Sticks,Gives: Stones,Gives: Flowers,Notes,Frequency
-Squeal,Deal 1 damage to each non-elite enemy.,2,0,1,0,0,0,0,0,1,Pig,2
-Cover in Mud,Blank one effect of an encounter card until tomorrow.,2,0,0,0,1,0,1,0,0,Pig,2
-Knock Over,"Deal 1 damage to one or two enemies.
-Rotate one hero card on your field or on your partner's field.",2,0,1,0,1,0,1,0,1,Pig,2
-Panic,"Deal 2 damage to one enemy. If there are more encounter cards on the field than there are hero cards on your field, also deal 2 damage to another enemy.",1,0,2,0,0,0,1,0,0,Pig,1
+Squeal,Deal 1 damage to one or two non-elite enemies.,2,0,1,0,0,0,0,0,1,Pig,2
+Get Dirty,Subdue one enemy.,2,0,0,0,1,0,1,0,0,Pig,2
+Run Wild,"Rotate two hero cards on your field.
+If there are more encounter cards on the field than there are hero cards on your field, deal 1 damage to each enemy.",2,0,1,0,1,0,1,0,1,Pig,2
+Panic,"Deal 1 damage to one or two enemies. 
+If there are more encounter cards on the field than there are hero cards on your field, also deal 2 damage to those enemies instead.",1,0,2,0,0,0,1,0,0,Pig,1
 Mess Around,"Remove 1 ⏳ from one duration.
-Blank one effect of an encounter card until tomorrow.
-Rotate one hero card on your field or on your parnter's field.",1,0,,0,2,0,0,0,1,Pig,1
-Splash About,Deal 1 damage to one or two enemies. Blank each effect of each enemy dealt damage this way until tomorrow.,1,0,1,0,1,0,1,0,1,Pig,1
-Root Out,"Deal 2 damage to each enemy.
-Remove 1 ⏳ from each duration.",1,0,2,0,2,0,1,0,1,Pig,1
+Rotate one hero card on your field.
+Subdue one enemy.",1,0,,0,2,0,0,0,1,Pig,1
+Splash Mud,"Deal 1 damage.
+Subdue one enemy twice.",1,0,1,0,1,0,1,0,1,Pig,1
+Root Out,"Choose one:
+• Deal 2 damage to each enemy.
+• Remove 2 ⏳ from each duration.",1,0,2,0,2,0,1,0,1,Pig,1
