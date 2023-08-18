@@ -1,2 +1,2 @@
 Name,Ability,Resource Affinity 1,Resource Affinity 2
-Deer,"Draw two cards from your deck. If you have shuffled your discard pile into your deck this game, draw four cards instead.",Sticks,Berries
+Deer,"If you have three or more hero cards in your hand, draw four cards from your deck. Otherwise, draw two cards from your deck.",Sticks,Berries

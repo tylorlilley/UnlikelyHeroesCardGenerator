@@ -1,5 +1,5 @@
 Name,Description,Count,Health,Attack,Duration,Icons,Card Type,Opening Salvo
-Encounter: The Swarm,"At dawn, if there are no enemies on the field, seek an enemy from the encounter deck and draw it.",1,,,,,RULES CARD,
+Encounter: The Swarm,"At the end of each night, if there are no non-elite enemies on the field, seek a non-elite enemy from the top of the encounter deck and draw it.",1,,,,,RULES CARD,
 Eaten Alive,"Each enemy attacks.
 If no enemies attack this way, this event persists and escalates.",1,,,,,EVENT,
 Walking Hive,"After you draw another enemy for the first time each night, that enemy escalates.

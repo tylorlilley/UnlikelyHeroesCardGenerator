@@ -2,7 +2,7 @@ Name,Description,Count,Cost: Berries,Cost: Sticks,Cost: Stones,Cost: Flowers,Giv
 Stop and Think,Draw one card from your deck.,2,1,0,0,0,0,0,1,0,Turtle,2
 Nip,Deal 1 damage to one enemy.,2,0,0,1,0,1,0,0,0,Turtle,2
 Steady Strike,"Deal 2 damage to one enemy.
-If you have three or more hero cards in your hand, draw a card from your deck.",2,1,0,1,0,1,0,1,0,Turtle,2
+If you have previously played an action with this name today, draw two cards from your deck and discard a hero card from your hand.",2,1,0,1,0,1,0,1,0,Turtle,2
 Submerge,Recover 4 vitality.,1,2,0,0,0,1,0,0,0,Turtle,1
 Ram Against,Deal 4 damage to one elite-enemy.,1,0,0,2,0,0,0,1,0,Turtle,1
 Swim Under,Deal 2 damage to the encounter deck as if there were no enemies on the field.,1,1,0,1,0,1,0,1,0,Turtle,1

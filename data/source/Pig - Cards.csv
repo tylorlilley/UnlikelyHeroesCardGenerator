@@ -2,14 +2,12 @@ Name,Description,Count,Cost: Berries,Cost: Sticks,Cost: Stones,Cost: Flowers,Giv
 Squeal,Deal 1 damage to one or two non-elite enemies.,2,0,1,0,0,0,0,0,1,Pig,2
 Get Dirty,Subdue one enemy.,2,0,0,0,1,0,1,0,0,Pig,2
 Run Wild,"Rotate two hero cards on your field.
-If there are more encounter cards on the field than there are hero cards on your field, deal 1 damage to each enemy.",2,0,1,0,1,0,1,0,1,Pig,2
-Panic,"Deal 1 damage to one or two enemies. 
-If there are more encounter cards on the field than there are hero cards on your field, also deal 2 damage to those enemies instead.",1,0,2,0,0,0,1,0,0,Pig,1
+If the number of encounter cards on the field is equal to or greater than the number of hero cards on your field, deal 1 damage to each enemy.",2,0,1,0,1,0,1,0,1,Pig,2
+Panic,"Deal 1 damage to one or two enemies. If the number of encounter cards on the field is equal to or greater than the number of hero cards on your field, deal 2 damage to those enemies instead.",1,0,2,0,0,0,1,0,0,Pig,1
 Mess Around,"Remove 1 ⏳ from one duration.
 Rotate one hero card on your field.
 Subdue one enemy.",1,0,,0,2,0,0,0,1,Pig,1
-Splash Mud,"Deal 1 damage.
-Subdue one enemy twice.",1,0,1,0,1,0,1,0,1,Pig,1
+Cover with Mud,Deal 1 damage to one enemy and subdue it twice.,1,0,1,0,1,0,1,0,1,Pig,1
 Root Out,"Choose one:
 • Deal 2 damage to each enemy.
 • Remove 2 ⏳ from each duration.",1,0,2,0,2,0,1,0,1,Pig,1

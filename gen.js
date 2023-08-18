@@ -32,6 +32,7 @@ const ICON_HEART   = { emoji: "❤️", image: "../assets/heart-small.png" }
 const DECK_LIBRARIAN = { is_job: true, is_hero: true, path: "./data/source/Librarian - Cards.csv", sheet_path: "./data/source/Librarian - Sheet.csv", emoji: "📚", image: "../assets/deck_icon_librarian.png" }
 const DECK_GARDENER  = { is_job: true, is_hero: true, path: "./data/source/Gardener - Cards.csv", sheet_path: "./data/source/Gardener - Sheet.csv", emoji: "👩‍🌾", image: "../assets/deck_icon_gardener.png" }
 const DECK_CHEF      = { is_job: true, is_hero: true, path: "./data/source/Chef - Cards.csv", sheet_path: "./data/source/Chef - Sheet.csv", emoji: "👨‍🍳", image: "../assets/deck_icon_baker.png", spiced: true }
+const DECK_REPORTER = { is_job: true, is_hero: true, path: "./data/source/Reporter - Cards.csv", sheet_path: "./data/source/Reporter - Sheet.csv", emoji: "🎤", image: "" }
 const DECK_CONSTABLE = { is_job: true, is_hero: true, path: "./data/source/Constable - Cards.csv", sheet_path: "./data/source/Constable - Sheet.csv", emoji: "👮", image: "../assets/deck_icon_constable.png" }
 const DECK_SEAMSTRESS = { is_job: true, is_hero: true, path: "./data/source/Seamstress - Cards.csv", sheet_path: "./data/source/Seamstress - Sheet.csv", emoji: "🪡", image: "" }
 
@@ -63,7 +64,7 @@ const sheets = [
   DECK_PIG,
   DECK_DEER,
   DECK_BEAR,
-  DECK_SEAMSTRESS,
+  DECK_REPORTER,
   DECK_LIBRARIAN,
   DECK_GARDENER, 
   DECK_CHEF,
@@ -71,9 +72,11 @@ const sheets = [
   DECK_SQUIRREL,
   DECK_SNAKE,
   DECK_TURTLE,
+  DECK_SEAMSTRESS,
 ]
 
 const decks = [
+  DECK_REPORTER,
   DECK_SEAMSTRESS,
   DECK_LIBRARIAN,
   DECK_GARDENER, 

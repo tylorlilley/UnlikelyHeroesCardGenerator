@@ -1,25 +1,24 @@
 Name,Description,Count,Health,Duration,Icons,Attack,Card Type,Opening Salvo
-Encounter: Blood Games,"As you draw encounter cards, you must make all choices it asks you to make without any input from your partner.
-After you discard one or more cards from the encounter deck, choose one:
-• Put an event discarded this way on top of the encounter deck and draw it.
-• Shuffle each card discarded this way into the encounter deck.",1,,,,,RULES CARD,
+Encounter: Blood Games,"If an encounter card asks you to choose one effect, you must choose an option you can fully complete and you must choose without any input from your partner.
+After you play an action that discards one or more cards from the encounter deck, choose one:
+• Draw an event discarded this way.
+• Persist each card discarded this way.",1,,,,,RULES CARD,
 Your Gracious Host,"After an enemy attacks, choose one:
-• Remove all damage from that enemy.
+• Remove all damage from that enemy. At least one damage must be removed to be able to choose this option.
 • That enemy escalates.",1,12,,,1,ELITE ENEMY,
-Neverending Torment,"If an encounter card would be discarded from the field, shuffle it into the encounter deck instead.",1,,6,,,DURATION,TRUE
-Double Jeopardy,"If an encounter card asks you to choose one effect, choose each effects instead.",1,,6,,,DURATION,TRUE
-Harrowing Decision,"After you draw an event, choose one:
-• Lose 2 vitality.
-• That event persists and escalates.",2,,4,,,DURATION,TRUE
+Neverending Torment,"If an encounter card would be discarded from the field, it persists instead.",1,,6,,,DURATION,TRUE
+Double Jeopardy,"If an encounter card asks you to choose one effect, choose each effect of that encounter card instead.",1,,6,,,DURATION,TRUE
+Harrowing Experience,"After you draw this duration, it escalates.
+After you draw an event, choose one:
+• That event persists and escalates. That event must not already be persisting or escalating to choose this option.
+• Lose 2 vitality.",2,,6,,,DURATION,
 Now or Later,"Choose one: 
-• Discard each hero card on the field.
+• Discard each hero card on the field. At least one hero card must be on the field to choose this option.
 • Discard a hero card from your hand and this event persists.",2,,,,,EVENT,
-Unwilling Participant,"After you draw an event, choose one:
-• This enemy attacks.
-• That event persists.",2,,6,,2,ENEMY,TRUE
-Life or Limb,"Choose one: 
-• Lose 4 vitality.
-• Discard three hero cards from your hand.",3,,,,,EVENT,TRUE
 Friend or Foe,"Choose one: 
-• Your partner discards three hero cards from their hand.
-• Seek an enemy from the top of the encounter deck and draw it.",3,,,,,EVENT,TRUE
+• Your partner discards each hero card in their hand. They must have at least one hero card in their hand to choose this option.
+• Seek Your Gracious Host from the top of the encounter deck or the top of the discard pile and draw it. If you can't, this event escalates.",2,,,,,EVENT,
+Life or Limb,"Choose one: 
+• Discard each hero card in your hand. You must have at least one hero card in your hand to choose this option.
+• Lose 4 vitality.",3,,,,,EVENT,TRUE
+Unwilling Participant,"As this enemy leaves the field, lose 4 vitality.",3,1,,,1,ENEMY,TRUE

@@ -1,0 +1,11 @@
+Name,Description,Count,Cost: Berries,Cost: Sticks,Cost: Stones,Cost: Flowers,Gives: Berries,Gives: Sticks,Gives: Stones,Gives: Flowers,Notes,Frequency
+Hound,Deal 1 damage to one or two enemies that have previously been dealt damage today.,2,0,1,0,0,0,1,0,0,Reporter,2
+Hit Piece,"Deal 1 damage to one or two enemies.
+Discard the top card of the encounter deck.",2,1,1,0,0,1,1,0,0,Reporter,2
+Twist the Story,"Deal 1 damage to one enemy.
+Rotate up to two hero cards on your field.",2,0,1,0,1,0,1,0,1,Reporter,2
+Follow-Up,"Deal 2 damage to one enemy. If that enemy has previously been damaged today, deal 4 damage instead.",2,0,1,1,0,0,1,1,0,Reporter,2
+Get the Scoop,Deal 1 damage to each enemy.,1,0,2,0,0,0,1,0,0,Reporter,1
+Sell Copies,"Choose one:
+• Deal 3 damage divided as you choose between one or more enemies.
+• After you play another action today, reprint it and discard it.",1,0,3,0,0,0,1,0,0,Reporter,1
